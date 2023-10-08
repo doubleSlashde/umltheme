@@ -1,0 +1,17 @@
+skinparam NoteBackgroundColor #D7E9F4
+skinparam NoteBorderColor #D7E9F4
+skinparam backgroundStyle crosshatch
+
+
+skinparam Sequence {
+    ParticipantBorderColor #D7E9F4
+    ParticipantBackgroundColor #D7E9F4
+    LifeLineBorderColor #C6C6C6
+    LifeLineBackgroundColor #C6C6C6
+    ArrowColor black
+    GroupBackgroundColor #C6C6C6
+    ActorBorderColor #00A5E1
+    ActorBackgroundColor #00A5E1
+    ActorBorderThickness 2.5
+    ReferenceHeaderBackgroundColor #C6C6C6
+}
