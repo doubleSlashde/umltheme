@@ -39,7 +39,7 @@ skinparam Usecase {
 skinparam class {
     BackgroundColor #D7E9F4
     ArrowColor black
-    BorderColor #D7E9F4
+    BorderColor black
     IconColor black
 }
 
