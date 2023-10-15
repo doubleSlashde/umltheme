@@ -10,4 +10,4 @@ Use stylings by including the theme file at the top of your code.
 
 ## Beispiel Datenmodell einer Software Factory
 
-![Software Factory Datenmodell](./softwarefactory_datamodel)
+![Software Factory Datenmodell](./softwarefactory_datamodel.png)
