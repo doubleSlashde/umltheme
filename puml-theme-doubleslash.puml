@@ -16,7 +16,7 @@
 !define NOTEBGCOLOR       FFF6E7
 !define NOTEBORDERCOLOR   FFD999
 
-!define FONTNAME          "Arial Nova"
+!define FONTNAME          "Helvetica"
 
 hide circle 
 hide empty members
