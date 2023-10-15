@@ -1,0 +1,28 @@
+hide circle 
+
+skinparam padding 8
+skinparam roundcorner 16
+
+
+skinparam ArrowColor #DS_GREY
+skinparam ArrowThickness 1
+skinparam ArrowFontColor #grey
+skinparam ArrowFontStyle bold
+skinparam Shadowing true
+skinparam BorderThickness 2
+
+
+
+skinparam package {
+    AttributeFontColor #DS_GREY
+    BackgroundColor #fbfbfb
+    BorderColor #darkgrey
+}
+
+skinparam class {
+    BackgroundColor #DS_LIGHTBLUE
+    FontName "Arial Nova"
+    FontColor #DS_DARKGREY
+    BorderColor #STEELBLUE40
+    BorderThickness 0
+}
