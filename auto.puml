@@ -1,0 +1,40 @@
+@startuml Auto
+!include puml-theme-doubleslash.puml
+skinparam padding 2
+skinparam classBorderThickness 2
+
+class Auto {
+  - Lenkrad: boolean = true
+  - Motor: Motor
+  - Vorderrad: Rad[2]
+  - Hinterrad: Rad[2]
+  + startMotor()
+  + stopMotor()
+  + aufschließen()
+  + starten()
+}
+
+class Motor {
+  + start()
+  + stop()
+}
+
+class Rad {
+  - Größe: int
+  - Reifenart: string
+}
+
+interface AutoSteuerung {
+  + aufschließen()
+  + starten()
+}
+
+Auto *-- Motor : hat
+Auto *-- Rad : hat
+Auto -- AutoSteuerung : benutzt
+
+note top of Auto: Das Auto hat insgesamt 4 Räder,\ndavon 2 Vorderräder und 2 Hinterräder.
+note top of Motor: Steuert den Motor des Autos.
+note top of Rad: Ein Rad hat eine\nbestimmte Größe und Reifenart.
+
+@enduml
