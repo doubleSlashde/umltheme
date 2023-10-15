@@ -1,0 +1,151 @@
+@startuml datamodel
+
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash_style.theme
+
+!define STEELBLUE25  374656
+!define STEELBLUE40  8A9DB3
+!define DS_BLUE      00A5E1
+!define DS_LIGHTBLUE D7E9F4
+!define DS_ORANGE    FF9F00
+!define DS_LIGHTGREY C6C6C6
+!define DS_GREY      7A7A7A
+!define DS_DARKGREY  515151
+!define BLACK50      7F7F7F
+!define BLACK25      404040
+
+!define COMMENT(x) <color:grey><size:12>x</color>
+
+footer doubleSlash Software Factory artefacts
+
+hide empty members
+
+<style>
+root {
+    Margin 10
+  }
+</style>
+
+hide circle 
+
+skinparam padding 8
+skinparam roundcorner 16
+
+
+skinparam ArrowColor #DS_GREY
+skinparam ArrowThickness 1
+skinparam ArrowFontColor #grey
+skinparam ArrowFontStyle bold
+skinparam Shadowing true
+skinparam BorderThickness 2
+
+
+
+skinparam package {
+    AttributeFontColor #DS_GREY
+    BackgroundColor #fbfbfb
+    BorderColor #darkgrey
+}
+
+skinparam class {
+    BackgroundColor #DS_LIGHTBLUE
+    FontName "Arial Nova"
+    FontColor #DS_DARKGREY
+    BorderColor #STEELBLUE40
+    BorderThickness 0
+}
+
+
+
+
+
+'Das ProductModel beschreibt eine Capability in den Dimensionen People, Process, System und Data vollständig.
+'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren 
+'Entwicklung entstehen.
+package "Capability > Product Model " {
+    together {
+        class People
+        class Process 
+        class System
+        class Data
+    }
+}
+
+'Beschreibung der Interaktionen des Systems mit den Benutzern (Aktoren) oder anderen Systemen
+class UseCase
+
+' Sammlung aller Technologien, die für das Produkt eingesetzt werden sollen:
+' Frontend, Backend, Datenbank, Infrastruktur, Entwicklungswerkzeuge und Bibliotheken
+class TechnologyStack
+'Dokumentation der Anforderungen nach dem Schema:
+' Als [Rolle] möchte ich [Funktion], damit [Nutzen]. 
+class UserStory
+'Ein physikalisches Datenmodell beschreibt die Struktur und Beziehungen der Daten in einer Datenbank. 
+'Es definiert die Tabellen, Spalten, Relationen und Constraints.
+class DataModel 
+class Mockup
+class APIDesign
+class AcceptanceCriteria 
+class TestCase
+class ModuleDesign
+class SequenceModel
+class SourceCode
+class BuildCode
+class DeploymentCode
+class InfrastructureCode
+class DeploymentArtefact
+
+
+
+'Ableitung der Use Cases aus dem Benutzer- und Prozessmodell
+People  -- UseCase : bildet >
+Process --  UseCase : bildet >
+
+System -- TechnologyStack
+Data -- TechnologyStack
+
+
+UseCase --> UserStory : wird zu >
+
+
+TechnologyStack --> DataModel
+UserStory ---> "0..1" Mockup
+UserStory ---> "0..1" APIDesign
+UserStory "1" ---> "n" AcceptanceCriteria
+
+
+AcceptanceCriteria --> TestCase
+TestCase -> ModuleDesign
+
+DataModel --> ModuleDesign
+Mockup --> ModuleDesign
+AcceptanceCriteria --> ModuleDesign
+
+APIDesign --> ModuleDesign
+
+ModuleDesign --> SequenceModel
+
+SequenceModel --> SourceCode
+
+ModuleDesign ---> DeploymentCode
+ModuleDesign ---> BuildCode
+TechnologyStack ----> DeploymentCode
+TechnologyStack -------> InfrastructureCode
+
+class Incident #DS_LIGHTGREY
+class Defect #DS_LIGHTGREY
+class PullRequest #DS_LIGHTGREY
+
+SourceCode "1" --> "0..n" PullRequest
+
+SourceCode --> DeploymentArtefact
+ 
+
+DeploymentArtefact "1" --> "0..n" Defect
+DeploymentArtefact "1" --> "0..n" Incident
+
+Defect "1" ---> "1..n" TestCase
+Incident "1" --> "1..n" TestCase
+
+
+@enduml
+

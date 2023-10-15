@@ -1,4 +1,8 @@
-' Define colors in doubleSLash corporate identity
+
+!$PUML_THEME = "doubleslash"
+!$THEME      = "doubleslash"
+''Define colors in doubleSLash corporate identity
+
 !define STEELBLUE25  374656
 !define STEELBLUE40  8A9DB3
 !define DS_BLUE      00A5E1
