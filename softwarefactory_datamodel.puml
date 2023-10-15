@@ -1,60 +1,16 @@
 @startuml datamodel
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 
-'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash_style.theme
-
-!define STEELBLUE25  374656
-!define STEELBLUE40  8A9DB3
-!define DS_BLUE      00A5E1
-!define DS_LIGHTBLUE D7E9F4
-!define DS_ORANGE    FF9F00
-!define DS_LIGHTGREY C6C6C6
-!define DS_GREY      7A7A7A
-!define DS_DARKGREY  515151
-!define BLACK50      7F7F7F
-!define BLACK25      404040
-
-!define COMMENT(x) <color:grey><size:12>x</color>
-
+title doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
 
-hide empty members
 
-<style>
-root {
-    Margin 10
-  }
+<style> 
+   root { 
+        Margin 10 
+'        BackgroundStyle crosshatch
+   } 
 </style>
-
-hide circle 
-
-skinparam padding 8
-skinparam roundcorner 16
-
-
-skinparam ArrowColor #DS_GREY
-skinparam ArrowThickness 1
-skinparam ArrowFontColor #grey
-skinparam ArrowFontStyle bold
-skinparam Shadowing true
-skinparam BorderThickness 2
-
-
-
-skinparam package {
-    AttributeFontColor #DS_GREY
-    BackgroundColor #fbfbfb
-    BorderColor #darkgrey
-}
-
-skinparam class {
-    BackgroundColor #DS_LIGHTBLUE
-    FontName "Arial Nova"
-    FontColor #DS_DARKGREY
-    BorderColor #STEELBLUE40
-    BorderThickness 0
-}
-
-
 
 
 

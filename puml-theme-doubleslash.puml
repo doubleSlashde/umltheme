@@ -15,6 +15,7 @@
 !define BLACK25      404040
 
 hide circle 
+hide empty members
 
 skinparam padding 8
 skinparam roundcorner 16
