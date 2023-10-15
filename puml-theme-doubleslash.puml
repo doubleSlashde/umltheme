@@ -3,16 +3,20 @@
 !$THEME      = "doubleslash"
 ''Define colors in doubleSLash corporate identity
 
-!define STEELBLUE25  374656
-!define STEELBLUE40  8A9DB3
-!define DS_BLUE      00A5E1
-!define DS_LIGHTBLUE D7E9F4
-!define DS_ORANGE    FF9F00
-!define DS_LIGHTGREY C6C6C6
-!define DS_GREY      7A7A7A
-!define DS_DARKGREY  515151
-!define BLACK50      7F7F7F
-!define BLACK25      404040
+!define STEELBLUE25       374656
+!define STEELBLUE40       8A9DB3
+!define DS_BLUE           00A5E1
+!define DS_LIGHTBLUE      D7E9F4
+!define DS_ORANGE         FF9F00
+!define DS_LIGHTGREY      C6C6C6
+!define DS_GREY           7A7A7A
+!define DS_DARKGREY       515151
+!define BLACK50           7F7F7F
+!define BLACK25           404040
+!define NOTEBGCOLOR       FFF6E7
+!define NOTEBORDERCOLOR   FFD999
+
+!define FONTNAME          "Arial Nova"
 
 hide circle 
 hide empty members
@@ -21,35 +25,51 @@ skinparam padding 8
 skinparam roundcorner 16
 skinparam NoteBackgroundColor #DS_LIGHTBLUE
 skinparam NoteBorderColor #DS_LIGHTBLUE
-skinparam backgroundStyle crosshatch
+
+skinparam FontName FONTNAME
+skinparam defaultFontName FONTNAME
+skinparam FontSize 14
 
 skinparam ArrowColor #DS_GREY
 skinparam ArrowThickness 1
-skinparam ArrowFontName "Arial Nova"
+skinparam ArrowFontName FONTNAME
 skinparam ArrowFontColor #DS_GREY
 skinparam ArrowFontStyle bold
 skinparam Shadowing true
+skinparam BorderColor #DS_LIGHTGREY
 skinparam BorderThickness 2
 
 skinparam stereotypeCBackgroundColor #C6C6C6
+
+skinparam NoteBorderColor #NOTEBORDERCOLOR
+
+skinparam title {
+  FontName FONTNAME
+  FontSize 12
+}
 
 skinparam package {
     AttributeFontColor #DS_GREY
     BackgroundColor #fbfbfb
     BorderColor #darkgrey
+    FontSize 14
+}
+
+skinparam note {
+  FontSize 12
+  FontColor #DS_GREY
+  BackgroundColor #NOTEBGCOLOR
+  BorderThickness 0
 }
 
 skinparam class {
     BackgroundColor #DS_LIGHTBLUE
-    FontName "Arial Nova"
     FontColor #DS_DARKGREY
-    skinparam ArrowColor #DS_GREY
     BorderColor #STEELBLUE40
     BorderThickness 0
 }
 
 skinparam Sequence {
-    FontName "Arial Nova"
     ParticipantBorderColor #DS_LIGHTBLUE
     ParticipantBackgroundColor #DS_LIGHTBLUE
     LifeLineBorderColor #DS_LIGHTGREY
@@ -62,7 +82,6 @@ skinparam Sequence {
 }
 
 skinparam Activity {
-  FontName "Arial Nova"
   StartColor #DS_LIGHTBLUE
   BarColor #DS_LIGHTBLUE
   EndColor #DS_LIGHTGREY
@@ -74,9 +93,8 @@ skinparam Activity {
 skinparam Usecase {
     BackgroundColor #DS_LIGHTBLUE
     BorderColor #DS_LIGHTBLUE
-    ArrowColor black
     ActorBorderColor #DS_LIGHTBLUE
-    ActorFontName "Arial Nova"
+    ActorFontName FONTNAME
     ActorBackgroundColor #DS_LIGHTBLUE
 }
 
@@ -86,8 +104,8 @@ skinparam Interface {
 }
 
 skinparam Component {
-  FontSize 14
-  FontName "Arial Nova"
   BorderColor #DS_LIGHTBLUE
   BackgroundColor #DS_LIGHTBLUE
 }
+
+

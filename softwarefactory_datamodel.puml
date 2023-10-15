@@ -1,16 +1,9 @@
 @startuml datamodel
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
+!include puml-theme-doubleslash.puml
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 
-title doubleSlash Software Factory artefacts
+title <size:18>doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
-
-
-<style> 
-   root { 
-        Margin 10 
-'        BackgroundStyle crosshatch
-   } 
-</style>
 
 'Das ProductModel beschreibt eine Capability in den Dimensionen People, Process, System und Data vollständig.
 'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren 
@@ -26,6 +19,11 @@ package "Capability > Product Model " {
 
 'Beschreibung der Interaktionen des Systems mit den Benutzern (Aktoren) oder anderen Systemen
 class UseCase
+'note left
+'  UseCases stellen eine 
+'  reduzierte Sicht auf 
+'  People und Process dar
+'end note
 
 ' Sammlung aller Technologien, die für das Produkt eingesetzt werden sollen:
 ' Frontend, Backend, Datenbank, Infrastruktur, Entwicklungswerkzeuge und Bibliotheken
@@ -48,16 +46,16 @@ class DeploymentCode
 class InfrastructureCode
 class DeploymentArtefact
 
+class Incident #DS_LIGHTGREY
+class Defect #DS_LIGHTGREY
+class PullRequest #DS_LIGHTGREY
 
 
 'Ableitung der Use Cases aus dem Benutzer- und Prozessmodell
-People  -- UseCase : bildet >
-Process --  UseCase : bildet >
-
+People  -- UseCase 
+Process --  UseCase
 System -- TechnologyStack
 Data -- TechnologyStack
-
-
 UseCase --> UserStory : wird zu >
 
 
@@ -85,9 +83,6 @@ ModuleDesign ---> BuildCode
 TechnologyStack ----> DeploymentCode
 TechnologyStack -------> InfrastructureCode
 
-class Incident #DS_LIGHTGREY
-class Defect #DS_LIGHTGREY
-class PullRequest #DS_LIGHTGREY
 
 SourceCode "1" --> "0..n" PullRequest
 
