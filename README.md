@@ -1,7 +1,8 @@
-# umltheme
-This repo contains styling information to include in plantUML drawings
 
-Use stylings by the theme file at the top of your code.
+# umltheme
+
+This repo contains doubleSlash CI styling information to include in plantUML drawings
+Use stylings by including the theme file at the top of your code.
 
 ```
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
@@ -10,4 +11,3 @@ Use stylings by the theme file at the top of your code.
 ## Beispiel Datenmodell einer Software Factory
 
 ![Software Factory Datenmodell](./softwarefactory_datamodel)
-
