@@ -43,6 +43,7 @@ skinparam class {
     BackgroundColor #DS_LIGHTBLUE
     FontName "Arial Nova"
     FontColor #DS_DARKGREY
+    skinparam ArrowColor #DS_GREY
     BorderColor #STEELBLUE40
     BorderThickness 0
 }
