@@ -1,0 +1,41 @@
+@startuml piprocess
+!include puml-theme-doubleslash.puml
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
+skinparam padding 4
+
+'skinparam BorderThickness 0
+skinparam ArrowThickness 2
+skinparam ArrowColor #DS_DARKGREY
+skinparam ActivityEndColor #black
+skinparam ActivityBorderThickness 1
+skinparam ActivityBorderColor #DS_LIGHTBLUE
+skinparam ActivityDiamondBorderColor #DS_ORANGE
+skinparam ActivityStartColor #black
+skinparam ActivityEndColor #black
+
+
+start 
+
+partition Planung {
+   :doubleSlash Angebot über 
+    verfügbare Kapa ab; 
+   :Kapa wird in StoryPoints 
+   umgerechnet (SP=PT/2);
+}
+
+partition "PI Entwicklung" {
+   if (Ungeplantes Ereignis) then (Ja)
+      :StoryPoints anpassen;
+   endif
+}
+
+partition Abrechnung {
+   :Erledigte User Stories zusammenzählen;
+   :Spill over berechnen;
+}
+:PI Abschließen;
+
+end
+
+
+@enduml

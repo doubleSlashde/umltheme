@@ -3,14 +3,17 @@
 !$THEME      = "doubleslash"
 ''Define colors in doubleSLash corporate identity
 
-!define STEELBLUE25       374656
-!define STEELBLUE40       8A9DB3
+
 !define DS_BLUE           00A5E1
 !define DS_LIGHTBLUE      D7E9F4
 !define DS_ORANGE         FF9F00
 !define DS_LIGHTGREY      C6C6C6
 !define DS_GREY           7A7A7A
 !define DS_DARKGREY       515151
+
+!define SUPERLIGHTGREY    F2F2F2
+!define STEELBLUE25       374656
+!define STEELBLUE40       8A9DB3
 !define BLACK50           7F7F7F
 !define BLACK25           404040
 !define NOTEBGCOLOR       FFF6E7
@@ -65,6 +68,7 @@ skinparam note {
 skinparam class {
     BackgroundColor #DS_LIGHTBLUE
     FontColor #DS_DARKGREY
+    HeaderFontSize 16
     BorderColor #STEELBLUE40
     BorderThickness 0
 }
@@ -81,14 +85,37 @@ skinparam Sequence {
     ReferenceHeaderBackgroundColor #DS_LIGHTGREY
 }
 
-skinparam Activity {
-  StartColor #DS_LIGHTBLUE
-  BarColor #DS_LIGHTBLUE
-  EndColor #DS_LIGHTGREY
-  BackgroundColor #DS_LIGHTBLUE
+<style>
+activityDiagram {
   BackgroundColor #DS_LIGHTBLUE
   BorderColor #DS_LIGHTBLUE
+  FontColor #DS_DARKGREY
+  FontName FONTNAME
+  StartColor #DS_LIGHTBLUE
+  BarColor #DS_LIGHTBLUE
+  EndColor #DS_GREY
+
+  diamond {
+    BackgroundColor #DS_ORANGE
+    LineColor #DS_ORANGE
+    FontColor #white
+    FontName FONTNAME
+  }
+  arrow {
+    FontName FONTNAME
+    ArrowThickness 2
+  }
+  partition {
+    LineColor #DS_DARKGREY
+    FontColor #DS_DARKGREY
+    RoundCorner 10
+    BackgroundColor #SUPERLIGHTGREY
+  }
 }
+document {
+   BackgroundColor transparent
+}
+</style>
 
 skinparam Usecase {
     BackgroundColor #DS_LIGHTBLUE

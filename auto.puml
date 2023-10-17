@@ -31,7 +31,7 @@ interface AutoSteuerung {
 
 Auto *-- Motor : hat
 Auto *-- Rad : hat
-Auto -- AutoSteuerung : benutzt
+Auto <.. AutoSteuerung : benutzt
 
 note top of Auto: Das Auto hat insgesamt 4 Räder,\ndavon 2 Vorderräder und 2 Hinterräder.
 note top of Motor: Steuert den Motor des Autos.
