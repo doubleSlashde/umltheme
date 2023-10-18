@@ -37,7 +37,7 @@ skinparam ArrowColor #DS_GREY
 skinparam ArrowThickness 1
 skinparam ArrowFontName FONTNAME
 skinparam ArrowFontColor #DS_GREY
-skinparam ArrowFontStyle bold
+skinparam ArrowFontStyle normal
 skinparam Shadowing true
 skinparam BorderColor #DS_LIGHTGREY
 skinparam BorderThickness 2

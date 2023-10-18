@@ -5,38 +5,38 @@
 title <size:18>Class diagram of doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
 
+'skinparam classBorderThickness 2
+'skinparam padding 4
+'skinparam ArrowFontStyle normal
+
 'Das ProductModel beschreibt eine Capability in den Dimensionen People, Process, System und Data vollständig.
-'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren 
+'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren
 'Entwicklung entstehen.
 package "Capability > Product Model " {
     together {
         class People
-        class Process 
+        class Process
         class System
         class Data
     }
+    'Beschreibung der Interaktionen des Systems mit den Benutzern (Aktoren) oder anderen Systemen
+    class UseCase
+    ' Sammlung aller Technologien, die für das Produkt eingesetzt werden sollen:
+    ' Frontend, Backend, Datenbank, Infrastruktur, Entwicklungswerkzeuge und Bibliotheken
+    class TechnologyStack
 }
 
-'Beschreibung der Interaktionen des Systems mit den Benutzern (Aktoren) oder anderen Systemen
-class UseCase
-'note left
-'  UseCases stellen eine 
-'  reduzierte Sicht auf 
-'  People und Process dar
-'end note
 
-' Sammlung aller Technologien, die für das Produkt eingesetzt werden sollen:
-' Frontend, Backend, Datenbank, Infrastruktur, Entwicklungswerkzeuge und Bibliotheken
-class TechnologyStack
 'Dokumentation der Anforderungen nach dem Schema:
-' Als [Rolle] möchte ich [Funktion], damit [Nutzen]. 
-class UserStory
-'Ein physikalisches Datenmodell beschreibt die Struktur und Beziehungen der Daten in einer Datenbank. 
+' Als [Rolle] möchte ich [Funktion], damit [Nutzen].
+class Backlog
+
+'Ein physikalisches Datenmodell beschreibt die Struktur und Beziehungen der Daten in einer Datenbank.
 'Es definiert die Tabellen, Spalten, Relationen und Constraints.
-class DataModel 
+class DataModel
 class Mockup
 class APIDesign
-class AcceptanceCriteria 
+class AcceptanceCriteria
 class TestCase
 class ModuleDesign
 class SequenceModel
@@ -52,48 +52,51 @@ class PullRequest #DS_LIGHTGREY
 
 
 'Ableitung der Use Cases aus dem Benutzer- und Prozessmodell
-People  -- UseCase 
+People  -- UseCase
 Process --  UseCase
 System -- TechnologyStack
 Data -- TechnologyStack
-UseCase --> UserStory : wird zu >
+UseCase -- Backlog : wird zu >
 
 
 TechnologyStack --> DataModel
-UserStory ---> "0..1" Mockup
-UserStory ---> "0..1" APIDesign
-UserStory "1" ---> "n" AcceptanceCriteria
+Backlog --- "0..1" Mockup
+Backlog --- "0..1" APIDesign
+Backlog "1" --- "n" AcceptanceCriteria
 
 
-AcceptanceCriteria --> TestCase
-TestCase -> ModuleDesign
+AcceptanceCriteria -- TestCase
+TestCase - ModuleDesign
 
-DataModel --> ModuleDesign
-Mockup --> ModuleDesign
-AcceptanceCriteria --> ModuleDesign
+DataModel -- ModuleDesign
+Mockup -- ModuleDesign
+AcceptanceCriteria -- ModuleDesign
 
-APIDesign --> ModuleDesign
+APIDesign -- ModuleDesign
 
-ModuleDesign --> SequenceModel
+ModuleDesign -- SequenceModel
 
-SequenceModel --> SourceCode
+SequenceModel -- SourceCode
 
-ModuleDesign ---> DeploymentCode
-ModuleDesign ---> BuildCode
-TechnologyStack ----> DeploymentCode
-TechnologyStack -------> InfrastructureCode
+ModuleDesign --- DeploymentCode
+ModuleDesign --- BuildCode
+TechnologyStack ---- DeploymentCode
+TechnologyStack ------- InfrastructureCode 
 
 
-SourceCode "1" --> "0..n" PullRequest
 
-SourceCode --> DeploymentArtefact
- 
 
-DeploymentArtefact "1" --> "0..n" Defect
-DeploymentArtefact "1" --> "0..n" Incident
+SourceCode "1" -- "0..n" PullRequest
 
-Defect "1" ---> "1..n" TestCase
-Incident "1" --> "1..n" TestCase
+SourceCode -- DeploymentArtefact
+
+
+DeploymentArtefact "1" -- "0..n" Defect
+DeploymentArtefact "1" -- "0..n" Incident
+
+Defect "1" --- "1..n" TestCase
+Incident "1" -- "1..n" TestCase
+
 
 
 @enduml
