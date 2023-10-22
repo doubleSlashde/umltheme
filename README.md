@@ -9,17 +9,16 @@ Use stylings by including the theme file at the top of your code.
 ## Examples
 see sub driectory examples
 ### Usecase model
-<img src="./examples/usecase_model.png"  width="600" height="300">
-![Usecase Modell](./examples/usecase_model.png)
+<img src="./examples/usecase_model.png">
+
 
 ### Class model 
-![Klassenmodell](./examples/class_model.png)
-![Klassenmodell](./examples/class_model.png)
+<img src="./examples/class_model.png">
 
 ## Other examples
 
 ### Data model of doubleSlash Software Factory
+<img src="./examples/softwarefactory_datamodel.png">
 
-![Software Factory Datenmodell](./examples/softwarefactory_datamodel.png)
 
 
