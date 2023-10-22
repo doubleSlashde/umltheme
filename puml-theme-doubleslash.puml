@@ -1,9 +1,9 @@
-
+'Include this theme with:
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 !$PUML_THEME = "doubleslash"
 !$THEME      = "doubleslash"
-''Define colors in doubleSLash corporate identity
 
-
+''Define colors in doubleSlash corporate identity
 !define DS_BLUE           00A5E1
 !define DS_LIGHTBLUE      D7E9F4
 !define DS_ORANGE         FF9F00
@@ -21,8 +21,12 @@
 
 !define FONTNAME          "Helvetica"
 
-hide circle 
+'allowmixing
+show circle 
 hide empty members
+hide stereotype
+
+skinparam Shadowing false
 
 skinparam padding 8
 skinparam roundcorner 16
@@ -38,11 +42,18 @@ skinparam ArrowThickness 1
 skinparam ArrowFontName FONTNAME
 skinparam ArrowFontColor #DS_GREY
 skinparam ArrowFontStyle normal
-skinparam Shadowing true
 skinparam BorderColor #DS_LIGHTGREY
 skinparam BorderThickness 2
 
-skinparam stereotypeCBackgroundColor #C6C6C6
+
+skinparam ActorBorderColor #DS_LIGHTGREY
+skinparam ActorBackgroundColor #DS_LIGHTGREY
+skinparam ActorBorderThickness 3.5
+skinparam ActorFontName FONTNAME
+skinparam UsecaseBackgroundColor #DS_LIGHTBLUE
+skinparam UsecaseBorderColor #DS_LIGHTBLUE
+
+
 
 skinparam NoteBorderColor #NOTEBORDERCOLOR
 
@@ -51,7 +62,15 @@ skinparam title {
   FontSize 12
 }
 
+
+
 skinparam package {
+    AttributeFontColor #DS_GREY
+    BackgroundColor #fbfbfb
+    BorderColor #darkgrey
+    FontSize 14
+}
+skinparam rectangle {
     AttributeFontColor #DS_GREY
     BackgroundColor #fbfbfb
     BorderColor #darkgrey
@@ -66,11 +85,11 @@ skinparam note {
 }
 
 skinparam class {
-    BackgroundColor #DS_LIGHTBLUE
-    FontColor #DS_DARKGREY
-    HeaderFontSize 16
-    BorderColor #STEELBLUE40
-    BorderThickness 0
+  BackgroundColor #DS_LIGHTBLUE
+  FontColor #DS_DARKGREY
+  HeaderFontSize 16
+  BorderColor #STEELBLUE40
+  BorderThickness 2
 }
 
 skinparam Sequence {
@@ -79,9 +98,6 @@ skinparam Sequence {
     LifeLineBorderColor #DS_LIGHTGREY
     LifeLineBackgroundColor #DS_LIGHTGREY
     GroupBackgroundColor #DS_LIGHTGREY
-    ActorBorderColor #DS_BLUE
-    ActorBackgroundColor #DS_BLUE
-    ActorBorderThickness 2.5
     ReferenceHeaderBackgroundColor #DS_LIGHTGREY
 }
 
@@ -117,18 +133,7 @@ document {
 }
 </style>
 
-skinparam Usecase {
-    BackgroundColor #DS_LIGHTBLUE
-    BorderColor #DS_LIGHTBLUE
-    ActorBorderColor #DS_LIGHTBLUE
-    ActorFontName FONTNAME
-    ActorBackgroundColor #DS_LIGHTBLUE
-}
 
-skinparam Interface {
-  backgroundColor #DS_LIGHTGREY
-  borderColor #DS_LIGHTGREY
-}
 
 skinparam Component {
   BorderColor #DS_LIGHTBLUE

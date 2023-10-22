@@ -2,17 +2,17 @@
 !include puml-theme-doubleslash.puml
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 
+hide circle
+
 title <size:18>Class diagram of doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
 
-'skinparam classBorderThickness 2
-'skinparam padding 4
-'skinparam ArrowFontStyle normal
+
 
 'Das ProductModel beschreibt eine Capability in den Dimensionen People, Process, System und Data vollständig.
 'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren
 'Entwicklung entstehen.
-package "Capability > Product Model " {
+rectangle "Capability > Product Model " {
     together {
         class People
         class Process

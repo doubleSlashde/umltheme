@@ -1,6 +1,4 @@
-
 # umltheme
-
 This repo contains doubleSlash CI styling information to include in plantUML drawings
 Use stylings by including the theme file at the top of your code.
 
@@ -8,6 +6,19 @@ Use stylings by including the theme file at the top of your code.
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 ```
 
-## Example Data model of doubleSlash Software Factory
+## Examples
+see sub driectory examples
+### Usecase model
+![Usecase Modell](./examples/usecase_model.png)
 
-![Software Factory Datenmodell](./softwarefactory_datamodel.png)
+### Class model 
+![Klassenmodell](./examples/class_model.png)
+![Klassenmodell](./examples/class_model.png)
+
+## Other examples
+
+### Data model of doubleSlash Software Factory
+
+![Software Factory Datenmodell](./examples/softwarefactory_datamodel.png)
+
+
