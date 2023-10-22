@@ -33,6 +33,7 @@ skinparam Padding 2
 skinparam Roundcorner 16
 skinparam backgroundColor white
 skinparam defaultFontName FONTNAME
+skinparam defaultFontSize 12
 
 ' Title
 '=================================================================
