@@ -9,6 +9,7 @@ Use stylings by including the theme file at the top of your code.
 ## Examples
 see sub driectory examples
 ### Usecase model
+<img src="./examples/usecase_model.png"  width="600" height="300">
 ![Usecase Modell](./examples/usecase_model.png)
 
 ### Class model 
