@@ -28,7 +28,7 @@ hide stereotype
 
 skinparam Shadowing false
 
-skinparam padding 8
+skinparam padding 2
 skinparam roundcorner 16
 skinparam NoteBackgroundColor #DS_LIGHTBLUE
 skinparam NoteBorderColor #DS_LIGHTBLUE

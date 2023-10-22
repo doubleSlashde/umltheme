@@ -1,28 +1,27 @@
 @startuml deployment
 !include puml-theme-doubleslash.puml
 
-skinparam padding 2
+left to right direction
 
-
-interface useKlasse
+interface Schnittstelle
+skinparam nodesep 25
+skinparam Ranksep 1
 
 class Klasse {
-  - Attribut : Typ
-  + Methode()
+  - Attribut : AndereKlasse
+  + Methode1()
 }
 class AndereKlasse {
   - Attribut : Typ
-  + Methode()
+  + Methode2()
 }
 
 class AufrufendeKlasse {
   + useKlasse()
 }
-useKlasse <|.. Klasse : implementiert
-AufrufendeKlasse ..> useKlasse : verwendet
+Schnittstelle <|.. Klasse : implementiert
+AufrufendeKlasse ..> Schnittstelle : verwendet
 Klasse *-- AndereKlasse : aggregiert
-note right of Klasse: Diese Notiz liefert eine nähere\n Beschreibung der Klasse
-note right of useKlasse: Diese Notiz liefert eine nähere\n Beschreibung der Schnittstelle
+note top of Klasse: Diese Notiz liefert eine nähere\n Beschreibung der Klasse
+note top of Schnittstelle: Diese Notiz liefert eine nähere\n Beschreibung der Schnittstelle
 @enduml
-```
-In this updated diagram, the `Auto` class now implements the `AutoSteuerung` interface, and the `DigitalKey` class uses the `AutoSteuerung` interface.
