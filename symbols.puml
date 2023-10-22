@@ -1,0 +1,17 @@
+@startuml 
+
+' see https://apps.timwhitlock.info/emoji/tables/unicode
+
+
+Rectangle "UniCode Symbols" { 
+   object symbols
+   note left
+     ✉ ⏲ ✔ 
+     🌷 → 🌻 
+     🏠
+   end note
+}
+
+'note: ✉
+
+@enduml

@@ -1,36 +1,32 @@
-@startuml usecasemodel
+@startuml usecase model
 !include puml-theme-doubleslash.puml
-
 'You will find help here https://plantuml.com/de/use-case-diagram
 
 left to right direction
-hide stereotype
 
-skinparam UsecaseBackgroundColor<<Legacy>> #DS_LIGHTGREY
 
-Actor "Actor 2" as actor2
+title Usecase Diagramm im //-Design
+
 Actor "Actor 1" as actor1
+Actor "Actor 2" as actor2
 
-card "System A" {
-    UseCase (First usecase) as UC1
-}
-card "System B" {
+rectangle  "System B" {
     UseCase (Second usecase) as UC2
     UseCase (Third usecase) as UC3
+} 
+rectangle "System A" {
+    UseCase (First usecase) as UC1
 }
 
-UseCase (Old Usecase) <<Legacy>> as UC4
-UseCase (Other Usecase) <<Legacy>> as UC5
+UseCase (Old Usecase) <<External>> as UC4
+UseCase (Other Usecase) <<External>> as UC5
 
-actor1  -[dotted]- UC1
+actor1  --- UC1
 
 actor2 -- UC1
 actor2 -- UC2
 actor2 -- UC3
-
 UC3 ..|> UC4 : <<include>>
 UC2 <|.. UC5 : <<extends>>
-
-
 
 @enduml
