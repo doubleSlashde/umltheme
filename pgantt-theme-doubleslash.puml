@@ -1,0 +1,17 @@
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash-colordefs.puml
+
+<style>
+ganttDiagram {
+  task {
+    BackGroundColor DS_LIGHTBLUE
+    LineColor DS_BLUE 
+    unstarted {
+      BackGroundColor DS_LIGHTBLUE 
+      LineColor DS_BLUE
+    }
+  }
+  timeline {
+    FontName FONTNAME
+  }
+}
+</style>
