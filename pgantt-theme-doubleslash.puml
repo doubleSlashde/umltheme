@@ -2,16 +2,35 @@
 
 <style>
 ganttDiagram {
+
   task {
+    FontName FONTNAME
+    FontSize 12
     BackGroundColor DS_LIGHTBLUE
     LineColor DS_BLUE 
-    unstarted {
-      BackGroundColor DS_LIGHTBLUE 
-      LineColor DS_BLUE
-    }
   }
+
   timeline {
     FontName FONTNAME
-  }
+	  BackgroundColor SUPERLIGHTGREY
+	}
+
+	milestone {
+		FontColor BLACK25
+		FontSize 12
+		FontStyle italic
+		BackGroundColor DS_ORANGE
+		LineColor DS_ORANGE
+	}
+
+	note {
+		FontColor black
+		FontSize 10
+		LineColor DS_LIGHTGREY 
+	}
+	closed {
+		BackgroundColor SUPERLIGHTGREY
+		FontColor DS_DARKGREY
+	}
 }
 </style>
