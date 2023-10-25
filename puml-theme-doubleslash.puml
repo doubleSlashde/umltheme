@@ -2,7 +2,7 @@
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 !$PUML_THEME = "doubleslash"
 !$THEME      = "doubleslash"
-!include doubleslash-colordefs.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash-colordefs.puml
 
 
 'allowmixing 'if flag is set, different diagram types could mixed up
