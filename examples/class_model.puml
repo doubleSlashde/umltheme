@@ -1,7 +1,7 @@
 @startuml class model
-!include puml-theme-doubleslash.puml
+!include ../puml-theme-doubleslash.puml
 
-title <size:18><color:black> Klassenmodell im //-Design
+title Klassenmodell im //-Design
 left to right direction
 skinparam Ranksep 1
 skinparam Nodesep 10

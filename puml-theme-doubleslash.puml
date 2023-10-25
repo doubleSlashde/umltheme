@@ -2,26 +2,8 @@
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 !$PUML_THEME = "doubleslash"
 !$THEME      = "doubleslash"
+!include doubleslash-colordefs.puml
 
-''Define colors in doubleSlash corporate identity
-!define DS_BLUE           #00A5E1
-!define DS_LIGHTBLUE      #D7E9F4
-!define DS_ORANGE         #FF9F00
-!define DS_LIGHTGREY      #C6C6C6
-!define DS_GREY           #7A7A7A
-!define DS_DARKGREY       #515151
-
-!define SUPERLIGHTGREY    #F8F8F8
-!define STEELBLUE25       #374656
-!define STEELBLUE40       #8A9DB3
-!define BLACK50           #7F7F7F
-!define BLACK25           #404040
-!define LIGHTGREEN        #D5E8D4
-
-!define TIPBGCOLOR       #FFF6E7
-!define TIPBORDERCOLOR   #FFD999
-
-!define FONTNAME          "Helvetica"
 
 'allowmixing 'if flag is set, different diagram types could mixed up
 show circle 
@@ -31,8 +13,9 @@ hide stereotype
 skinparam Shadowing false
 skinparam Padding 2
 skinparam Roundcorner 16
-skinparam backgroundColor white
-skinparam defaultFontName FONTNAME
+skinparam BackgroundColor white
+skinparam DefaultFontName FONTNAME
+skinparam DefaultTextAlignment center
 
 ' Title
 '=================================================================
@@ -45,11 +28,14 @@ skinparam TitleFontColor DS_DARKGREY
 'skinparam NoteBackgroundColor TIPBGCOLOR
 'skinparam NoteBorderColor TIPBORDERCOLOR
 'skinparam NoteBorderThickness 0.3
+'skinparam NoteShadowing true
 skinparam NoteBackgroundColor transparent
+skinparam NoteBorderColor transparent
 skinparam NoteBorderThickness 0.0
 skinparam NoteFontColor DS_GREY
 skinparam NoteFontSize 11
-skinparam NoteShadowing true
+skinparam NoteTextAlignment left
+
 
 ' Rectangle
 '=================================================================
@@ -71,7 +57,7 @@ skinparam ArrowColor DS_GREY
 skinparam ArrowThickness 1.5
 skinparam ArrowFontName FONTNAME
 skinparam ArrowFontColor DS_GREY
-skinparam ArrowFontStyle italic
+skinparam ArrowFontStyle normal
 
 
 ' Rectangle
@@ -104,17 +90,19 @@ skinparam ClassFontColor DS_DARKGREY
 skinparam ClassFontSize 12
 skinparam ClassBorderColor STEELBLUE40
 skinparam ClassBorderThickness 1.5
+skinparam ClassAttributeFontSize 12
 
 ' Activity
 '=================================================================
 skinparam ActivityStartColor DS_DARKGREY
 skinparam ActivityEndColor DS_DARKGREY
+skinparam ActivityFontColor DS_DARKGREY
 skinparam ActivityBackgroundColor DS_LIGHTBLUE
 skinparam ActivityBorderColor STEELBLUE40
 skinparam ActivityBorderThickness 1.5
 skinparam ActivityDiamondBorderColor DS_ORANGE
 skinparam ActivityDiamondBackgroundColor DS_ORANGE
-skinparam ActivityDiamondFontColor DS_DARKGREY
+skinparam ActivityDiamondFontColor DS_GREY
 skinparam ActivityDiamondFontName FONTNAME
 skinparam conditionStyle diamond
 

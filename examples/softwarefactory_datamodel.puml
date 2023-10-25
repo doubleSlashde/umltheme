@@ -1,5 +1,5 @@
 @startuml datamodel
-!include puml-theme-doubleslash.puml
+!include ../puml-theme-doubleslash.puml
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 
 hide circle

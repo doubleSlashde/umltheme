@@ -1,5 +1,5 @@
 @startuml activitymodel
-!include puml-theme-doubleslash.puml
+!include ../puml-theme-doubleslash.puml
 
 'You will find help on this page: https://plantuml.com/de/activity-diagram-beta
 ' left to right direction 'does not work with activity diagrams

@@ -1,5 +1,5 @@
 @startuml usecase model
-!include puml-theme-doubleslash.puml
+!include ../puml-theme-doubleslash.puml
 'You will find help here https://plantuml.com/de/use-case-diagram
 
 left to right direction
