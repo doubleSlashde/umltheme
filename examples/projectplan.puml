@@ -6,7 +6,7 @@ saturday are closed
 sunday are closed
 'saturday are colored in DS_LIGHTGREY
 'sunday are colored in DS_LIGHTGREY
-
+language de
 printscale weekly zoom 3
 
 title Projekt Zeitplan in //-Design
@@ -16,7 +16,7 @@ title Projekt Zeitplan in //-Design
 
 Project starts 2024-01-07
 
-[Prototype design] starts 2024-01-15
+[Prototype design] starts at 2024-01-18
 [Prototype design] lasts 10 days
 
 [Develop prototype] starts at [Prototype design]'s end
@@ -26,7 +26,7 @@ Project starts 2024-01-07
 [Develop completed] happens at [Develop prototype]'s end
 -- Test phase --
 2024-02-01 to 2024-02-22 are named [Paralell Testing]
-[Test prototype] starts at 2024-02-01
+[Test prototype] starts at 2024-02-10
 [Test prototype] lasts 15 days
 [Test completed] starts at [Test prototype]'s end
 [Test completed] happens at [Test prototype]'s end
