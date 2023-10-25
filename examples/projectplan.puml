@@ -1,31 +1,46 @@
 @startgantt projectplan
 ''Define doubleSlash styling
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
+!include ../pgantt-theme-doubleslash.puml
 
-'saturday are closed
-'sunday are closed
+saturday are closed
+sunday are closed
+'saturday are colored in DS_LIGHTGREY
+'sunday are colored in DS_LIGHTGREY
 
-'printscale weekly
+printscale weekly zoom 3
 
 title Projekt Zeitplan in //-Design
 
-2024-01-20 is colored in salmon
+2024-01-24 is colored in DS_LIGHTGREY
+
 
 Project starts 2024-01-07
-[Prototype design] starts 2024-01-15
 
+[Prototype design] starts 2024-01-15
 [Prototype design] lasts 10 days
-[Develop prototype] lasts 15 days
-[Test prototype] lasts 7 days
 
 [Develop prototype] starts at [Prototype design]'s end
-[Develop completed] happens at [Develop prototype]'s end
+[Develop prototype] lasts 15 days
 
-[Test prototype] starts at [Develop prototype]'s end
+[Develop completed] starts at [Develop prototype]'s end
+[Develop completed] happens at [Develop prototype]'s end
+-- Test phase --
+2024-02-01 to 2024-02-22 are named [Paralell Testing]
+[Test prototype] starts at 2024-02-01
+[Test prototype] lasts 15 days
+[Test completed] starts at [Test prototype]'s end
+[Test completed] happens at [Test prototype]'s end
+-- Deployment phase --
+2024-02-12 to 2024-02-22 are named [When is deployment?]
+[PROD Deployment] starts at [Test completed]'s end
+[PROD Deployment] lasts 2 days
+
 
 
 [Prototype design] is 100% completed
 [Develop prototype] is 60% completed
-[Test prototype] is 25% completed
+[Test prototype] is 10% completed
+
+Separator just at [Develop prototype]'s end
 
 @endgantt
