@@ -119,10 +119,25 @@ skinparam Activity {
 ' Sequence
 '=================================================================
 skinparam Sequence {
-    LifeLineBackgroundColor DS_LIGHTGREY
-    LifeLineBorderColor DS_LIGHTGREY
+
+    LifeLineBackgroundColor DS_BLUE
+    LifeLineBorderColor DS_BLUE
+    LifeLineBorderThickness 0.0
+
     GroupBackgroundColor SUPERLIGHTGREY
     ReferenceBackgroundColor DS_LIGHTGREY
+
+    ParticipantBackgroundColor DS_LIGHTBLUE
+    ParticipantBorderColor DS_BLUE
+    ParticipantFontColor DS_DARKGREY
+    ParticipantFontSize 12
+    ParticipantBorderThickness 1.5
+
+    DividerBorderThickness .5
+    DividerFontSize 10
+    ArrowColor DS_GREY
+    ArrowFontSize 11
+
 }
 
 

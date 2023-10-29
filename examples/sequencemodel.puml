@@ -1,0 +1,34 @@
+@startuml Sequence model
+!include ../puml-theme-doubleslash.puml
+
+skinparam BorderThickness 2.5
+
+title Sequenzmodell
+
+Actor Alice
+Participant FrontEnd
+Participant API
+
+
+== Initialization ==
+
+
+Alice -> FrontEnd: klick Button
+activate FrontEnd
+FrontEnd -> API: call Service
+API -> Backend : Call Backend
+
+activate Backend
+Backend -> API : return value
+deactivate Backend
+
+API -> FrontEnd : return value
+FrontEnd -> Alice: Show status
+deactivate FrontEnd
+== Processing ==
+
+Backend -> DB : read detail data
+DB -> Backend : return
+
+
+@enduml
