@@ -1,8 +1,8 @@
-
-
-
 @startuml class model
 !include ../puml-theme-doubleslash.puml
+
+!define textsize14(name) "<size:14><b>name</size>" as name
+
 
 skinparam DefaultTextAlignment left
 skinparam Ranksep 30
@@ -11,23 +11,24 @@ left to right direction
 
 title Datenmodell 
 
-entity Entität1 {
-   
-    name : text
-    params : Text[]
-    text2: Text
+entity textsize14(Entität1)  {
+    + name : text
+    + params : Text[]
+    + text2: Text
 
     e1Id : SERIAL (PK)
     e2Id: INTEGER (FK)
 }
 note top of Entität1
-  Die Entität lorem
-  ipsum ....
+    Lorem ipsum dolor sit amet, 
+    consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor 
+    invidunt ut labore et dolore magna ...
 end note
 
 
 
-entity Entität2 {
+entity textsize14(Entität2) {
 
     Name : Text
     Beschreibung: Text
@@ -42,20 +43,34 @@ entity Entität2 {
     collectionId : INTEGER (FK)
 }
 note top of Entität2
-Lorem ipsum ...
-Mit viel Text, um die Entität 
-zu beschreiben. 
+Lorem ipsum dolor sit amet, 
+consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor 
+invidunt ut labore et dolore magna 
+aliquyam erat, sed diam voluptua. 
+At vero eos et accusam et justo 
+duo dolores et ea rebum. Stet clita 
+kasd gubergren, no sea takimata 
+sanctus est Lorem ipsum dolor sit amet. 
+Lorem ipsum dolor sit amet, consetetur 
+sadipscing elitr, sed diam nonumy ...
 end note
 
-entity CollectionEntity {
+entity textsize14(CollectionEntity) {
     collectionId : SERIAL (PK)
     name : Text
 }
 
-entity OtherEntity <<external>> {
+entity textsize14(OtherEntity) <<external>> {
     otherId : SERIAL (PK)
     name : Text
 }
+note bottom of OtherEntity
+    Lorem ipsum dolor sit amet, 
+    consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor 
+    invidunt ut labore et dolore magna ...
+end note
 
 CollectionEntity |o----o{ Entität2
 
