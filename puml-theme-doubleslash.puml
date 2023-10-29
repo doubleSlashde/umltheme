@@ -86,12 +86,17 @@ skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
 
 ' Class
 '=================================================================
-skinparam ClassBackgroundColor DS_LIGHTBLUE
-skinparam ClassFontColor DS_DARKGREY
-skinparam ClassFontSize 12
-skinparam ClassBorderColor STEELBLUE40
-skinparam ClassBorderThickness 1.5
-skinparam ClassAttributeFontSize 12
+skinparam Class {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor STEELBLUE40
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+    FontColor DS_DARKGREY
+    FontSize 14
+    BorderThickness 1.5
+    AttributeFontSize 12
+}
 
 ' Activity
 '=================================================================
@@ -135,11 +140,10 @@ skinparam Component {
 skinparam Card {
     BackgroundColor DS_LIGHTBLUE
     BorderColor DS_BLUE
-    BorderThickness .4
-
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
+    BorderThickness .4
 
     FontColor DS_DARKGREY
 }
@@ -155,6 +159,7 @@ skinparam interface {
 
     FontColor DS_DARKGREY
 }
+
 
 skinparam AgentFontColor<<external>> DS_GREY
 skinparam DatabaseFontColor<<external>> DS_GREY

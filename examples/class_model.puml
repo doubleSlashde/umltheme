@@ -9,7 +9,7 @@ skinparam Nodesep 10
 
 interface Schnittstelle
 
-class Klasse {
+class Klasse implements Schnittstelle {
   - Attribut : AndereKlasse
   + Methode1()
 }
@@ -17,12 +17,13 @@ class AndereKlasse {
   - Attribut : Typ
   + Methode2()
 }
+class Unterklasse extends Klasse {}
 
-class AufrufendeKlasse {
+class AufrufendeKlasse<<external>> {
   + useInterface()
 }
-Schnittstelle <|-- Klasse : implementiert
-AufrufendeKlasse -[dotted]-> Schnittstelle : verwendet
+
+AufrufendeKlasse --> Schnittstelle : verwendet
 Klasse *-- AndereKlasse : aggregiert
 note top of Klasse: Diese Notiz liefert eine nähere\n Beschreibung der Klasse
 note top of Schnittstelle: Diese Notiz liefert eine nähere\n Beschreibung der Schnittstelle
