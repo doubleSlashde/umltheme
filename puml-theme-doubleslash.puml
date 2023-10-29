@@ -105,7 +105,7 @@ skinparam Activity {
     BorderThickness 1.5
     DiamondBorderColor DS_BLUE
     DiamondBackgroundColor DS_BLUE
-    DiamondFontColor DS_GREY
+    DiamondFontColor DS_DARKGREY
     DiamondFontName FONTNAME
 }
 

@@ -18,10 +18,10 @@ ganttDiagram {
 
 	milestone {
 		FontColor BLACK25
-		FontSize 12
+		FontSize 14
 		FontStyle normal
-		BackGroundColor DS_ORANGE
-		LineColor DS_ORANGE
+		BackGroundColor DS_BLUE
+		LineColor DS_BLUE
 		LineThickness 5.0
 		Margin 5
 	}
@@ -35,5 +35,16 @@ ganttDiagram {
 		BackgroundColor SUPERLIGHTGREY
 		FontColor DS_DARKGREY
 	}
+
+	Arrow {
+		LineColor DS_GREY
+		LineThickness 1.5
+		Arrowstyle dotted
+	}
+
+	
 }
 </style>
+
+
+

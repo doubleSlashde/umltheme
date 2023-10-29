@@ -3,22 +3,22 @@
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
 skinparam padding 3
 
-skinparam PartitionBorderColor DS_GREY
+'skinparam ConditionStyle normal
 
-start
 
-partition Planung {
-   note left:
+|Planung|
+
+   start 
 
    :doubleSlash Angebot über
    verfügbare Kapa ab;
 
-   :Kapa wird in StoryPoints
-   umgerechnet (SP=PT/2);
+   :Verfügbare Kapa wird in 
+    StoryPoints umgerechnet 
+    (1PT = 2SP);
 
-}
+|Entwicklung|
 
-partition "Entwicklung" {
 
    :Start der Entwicklung;
 
@@ -43,15 +43,13 @@ partition "Entwicklung" {
    endif
 
    :Ende der Entwicklung;
-}
 
-partition Abrechnung {
+
+|Abrechnung|
    note left:
    :Erledigte StoryPoints
    zusammenzählen;
    :Spill over berechnen;
-}
-:PI Abschließen;
 
 end
 
