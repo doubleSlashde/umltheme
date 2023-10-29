@@ -1,6 +1,7 @@
 @startgantt projectplan
 ''Define doubleSlash styling
 !include ../pgantt-theme-doubleslash.puml
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
 
 saturday are closed
 sunday are closed
