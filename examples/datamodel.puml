@@ -1,0 +1,69 @@
+
+
+
+@startuml class model
+!include ../puml-theme-doubleslash.puml
+
+skinparam DefaultTextAlignment left
+skinparam Ranksep 30
+left to right direction
+'hide circle
+
+title Datenmodell 
+
+entity Entität1 {
+   
+    name : text
+    params : Text[]
+    text2: Text
+
+    e1Id : SERIAL (PK)
+    e2Id: INTEGER (FK)
+}
+note top of Entität1
+  Die Entität lorem
+  ipsum ....
+end note
+
+
+
+entity Entität2 {
+
+    Name : Text
+    Beschreibung: Text
+    keyvalues: Text[]
+    headers: Text[]
+    body: Text
+    authorizationData: Text
+
+    e2Id : SERIAL (PK)
+    apiId : INTEGER (FK)
+    otherId: INTEGER (FK)
+    collectionId : INTEGER (FK)
+}
+note top of Entität2
+Lorem ipsum ...
+Mit viel Text, um die Entität 
+zu beschreiben. 
+end note
+
+entity CollectionEntity {
+    collectionId : SERIAL (PK)
+    name : Text
+}
+
+entity OtherEntity <<external>> {
+    otherId : SERIAL (PK)
+    name : Text
+}
+
+CollectionEntity |o----o{ Entität2
+
+Entität2 }o---|| Entität1
+Entität2 }o---|{ OtherEntity
+
+@enduml
+
+
+
+
