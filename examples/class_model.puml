@@ -21,8 +21,8 @@ class AndereKlasse {
 class AufrufendeKlasse {
   + useInterface()
 }
-Schnittstelle <|.. Klasse : implementiert
-AufrufendeKlasse ..> Schnittstelle : verwendet
+Schnittstelle <|-- Klasse : implementiert
+AufrufendeKlasse -[dotted]-> Schnittstelle : verwendet
 Klasse *-- AndereKlasse : aggregiert
 note top of Klasse: Diese Notiz liefert eine nähere\n Beschreibung der Klasse
 note top of Schnittstelle: Diese Notiz liefert eine nähere\n Beschreibung der Schnittstelle
