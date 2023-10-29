@@ -1,36 +1,54 @@
 @startuml piprocess
 !include ../puml-theme-doubleslash.puml
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
-skinparam padding 4
+skinparam padding 3
 
-start 
+skinparam PartitionBorderColor DS_GREY
 
-package Planung {
-note left: 
+start
 
-   :doubleSlash Angebot über 
-    verfügbare Kapa ab;
+partition Planung {
+   note left:
 
-   :Kapa wird in StoryPoints 
+   :doubleSlash Angebot über
+   verfügbare Kapa ab;
+
+   :Kapa wird in StoryPoints
    umgerechnet (SP=PT/2);
 
 }
 
+partition "Entwicklung" {
 
-package "Entwicklung" {
+   :Start der Entwicklung;
+
+   if (Effort Changing Event) then (Ja)
 
 
-   (*)
-   note left: Start der Entwicklung
-   if (Ungeplantes Ereignis) then (Ja)
-      :StoryPoints anpassen;
+   if (Change bewerten) then (Großer Change)
+      if() then (Mehraufwand)
+       if()
+      :StoryPoints erhöhen;
+      else
+        :Neue User Stories\nanlegen; 
+      endif 
+      else (Minderaufwand)
+      :StoryPoints verringern;
+      endif
+   else (Kleiner Change)
+      :Stories werden mit
+      dem vereinbarten
+      Aufwand erledigt.;
    endif
+   endif
+
+   :Ende der Entwicklung;
 }
 
-package Abrechnung {
-note left: 
-   :Erledigte User Stories 
-    zusammenzählen;
+partition Abrechnung {
+   note left:
+   :Erledigte StoryPoints
+   zusammenzählen;
    :Spill over berechnen;
 }
 :PI Abschließen;

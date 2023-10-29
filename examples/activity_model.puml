@@ -6,30 +6,30 @@
 
 title Aktivitätsdiagramm im //-Design
 
-|SUPERLIGHTGREY| Swimlane 1  |
+|SUPERLIGHTGREY|Swimlane 1|
 start
   :Activity 1; 
   :Activity 2;
   (✉)
-  -[dashed]->
+  -[dotted]->
 note right 
 Diese Notiz 
 gibt eine 
 Erläuterung des 
 Zwischenzustandes
 end note
-|  Swimlane 2  |
+
+|Swimlane 2|
 if (Alles OKAY?) then
-  -[dotted]-> nur zum Teil;
+  -> nur zum Teil;
   :do more research;
 else
   -> Ja;
   :do action; 
 endif  
 
-|SUPERLIGHTGREY| Swimlane 1  |
+|Swimlane 1|
   :final execution;
-
 end
 
 

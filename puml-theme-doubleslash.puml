@@ -22,6 +22,7 @@ skinparam DefaultTextAlignment center
 skinparam TitleFontSize 18
 skinparam TitleFontName FONTNAME
 skinparam TitleFontColor DS_DARKGREY
+skinparam TitleFontStyle normal
 
 ' Note 
 '=================================================================
@@ -94,30 +95,67 @@ skinparam ClassAttributeFontSize 12
 
 ' Activity
 '=================================================================
-skinparam ActivityStartColor DS_DARKGREY
-skinparam ActivityEndColor DS_DARKGREY
-skinparam ActivityFontColor DS_DARKGREY
-skinparam ActivityBackgroundColor DS_LIGHTBLUE
-skinparam ActivityBorderColor STEELBLUE40
-skinparam ActivityBorderThickness 1.5
-skinparam ActivityDiamondBorderColor DS_ORANGE
-skinparam ActivityDiamondBackgroundColor DS_ORANGE
-skinparam ActivityDiamondFontColor DS_GREY
-skinparam ActivityDiamondFontName FONTNAME
 skinparam conditionStyle diamond
+skinparam Activity {
+    StartColor DS_DARKGREY
+    EndColor DS_DARKGREY
+    FontColor DS_DARKGREY
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+    DiamondBorderColor DS_BLUE
+    DiamondBackgroundColor DS_BLUE
+    DiamondFontColor DS_GREY
+    DiamondFontName FONTNAME
+}
 
 
 
 ' Sequence
 '=================================================================
-skinparam SequenceLifeLineBackgroundColor DS_LIGHTGREY
-skinparam SequenceLifeLineBorderColor DS_LIGHTGREY
-skinparam SequenceGroupBackgroundColor SUPERLIGHTGREY
-skinparam SequenceReferenceBackgroundColor DS_LIGHTGREY
+skinparam Sequence {
+    LifeLineBackgroundColor DS_LIGHTGREY
+    LifeLineBorderColor DS_LIGHTGREY
+    GroupBackgroundColor SUPERLIGHTGREY
+    ReferenceBackgroundColor DS_LIGHTGREY
+}
+
 
 ' Component
 '=================================================================
-skinparam ComponentBorderColor DS_BLUE 
-skinparam ComponentBackgroundColor DS_LIGHTBLUE
+skinparam Component {
+    BorderColor DS_BLUE 
+    BackgroundColor DS_LIGHTBLUE
+    BorderThickness 1.5
+    FontColor DS_DARKGREY
+}
 
+' Card
+'=================================================================
+skinparam Card {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness .4
+
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+
+    FontColor DS_DARKGREY
+}
+
+' Interface
+'=================================================================
+skinparam interface {
+    BackgroundColor DS_BLUE
+    BorderColor DS_BLUE
+
+    BorderColor<<external>> DS_GREY
+    BackgroundColor<<external>> DS_GREY
+
+    FontColor DS_DARKGREY
+}
+
+skinparam AgentFontColor<<external>> DS_GREY
+skinparam DatabaseFontColor<<external>> DS_GREY
 
