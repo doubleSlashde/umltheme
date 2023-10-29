@@ -2,10 +2,6 @@
 !include ../puml-theme-doubleslash.puml
 
 !define textsize14(name) "<size:14><b>name</size>" as name
-
-
-skinparam DefaultTextAlignment left
-skinparam Ranksep 30
 left to right direction
 'hide circle
 
