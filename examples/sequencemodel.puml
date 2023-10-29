@@ -1,13 +1,15 @@
 @startuml Sequence model
 !include ../puml-theme-doubleslash.puml
-
-skinparam BorderThickness 2.5
+	
+skinparam maxMessageSize 80
 
 title Sequenzmodell
 
 Actor Alice
 Participant FrontEnd
 Participant API
+Participant Backend
+Participant DB
 
 
 == Initialization ==
@@ -27,8 +29,12 @@ FrontEnd -> Alice: Show status
 deactivate FrontEnd
 == Processing ==
 
-Backend -> DB : read detail data
-DB -> Backend : return
 
+Backend -> DB : read detail data
+activate Backend
+DB -> Backend : return
+Backend -> Backend : process result
+Backend -> Alice : send email
+deactivate Backend
 
 @enduml
