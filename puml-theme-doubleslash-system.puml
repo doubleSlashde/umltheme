@@ -1,0 +1,44 @@
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+skinparam AgentFontColor<<external>> DS_GREY
+skinparam DatabaseFontColor<<external>> DS_GREY
+
+' Component
+'=================================================================
+skinparam Component {
+    BorderColor DS_BLUE 
+    BackgroundColor DS_LIGHTBLUE
+    BorderThickness 1.5
+    FontColor DS_DARKGREY
+}
+
+' Card
+'=================================================================
+skinparam Card {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+    BorderThickness .4
+
+    FontColor DS_DARKGREY
+}
+
+' Interface
+'=================================================================
+skinparam interface {
+    BackgroundColor DS_BLUE
+    BorderColor DS_BLUE
+
+    BorderColor<<external>> DS_GREY
+    BackgroundColor<<external>> DS_GREY
+
+    FontColor DS_DARKGREY
+}
+
+
+
+
+

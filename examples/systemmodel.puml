@@ -1,5 +1,5 @@
 @startuml system model
-!include ../puml-theme-doubleslash.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
 
 left to right direction
 
