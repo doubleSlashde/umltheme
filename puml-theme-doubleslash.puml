@@ -89,14 +89,18 @@ skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
 skinparam Class {
     BackgroundColor DS_LIGHTBLUE
     BorderColor STEELBLUE40
+    BorderThickness 1.5
+
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
+
+    AttributeFontSize 12
+    AttributeFontColor DS_DARKGREY
 
     FontName Helvetica
     FontColor DS_DARKGREY
     FontSize 14
-    BorderThickness 1.5
-    AttributeFontSize 12
+    
 }
 
 ' Activity
