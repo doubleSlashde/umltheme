@@ -3,15 +3,20 @@
 	
 skinparam maxMessageSize 100
 skinparam ParticipantPadding 50
+
+skinparam SequenceLifeLineBorderThickness 15.0
+'skinparam SequenceActorBorderThickness 2.0
+skinparam ActorBorderThickness 2.0
 skinparam SequenceParticipantBorderThickness 0.0
 
 title Sequenzmodell
 
-Actor Alice 
-Participant FrontEnd 
-Participant API 
-Participant Backend 
-Participant DB 
+Actor Alice <<actor>>
+Participant FrontEnd <<actor>>
+Participant API <<actor>>
+Participant Backend <<actor>>
+Participant DB <<actor>>
+
 
 
 == Initialization ==
