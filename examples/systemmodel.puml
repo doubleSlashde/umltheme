@@ -2,8 +2,8 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
 
 
-skinparam nodesep 32
-skinparam ranksep 10
+'skinparam nodesep 32
+'skinparam ranksep 10
 
 
 title "System model with C4-Level 1-System context and 2-Containers"
@@ -12,7 +12,7 @@ title "System model with C4-Level 1-System context and 2-Containers"
 ' Definition of objects
 rectangle "System context" {
 
-    package "Container" {
+    package "Container " {
         [Component 1]
         [Component 2]
     }
