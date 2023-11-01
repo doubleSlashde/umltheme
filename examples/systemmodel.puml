@@ -1,14 +1,18 @@
-@startuml system model
+@startuml
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
 
-left to right direction
 
-title "System model with C4-Level 1(Software system) and 2(Containers)"
+skinparam nodesep 32
+skinparam ranksep 10
+
+
+title "System model with C4-Level 1-System context and 2-Containers"
+
 
 ' Definition of objects
 rectangle "System context" {
 
-    card "Container" {
+    package "Container" {
         [Component 1]
         [Component 2]
     }
@@ -26,13 +30,10 @@ agent "Other\nlegacy system" as LegacySystem<<external>>
 database "External\ndatabase" as eDB<<external>>
 interface "Interface 2" as IF2 <<external>>
 
-
-
 IF1 <|-- [Component 1] : implements
 IF2 <|-- LegacySystem : implements
 No2 ~~> IF1 : use
 
 [Component 1] ~~> eDB : use
 [Component 2] ~~> IF2 : use
-
 @enduml
