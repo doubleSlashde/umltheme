@@ -88,17 +88,17 @@ skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
 '=================================================================
 skinparam Class {
     BackgroundColor DS_LIGHTBLUE
-    BorderColor STEELBLUE40
+    BorderColor DS_BLUE
     BorderThickness 1.5
 
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
     AttributeFontSize 12
-    AttributeFontColor DS_DARKGREY
+    AttributeFontColor BLACK25
 
     FontName Helvetica
-    FontColor DS_DARKGREY
+    FontColor BLACK25
     FontSize 14
     
 }
