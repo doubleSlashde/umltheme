@@ -1,28 +1,30 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 left to right direction
+
 skinparam AgentFontColor<<external>> DS_GREY
 skinparam DatabaseFontColor<<external>> DS_GREY
+
+skinparam RectangleBackgroundColor transparent
+skinparam RectangleBorderColor DS_BLUE
+skinparam RectangleBorderThickness 2.0
+skinparam RectangleBorderStyle 3.0,5.0
+skinparam RectangleFontColor DS_GREY
+
+skinparam PackageBackgroundColor transparent
+skinparam PackageBorderColor DS_BLUE
+skinparam PackageBorderThickness 1.0
+skinparam PackageFontColor DS_GREY
+
+skinparam ArrowThickness 1.5
+
 
 ' Component
 '=================================================================
 skinparam Component {
     BorderColor DS_BLUE 
     BackgroundColor DS_LIGHTBLUE
-    BorderThickness 2.0
-    FontColor DS_DARKGREY
-}
-
-' Card
-'=================================================================
-skinparam Card {
-    BackgroundColor DS_LIGHTGREY
-    BorderColor DS_DARKGREY
-    BackgroundColor<<external>> SUPERLIGHTGREY
-    BorderColor<<external>> DS_GREY
-
-    BorderThickness .5
-
+    BorderThickness 1.5
     FontColor DS_DARKGREY
 }
 
@@ -37,6 +39,9 @@ skinparam interface {
 
     FontColor DS_DARKGREY
 }
+
+
+
 
 
 
