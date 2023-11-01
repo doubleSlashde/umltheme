@@ -17,6 +17,10 @@ Use stylings by including the theme file at the top of your code.
 ```
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 ```
+### Include for sequnce diagram 
+```
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
+```
 
 ### Include for Gantt diagram
 ```
