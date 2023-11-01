@@ -1,7 +1,6 @@
-'Include this theme with:
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
-' Class
+' Class styling, also works for other class stereotypes like Entity, ...
 '=================================================================
 skinparam Class {
     BackgroundColor DS_LIGHTBLUE
