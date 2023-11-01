@@ -1,5 +1,6 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+left to right direction
 skinparam AgentFontColor<<external>> DS_GREY
 skinparam DatabaseFontColor<<external>> DS_GREY
 
