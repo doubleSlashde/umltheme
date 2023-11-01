@@ -1,17 +1,21 @@
 # umltheme
 This repo contains doubleSlash CI styling information to include in plantUML drawings
 Use stylings by including the theme file at the top of your code.
-### Include for UseCase diagram
+### Include for use case diagram
 ```
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-usecase.puml
 ```
-### Include for class diagram (also for ER-diagrams)
+### Include for activity diagram
 ```
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-activity.puml
 ```
 ### Include for system diagram (C4 level 1 and 2)
 ```
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
+```
+### Include for class diagram (also for ER-diagrams)
+```
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 ```
 
 ### Include for Gantt diagram
