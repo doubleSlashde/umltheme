@@ -22,7 +22,7 @@ skinparam padding 3
 
    :Start der Entwicklung;
 
-   if (Effort Changing Event) then (Ja)
+   if (<size:16><color:red>Effort Changing Event</size>) then (Ja)
 
 
    if (Change bewerten) then (Großer Change)

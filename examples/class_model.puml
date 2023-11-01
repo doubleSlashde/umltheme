@@ -3,9 +3,9 @@
 
 title Klassenmodell im //-Design
 left to right direction
-skinparam Ranksep 1
-skinparam Nodesep 10
+
 'hide circle
+
 
 interface Schnittstelle
 

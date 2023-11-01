@@ -3,17 +3,19 @@
 <style>
 ganttDiagram {
 
-  task {
-    FontName FONTNAME
-    FontSize 12
-    BackGroundColor DS_LIGHTBLUE
-    LineColor DS_BLUE
-	Padding 2
-  }
+	task {
+		FontName FONTNAME
+		FontSize 12
+		FontColor DS_DARKGREY
+		FontStyle normal
+		BackGroundColor DS_LIGHTBLUE
+		LineColor DS_BLUE
+		Padding 2
+	}
 
-  timeline {
-    FontName FONTNAME
-	  BackgroundColor SUPERLIGHTGREY
+	timeline {
+		FontName FONTNAME
+		BackgroundColor SUPERLIGHTGREY
 	}
 
 	milestone {
@@ -23,13 +25,13 @@ ganttDiagram {
 		BackGroundColor DS_BLUE
 		LineColor DS_BLUE
 		LineThickness 5.0
-		Margin 5
+		Margin 4
 	}
 
 	note {
 		FontColor black
 		FontSize 10
-		LineColor DS_LIGHTGREY 
+		LineColor DS_LIGHTGREY
 	}
 	closed {
 		BackgroundColor SUPERLIGHTGREY
@@ -40,9 +42,27 @@ ganttDiagram {
 		LineColor DS_GREY
 		LineThickness 1.5
 		Arrowstyle dotted
+
+        FontName FONTNAME
+        FontColor DS_DARKGREY
+        FontSize 12
+        LineStyle 8.0;13.0
 	}
 
-	
+	Separator {
+		LineStyle 8.0;13.0
+		LineColor black
+		LineThickness 1.5
+
+		FontSize 14
+		FontStyle bold
+		FontColor DS_DARKGREY
+
+		Margin 5
+		Padding 5
+	}
+
+
 }
 </style>
 

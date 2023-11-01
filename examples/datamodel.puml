@@ -1,4 +1,4 @@
-@startuml class model
+@startuml data model
 !include ../puml-theme-doubleslash.puml
 
 !define textsize14(name) "<size:14><b>name</size>" as name
@@ -68,7 +68,7 @@ note bottom of OtherEntity
     invidunt ut labore et dolore magna ...
 end note
 
-CollectionEntity |o----o{ Entität2
+CollectionEntity |o---o{ Entität2
 
 Entität2 }o---|| Entität1
 Entität2 }o---|{ OtherEntity

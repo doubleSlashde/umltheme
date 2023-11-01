@@ -3,10 +3,11 @@
 !include ../pgantt-theme-doubleslash.puml
 '!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
 
-saturday are closed
-sunday are closed
-'saturday are colored in DS_LIGHTGREY
-'sunday are colored in DS_LIGHTGREY
+'saturday are closed
+'sunday are closed
+
+saturday is colored SUPERLIGHTGREY
+sunday is colored SUPERLIGHTGREY
 'language de
 printscale weekly zoom 4
 
@@ -42,8 +43,8 @@ Project starts 2024-01-07
 
 
 [Prototype design] is 100% completed
-[Develop prototype] is 60% completed
-[Test prototype] is 10% completed
+[Develop prototype] is 100% completed
+[Test prototype] is 100% completed
 
 Separator just at [Develop prototype]'s end
 

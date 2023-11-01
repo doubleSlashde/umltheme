@@ -92,6 +92,7 @@ skinparam Class {
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
+    FontName Helvetica
     FontColor DS_DARKGREY
     FontSize 14
     BorderThickness 1.5
