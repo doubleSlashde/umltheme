@@ -1,10 +1,9 @@
 @startuml piprocess
-!include ../puml-theme-doubleslash.puml
-'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-activity.puml
+
 skinparam padding 3
 
 'skinparam ConditionStyle normal
-
 
 |Planung|
 

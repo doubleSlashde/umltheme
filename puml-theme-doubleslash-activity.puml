@@ -1,0 +1,18 @@
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+' Activity
+'=================================================================
+skinparam conditionStyle diamond
+skinparam Activity {
+    StartColor DS_DARKGREY
+    EndColor DS_DARKGREY
+    FontColor DS_DARKGREY
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+    DiamondBorderColor DS_BLUE
+    DiamondBackgroundColor DS_BLUE
+    DiamondFontColor DS_DARKGREY
+    DiamondFontName FONTNAME
+}
