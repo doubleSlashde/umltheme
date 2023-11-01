@@ -99,8 +99,7 @@ skinparam Class {
 
     FontName Helvetica
     FontColor BLACK25
-    FontSize 14
-    
+    FontSize 14 
 }
 
 ' Activity
