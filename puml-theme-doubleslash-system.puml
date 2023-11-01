@@ -9,7 +9,7 @@ skinparam DatabaseFontColor<<external>> DS_GREY
 skinparam Component {
     BorderColor DS_BLUE 
     BackgroundColor DS_LIGHTBLUE
-    BorderThickness 1.5
+    BorderThickness 2.0
     FontColor DS_DARKGREY
 }
 
@@ -21,9 +21,9 @@ skinparam Card {
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
-    BorderThickness .4
+    BorderThickness .5
 
-    FontColor DS_DARKGREY
+    FontColor DS_BLUE
 }
 
 ' Interface
