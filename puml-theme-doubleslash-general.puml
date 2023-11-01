@@ -16,7 +16,7 @@
 !define TIPBGCOLOR       #FFF6E7
 !define TIPBORDERCOLOR   #FFD999
 
-!define FONTNAME          "Helvetica"
+!define FONTNAME          Arial
 
 'allowmixing 'if flag is set, different diagram types could mixed up
 show circle 
@@ -52,10 +52,15 @@ skinparam NoteTextAlignment left
 
 ' Rectangle
 '=================================================================
-skinparam RectangleFontColor DS_GREY
 skinparam RectangleBackgroundColor SUPERLIGHTGREY
+
 skinparam RectangleBorderColor DS_DARKGREY
+skinparam RectangleBorderColor DS_GREY
+skinparam RectangleBorderThickness 0.5
+
+skinparam RectangleFontColor DS_GREY
 skinparam RectangleFontSize 14
+
 
 ' Package
 '=================================================================
@@ -73,9 +78,4 @@ skinparam ArrowFontColor DS_GREY
 skinparam ArrowFontStyle normal
 
 
-' Rectangle
-'=================================================================
-skinparam RectangleBorderThickness 0.5
-skinparam RectangleBorderColor DS_GREY
-skinparam RectangleBackgroundColor SUPERLIGHTGREY
 
