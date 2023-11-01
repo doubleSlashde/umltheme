@@ -1,0 +1,33 @@
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+' Actor
+'=================================================================
+skinparam ActorBorderColor DS_LIGHTGREY
+skinparam ActorBackgroundColor DS_LIGHTGREY
+skinparam ActorBorderThickness 3.5
+skinparam ActorFontName FONTNAME
+
+' Sequence
+'=================================================================
+skinparam Sequence {
+
+    LifeLineBackgroundColor DS_BLUE
+    LifeLineBorderColor DS_BLUE
+    LifeLineBorderThickness 0.0
+
+    GroupBackgroundColor SUPERLIGHTGREY
+    ReferenceBackgroundColor DS_LIGHTGREY
+
+    ParticipantBackgroundColor DS_LIGHTBLUE
+    ParticipantBorderColor DS_BLUE
+    ParticipantFontColor DS_DARKGREY
+    ParticipantFontSize 12
+    ParticipantBorderThickness 1.5
+
+    DividerBorderThickness .5
+    DividerFontSize 10
+    ArrowColor DS_GREY
+    ArrowFontSize 11
+
+}
+

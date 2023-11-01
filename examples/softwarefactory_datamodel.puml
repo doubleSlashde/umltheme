@@ -1,10 +1,11 @@
 @startuml datamodel
-!include ../puml-theme-doubleslash.puml
-'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 
 hide circle
+skinparam ClassFontSize 12
+skinparam Padding 8
 
-title <size:18>Class diagram of doubleSlash Software Factory artefacts
+title Class diagram of doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
 
 
@@ -83,11 +84,7 @@ ModuleDesign --- BuildCode
 TechnologyStack ---- DeploymentCode
 TechnologyStack ------- InfrastructureCode 
 
-
-
-
 SourceCode "1" -- "0..n" PullRequest
-
 SourceCode -- DeploymentArtefact
 
 

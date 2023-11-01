@@ -1,5 +1,5 @@
 @startuml Sequence model
-!include ../puml-theme-doubleslash.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
 	
 skinparam maxMessageSize 80
 
