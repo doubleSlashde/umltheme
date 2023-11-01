@@ -4,15 +4,22 @@
 ' Activity
 '=================================================================
 skinparam conditionStyle diamond
+
 skinparam Activity {
     StartColor DS_DARKGREY
     EndColor DS_DARKGREY
     FontColor DS_DARKGREY
+    
     BackgroundColor DS_LIGHTBLUE
     BorderColor DS_BLUE
-    BorderThickness 1.5
+    BorderThickness 0.0
+
     DiamondBorderColor DS_BLUE
     DiamondBackgroundColor DS_BLUE
     DiamondFontColor DS_DARKGREY
     DiamondFontName FONTNAME
+
+    ArrowThickness 1.0
+
 }
+

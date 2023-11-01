@@ -4,13 +4,14 @@
 'You will find help on this page: https://plantuml.com/de/activity-diagram-beta
 ' left to right direction 'does not work with activity diagrams
 
-title Aktivitätsdiagramm im //-Design
+
+title Activity diagram
 
 |SUPERLIGHTGREY|Swimlane 1|
 start
   :Activity 1; 
   :Activity 2;
-  (✉)
+  (M)
   -[dotted]->
 note right 
 Diese Notiz 
@@ -29,6 +30,12 @@ else
 endif  
 
 |Swimlane 1|
+  if () then
+    :my way;
+  else
+    :your way;
+  endif
+
   :final execution;
 end
 
