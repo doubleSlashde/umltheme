@@ -1,5 +1,6 @@
 @startuml data model
-!include ../puml-theme-doubleslash.puml
+!include ../puml-theme-doubleslash-class.puml
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 
 left to right direction
 'hide circle
