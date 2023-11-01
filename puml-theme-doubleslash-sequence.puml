@@ -4,7 +4,7 @@
 '=================================================================
 skinparam ActorBorderColor DS_LIGHTGREY
 skinparam ActorBackgroundColor DS_LIGHTGREY
-skinparam ActorBorderThickness 4.0
+skinparam ActorBorderThickness 2.0
 skinparam ActorFontName FONTNAME
 
 skinparam maxMessageSize 100
