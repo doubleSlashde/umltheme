@@ -15,6 +15,7 @@ skinparam PackageBackgroundColor transparent
 skinparam PackageBorderColor DS_BLUE
 skinparam PackageBorderThickness 1.0
 skinparam PackageFontColor DS_GREY
+skinparam PackageFontsize 14
 
 skinparam ArrowThickness 1.5
 
