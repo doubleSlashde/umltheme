@@ -15,14 +15,14 @@ skinparam Component {
 ' Card
 '=================================================================
 skinparam Card {
-    BackgroundColor DS_LIGHTBLUE
+    BackgroundColor DS_LIGHTGREY
     BorderColor DS_BLUE
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
     BorderThickness .5
 
-    FontColor DS_BLUE
+    FontColor DS_DARKGREY
 }
 
 ' Interface
