@@ -18,3 +18,9 @@ skinparam UseCaseFontName FONTNAME
 
 skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
 skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
+
+skinparam RectangleBackgroundColor transparent
+skinparam RectangleBorderColor DS_BLUE
+skinparam RectangleBorderThickness 2.0
+skinparam RectangleBorderStyle 3.0,5.0
+skinparam RectangleFontColor DS_GREY
