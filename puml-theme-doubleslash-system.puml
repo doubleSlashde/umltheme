@@ -8,7 +8,7 @@ skinparam DatabaseFontColor<<external>> DS_GREY
 skinparam RectangleBackgroundColor transparent
 skinparam RectangleBorderColor DS_BLUE
 skinparam RectangleBorderThickness 2.0
-skinparam RectangleBorderStyle 3.0,5.0
+skinparam RectangleBorderStyle 3.0,3.0
 skinparam RectangleFontColor DS_GREY
 
 skinparam PackageBackgroundColor transparent
