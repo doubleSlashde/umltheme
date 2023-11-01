@@ -14,5 +14,7 @@ skinparam ActorFontName FONTNAME
 skinparam UsecaseBackgroundColor DS_LIGHTBLUE
 skinparam UsecaseBorderColor DS_BLUE
 skinparam UsecaseBorderThickness 1.5
+skinparam UseCaseFontName FONTNAME
+
 skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
 skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
