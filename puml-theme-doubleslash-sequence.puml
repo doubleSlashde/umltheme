@@ -7,6 +7,12 @@ skinparam ActorBackgroundColor DS_LIGHTGREY
 skinparam ActorBorderThickness 3.5
 skinparam ActorFontName FONTNAME
 
+skinparam maxMessageSize 100
+skinparam ParticipantPadding 50
+skinparam SequenceParticipantBorderThickness 0.0
+
+skinparam Padding 6
+
 ' Sequence
 '=================================================================
 skinparam Sequence {
@@ -22,7 +28,6 @@ skinparam Sequence {
     ParticipantBorderColor DS_BLUE
     ParticipantFontColor DS_DARKGREY
     ParticipantFontSize 12
-    ParticipantBorderThickness 1.5
 
     DividerBorderThickness .5
     DividerFontSize 10

@@ -1,20 +1,20 @@
 @startuml Sequence model
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
 	
-skinparam maxMessageSize 80
+skinparam maxMessageSize 100
+skinparam ParticipantPadding 50
+skinparam SequenceParticipantBorderThickness 0.0
 
 title Sequenzmodell
 
-Actor Alice
-Participant FrontEnd
-Participant API
-Participant Backend
-Participant DB
+Actor Alice 
+Participant FrontEnd 
+Participant API 
+Participant Backend 
+Participant DB 
 
 
 == Initialization ==
-
-
 Alice -> FrontEnd: klick Button
 activate FrontEnd
 FrontEnd -> API: call Service
@@ -27,9 +27,8 @@ deactivate Backend
 API -> FrontEnd : return value
 FrontEnd -> Alice: Show status
 deactivate FrontEnd
+
 == Processing ==
-
-
 Backend -> DB : read detail data
 activate Backend
 DB -> Backend : return
