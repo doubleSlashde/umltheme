@@ -16,7 +16,7 @@
 !define TIPBGCOLOR       #FFF6E7
 !define TIPBORDERCOLOR   #FFD999
 
-!define FONTNAME          "Helvetica,Arial"
+!define FONTNAME          Helvetica,Arial
 
 'allowmixing 'if flag is set, different diagram types could mixed up
 show circle 
