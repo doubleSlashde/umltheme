@@ -49,3 +49,33 @@ skinparam NoteBorderThickness 0.0
 skinparam NoteFontColor DS_GREY
 skinparam NoteFontSize 11
 skinparam NoteTextAlignment left
+
+' Rectangle
+'=================================================================
+skinparam RectangleFontColor DS_GREY
+skinparam RectangleBackgroundColor SUPERLIGHTGREY
+skinparam RectangleBorderColor DS_DARKGREY
+skinparam RectangleFontSize 14
+
+' Package
+'=================================================================
+skinparam PackageFontColor DS_GREY
+skinparam PackageBackgroundColor SUPERLIGHTGREY
+skinparam PackageBorderColor DS_DARKGREY
+skinparam PackageFontSize 14
+
+' Arrow
+'=================================================================
+skinparam ArrowColor DS_GREY
+skinparam ArrowThickness 1.5
+skinparam ArrowFontName FONTNAME
+skinparam ArrowFontColor DS_GREY
+skinparam ArrowFontStyle normal
+
+
+' Rectangle
+'=================================================================
+skinparam RectangleBorderThickness 0.5
+skinparam RectangleBorderColor DS_GREY
+skinparam RectangleBackgroundColor SUPERLIGHTGREY
+

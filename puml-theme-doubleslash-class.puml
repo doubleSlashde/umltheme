@@ -1,0 +1,22 @@
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+' Class
+'=================================================================
+skinparam Class {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+    BorderThickness<<external>> 1.0
+
+    FontName FONTNAME
+    FontColor BLACK25
+    FontSize 14
+
+    AttributeFontSize 12
+    AttributeFontColor BLACK25
+}
+
