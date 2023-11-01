@@ -1,42 +1,5 @@
 'Include this theme with:
-'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash.puml
-!$PUML_THEME = "doubleslash"
-!$THEME      = "doubleslash"
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash-colordefs.puml
-
-
-'allowmixing 'if flag is set, different diagram types could mixed up
-show circle 
-hide empty members
-hide stereotype
-
-skinparam Shadowing false
-skinparam Padding 2
-skinparam Roundcorner 16
-skinparam BackgroundColor white
-skinparam DefaultFontName FONTNAME
-skinparam DefaultTextAlignment center
-
-' Title
-'=================================================================
-skinparam TitleFontSize 18
-skinparam TitleFontName FONTNAME
-skinparam TitleFontColor DS_DARKGREY
-skinparam TitleFontStyle normal
-
-' Note 
-'=================================================================
-'skinparam NoteBackgroundColor TIPBGCOLOR
-'skinparam NoteBorderColor TIPBORDERCOLOR
-'skinparam NoteBorderThickness 0.3
-'skinparam NoteShadowing true
-skinparam NoteBackgroundColor transparent
-skinparam NoteBorderColor transparent
-skinparam NoteBorderThickness 0.0
-skinparam NoteFontColor DS_GREY
-skinparam NoteFontSize 11
-skinparam NoteTextAlignment left
-
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 ' Rectangle
 '=================================================================

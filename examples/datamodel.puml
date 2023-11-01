@@ -1,13 +1,12 @@
 @startuml data model
 !include ../puml-theme-doubleslash.puml
 
-!define textsize14(name) "<size:14><b>name</size>" as name
 left to right direction
 'hide circle
 
 title Datenmodell 
 
-entity textsize14(Entität1)  {
+entity Entität1  {
     + name : text
     + params : Text[]
     + text2: Text
@@ -24,7 +23,7 @@ end note
 
 
 
-entity textsize14(Entität2) {
+entity Entität2 {
 
     Name : Text
     Beschreibung: Text
@@ -52,12 +51,12 @@ Lorem ipsum dolor sit amet, consetetur
 sadipscing elitr, sed diam nonumy ...
 end note
 
-entity textsize14(CollectionEntity) {
+entity CollectionEntity {
     collectionId : SERIAL (PK)
     name : Text
 }
 
-entity textsize14(OtherEntity) <<external>> {
+entity OtherEntity <<external>> {
     otherId : SERIAL (PK)
     name : Text
 }
