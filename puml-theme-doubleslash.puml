@@ -84,24 +84,6 @@ skinparam UsecaseBorderThickness 1.5
 skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
 skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
 
-' Class
-'=================================================================
-skinparam Class {
-    BackgroundColor DS_LIGHTBLUE
-    BorderColor DS_BLUE
-    BorderThickness 1.5
-
-    BackgroundColor<<external>> SUPERLIGHTGREY
-    BorderColor<<external>> DS_GREY
-
-    AttributeFontSize 12
-    AttributeFontColor BLACK25
-
-    FontName Helvetica
-    FontColor BLACK25
-    FontSize 14 
-}
-
 ' Activity
 '=================================================================
 skinparam conditionStyle diamond
@@ -182,4 +164,22 @@ skinparam interface {
 
 skinparam AgentFontColor<<external>> DS_GREY
 skinparam DatabaseFontColor<<external>> DS_GREY
+
+' Class
+'=================================================================
+skinparam Class {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+    AttributeFontSize 12
+    AttributeFontColor BLACK25
+
+    FontName Helvetica
+    FontColor BLACK25
+    FontSize 14 
+}
 
