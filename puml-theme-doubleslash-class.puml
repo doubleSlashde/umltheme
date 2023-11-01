@@ -12,11 +12,12 @@ skinparam Class {
     BorderColor<<external>> DS_GREY
     BorderThickness<<external>> 1.0
 
-    FontName FONTNAME
-    FontColor BLACK25
-    FontSize 14
-
+    AttributeFontName FONTNAME
     AttributeFontSize 12
     AttributeFontColor BLACK25
+
+    FontName FONTNAME
+    FontSize 16
+    FontColor BLACK25
 }
 
