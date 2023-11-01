@@ -21,3 +21,5 @@ skinparam Class {
     FontColor BLACK25
 }
 
+skinparam ClassFontSize 16
+
