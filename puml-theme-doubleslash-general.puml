@@ -32,7 +32,7 @@ skinparam DefaultTextAlignment center
 
 ' Title
 '=================================================================
-skinparam TitleFontSize 18
+skinparam TitleFontSize 28
 skinparam TitleFontName FONTNAME
 skinparam TitleFontColor DS_DARKGREY
 skinparam TitleFontStyle normal
