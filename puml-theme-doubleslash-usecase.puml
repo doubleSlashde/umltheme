@@ -1,0 +1,18 @@
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+' Actor
+'=================================================================
+skinparam ActorBorderColor DS_LIGHTGREY
+skinparam ActorBackgroundColor DS_LIGHTGREY
+skinparam ActorBorderThickness 3.5
+skinparam ActorFontName FONTNAME
+
+
+' Usecase
+'=================================================================
+skinparam UsecaseBackgroundColor DS_LIGHTBLUE
+skinparam UsecaseBorderColor STEELBLUE40
+skinparam UsecaseBorderThickness 1.5
+skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
+skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY

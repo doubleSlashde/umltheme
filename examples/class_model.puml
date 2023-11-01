@@ -1,7 +1,7 @@
 @startuml class model
-!include ../puml-theme-doubleslash.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 
-title Klassenmodell im //-Design
+title Klassenmodell
 left to right direction
 
 'hide circle
