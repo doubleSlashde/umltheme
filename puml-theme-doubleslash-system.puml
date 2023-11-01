@@ -17,7 +17,7 @@ skinparam Component {
 '=================================================================
 skinparam Card {
     BackgroundColor DS_LIGHTGREY
-    BorderColor DS_BLUE
+    BorderColor DS_DARKGREY
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
 
