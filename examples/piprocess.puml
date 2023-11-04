@@ -4,44 +4,36 @@
 skinparam padding 3
 'skinparam ConditionStyle normal
 
-
-
 title "Prozess: Aufwandsänderung innerhalb eines Product Increments"
 
 |Planung|
-
 start
-
 :doubleSlash Angebot über
-verfügbare Kapa ab;
-
-:Verfügbare Kapa wird in
-StoryPoints umgerechnet
-(1PT = 2SP);
+verfügbare Kapazität in 
+Personentagen (PT) ab;
+:Verfügbare Kapazität in Stunden
+wird in StoryPoints umgerechnet
+(1 Storypoints = 4 Stunden Aufwand);
 
 |Entwicklung|
-
-
 :Start der Entwicklung;
-
-if (<size:16><color:red>Effort Changing Event</size>) then (Ja)
-
-
-if (Change bewerten) then (Großer Change)
-   if() then (Mehraufwand)
-      if()
-         :StoryPoints erhöhen;
-      else
-         :Neue User Stories\nanlegen;
+if (<size:14><color:red>Effort Changing Event?</size>) then (Ja)
+   if (Change bewerten) then (Großer Change)
+      if() then (Mehraufwand)
+         if()
+            :StoryPoints erhöhen;
+         else
+            :Neue User Stories\nanlegen;
+         endif
+      else (Minderaufwand)
+         :StoryPoints verringern;
       endif
-   else (Minderaufwand)
-      :StoryPoints verringern;
+   else (Kleiner Change)
+      :Stories werden mit
+      dem vereinbarten
+      Aufwand erledigt.;
    endif
-else (Kleiner Change)
-   :Stories werden mit
-   dem vereinbarten
-   Aufwand erledigt.;
-endif
+else (Nein)
 endif
 
 :Ende der Entwicklung;

@@ -3,16 +3,15 @@
 'You will find help here https://plantuml.com/de/use-case-diagram
 
 left to right direction
-skinparam nodesep 60
+skinparam padding 6
+skinparam nodesep 28
 skinparam ranksep 1
-
 
 title Usecase Diagramm
 
 Actor "Actor 2" as actor2
 note left of actor2
-    This is a description of an actor:
-    <b>Actor 2
+    <b><color:black><size:14>Actor 2
     Lorem ipsum dolor sit amet,
     consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor
@@ -21,8 +20,7 @@ end note
 
 Actor "Actor 1" as actor1
 note left of actor1
-    This is a description of an actor:
-    <b>Actor 1
+    <b><color:black><size:14>Actor 1
     Lorem ipsum dolor sit amet,
     consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor
@@ -30,11 +28,10 @@ note left of actor1
 end note
 
 rectangle "System A" {
-    UseCase (First usecase) as UC1
+    UseCase (Use first case) as UC1
 }
 note right of UC1
-    <b>This is a description of a UseCase ...
-
+    This is a description of a UseCase ...
     Lorem ipsum dolor <i>sit amet,
     consetetur sadipscing elitr, sed diam
     nonumy eirmod tempor
@@ -46,10 +43,9 @@ end note
 actor1  -- UC1
 actor2 -- UC1
 
-
 rectangle  "System B" {
-    UseCase (Second usecase) as UC2
-    UseCase (Third usecase) as UC3
+    UseCase (Use second case) as UC2
+    UseCase (Use third case) as UC3
 }
 actor2 -- UC2
 actor2 -- UC3
@@ -58,7 +54,5 @@ UseCase (Old Usecase) <<External>> as UC4
 UseCase (Other Usecase) <<External>> as UC5
 UC3 ..|> UC4 : <<include>>
 UC2 <|.. UC5 : <<extends>>
-
-
 
 @enduml
