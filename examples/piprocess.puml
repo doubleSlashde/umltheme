@@ -13,7 +13,7 @@ verfügbare Kapazität in
 Personentagen (PT) ab;
 :Verfügbare Kapazität in Stunden
 wird in StoryPoints umgerechnet
-(1 Storypoints = 4 Stunden Aufwand);
+(1 Storypoint = 4 Stunden Aufwand);
 
 |Entwicklung|
 :Start der Entwicklung;
@@ -46,6 +46,4 @@ zusammenzählen;
 :Spill over berechnen;
 
 end
-
-
 @enduml
