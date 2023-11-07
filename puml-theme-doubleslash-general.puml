@@ -18,11 +18,6 @@
 
 !define FONTNAME          Arial
 
-'allowmixing 'if flag is set, different diagram types could mixed up
-'show circle 
-hide empty members
-hide stereotype
-
 skinparam Shadowing false
 skinparam Padding 2
 skinparam Roundcorner 16
