@@ -1,4 +1,4 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash-colordefs.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 <style>
 ganttDiagram {
