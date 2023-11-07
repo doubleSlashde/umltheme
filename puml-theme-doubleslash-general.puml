@@ -19,7 +19,7 @@
 !define FONTNAME          Arial
 
 'allowmixing 'if flag is set, different diagram types could mixed up
-show circle 
+'show circle
 hide empty members
 hide stereotype
 

@@ -1,5 +1,4 @@
 @startgantt projectplan
-''Define doubleSlash styling
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
 
 'saturday are closed

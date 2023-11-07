@@ -33,6 +33,7 @@ ganttDiagram {
 		FontSize 10
 		LineColor DS_LIGHTGREY
 	}
+	
 	closed {
 		BackgroundColor SUPERLIGHTGREY
 		FontColor DS_DARKGREY
@@ -40,13 +41,12 @@ ganttDiagram {
 
 	Arrow {
 		LineColor DS_GREY
+        LineStyle solid
 		LineThickness 1.5
-		Arrowstyle dotted
-
+		
         FontName FONTNAME
         FontColor DS_DARKGREY
         FontSize 12
-        LineStyle 8.0;13.0
 	}
 
 	Separator {
@@ -65,6 +65,3 @@ ganttDiagram {
 
 }
 </style>
-
-
-
