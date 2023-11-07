@@ -1,5 +1,10 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+'allowmixing 'if flag is set, different diagram types could mixed up
+show circle 
+hide empty members
+hide stereotype
+
 ' Class styling, also works for other class stereotypes like Entity, ...
 '=================================================================
 skinparam Class {
