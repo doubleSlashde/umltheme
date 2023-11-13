@@ -70,7 +70,7 @@ skinparam PackageFontSize 14
 skinparam ArrowColor DS_GREY
 skinparam ArrowThickness 1.5
 skinparam ArrowFontName FONTNAME
-skinparam ArrowFontColor DS_GREY
+skinparam ArrowFontColor black
 skinparam ArrowFontStyle normal
 
 
