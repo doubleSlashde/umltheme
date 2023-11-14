@@ -26,7 +26,5 @@ skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
 ' Rectangle for system boundary
 '=================================================================
 skinparam RectangleBackgroundColor DS_LIGHTBLUE
-skinparam RectangleBorderColor DS_BLUE
 skinparam RectangleBorderThickness 0.0
 skinparam RectangleBorderStyle solid
-skinparam RectangleFontColor DS_GREY

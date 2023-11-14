@@ -52,7 +52,6 @@ skinparam RectangleBackgroundColor SUPERLIGHTGREY
 skinparam RectangleBorderColor DS_DARKGREY
 skinparam RectangleBorderColor DS_GREY
 skinparam RectangleBorderThickness 0.5
-
 skinparam RectangleFontColor black
 skinparam RectangleFontSize 14
 
