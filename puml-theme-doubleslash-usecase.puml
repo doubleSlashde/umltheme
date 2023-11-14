@@ -2,6 +2,9 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 hide stereotypes
+skinparam padding 3
+left to right direction
+
 ' Actor
 '=================================================================
 skinparam ActorBorderColor DS_LIGHTGREY
