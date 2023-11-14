@@ -30,7 +30,7 @@ skinparam DefaultTextAlignment center
 '=================================================================
 skinparam TitleFontSize 28
 skinparam TitleFontName FONTNAME
-skinparam TitleFontColor DS_DARKGREY
+skinparam TitleFontColor black
 skinparam TitleFontStyle normal
 
 ' Note 
@@ -58,7 +58,7 @@ skinparam RectangleFontSize 14
 
 ' Package
 '=================================================================
-skinparam PackageFontColor DS_GREY
+skinparam PackageFontColor black
 skinparam PackageBackgroundColor SUPERLIGHTGREY
 skinparam PackageBorderColor DS_DARKGREY
 skinparam PackageFontSize 14
@@ -70,6 +70,3 @@ skinparam ArrowThickness 1.5
 skinparam ArrowFontName FONTNAME
 skinparam ArrowFontColor black
 skinparam ArrowFontStyle normal
-
-
-
