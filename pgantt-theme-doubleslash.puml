@@ -19,7 +19,7 @@ ganttDiagram {
 	}
 
 	milestone {
-		FontColor BLACK25
+		FontColor black
 		FontSize 14
 		FontStyle normal
 		BackGroundColor DS_BLUE
@@ -41,12 +41,12 @@ ganttDiagram {
 
 	Arrow {
 		LineColor DS_GREY
-        LineStyle solid
+      LineStyle solid
 		LineThickness 1.5
 		
-        FontName FONTNAME
-        FontColor DS_DARKGREY
-        FontSize 12
+      FontName FONTNAME
+      FontColor DS_DARKGREY
+      FontSize 12
 	}
 
 	Separator {
