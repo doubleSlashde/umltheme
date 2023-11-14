@@ -2,7 +2,7 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 hide stereotypes
-skinparam padding 3
+skinparam padding 5
 left to right direction
 
 ' Actor
