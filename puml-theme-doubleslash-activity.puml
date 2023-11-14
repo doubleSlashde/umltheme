@@ -26,5 +26,7 @@ skinparam SwimlaneTitleFontSize 16
 skinparam SwimlaneTitleBackgroundColor SUPERLIGHTGREY
 skinparam SwimlaneBorderColor DS_LIGHTGREY
 skinparam SwimlaneBorderThickness 1.0
+'skinparam SwimlaneWidth 40
+'skinparam SwimlaneWrapTitleWidth 50
 
 
