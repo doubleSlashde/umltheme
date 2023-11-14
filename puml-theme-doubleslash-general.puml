@@ -23,6 +23,7 @@ skinparam Padding 2
 skinparam Roundcorner 16
 skinparam BackgroundColor white
 skinparam DefaultFontName FONTNAME
+skinparam DefaultFontColor black
 skinparam DefaultTextAlignment center
 
 ' Title
@@ -41,7 +42,7 @@ skinparam TitleFontStyle normal
 skinparam NoteBackgroundColor transparent
 skinparam NoteBorderColor transparent
 skinparam NoteBorderThickness 0.0
-skinparam NoteFontColor DS_GREY
+skinparam NoteFontColor black
 skinparam NoteFontSize 11
 skinparam NoteTextAlignment left
 
@@ -69,7 +70,7 @@ skinparam PackageFontSize 14
 skinparam ArrowColor DS_GREY
 skinparam ArrowThickness 1.5
 skinparam ArrowFontName FONTNAME
-skinparam ArrowFontColor DS_GREY
+skinparam ArrowFontColor black
 skinparam ArrowFontStyle normal
 
 
