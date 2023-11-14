@@ -3,22 +3,28 @@
 ' Activity
 '=================================================================
 skinparam conditionStyle diamond
+skinparam padding 3
 
-skinparam Activity {
-    StartColor DS_DARKGREY
-    EndColor DS_DARKGREY
-    FontColor black
-    
-    BackgroundColor DS_LIGHTBLUE
-    BorderColor DS_BLUE
-    BorderThickness 0.0
+skinparam ActivityFontColor black
 
-    DiamondBorderColor DS_BLUE
-    DiamondBackgroundColor DS_BLUE
-    DiamondFontColor DS_DARKGREY
-    DiamondFontName FONTNAME
+skinparam ActivityStartColor DS_DARKGREY
+skinparam ActivityEndColor DS_DARKGREY
 
-    ArrowThickness 1.0
+skinparam ActivityBackgroundColor DS_LIGHTBLUE
+skinparam ActivityBorderColor DS_BLUE
+skinparam ActivityBorderThickness 0.0
 
-}
+skinparam ActivityDiamondBorderColor DS_BLUE
+skinparam ActivityDiamondBackgroundColor DS_BLUE
+skinparam ActivityDiamondFontColor black
+skinparam ActivityDiamondFontName FONTNAME
+
+skinparam ActivityArrowThickness 1.2
+
+skinparam SwimlaneTitleFontColor black
+skinparam SwimlaneTitleFontSize 16
+skinparam SwimlaneTitleBackgroundColor SUPERLIGHTGREY
+skinparam SwimlaneBorderColor DS_LIGHTGREY
+skinparam SwimlaneBorderThickness 1.0
+
 
