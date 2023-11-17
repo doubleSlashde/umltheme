@@ -5,6 +5,8 @@ show circle
 hide empty members
 hide stereotype
 
+skinparam Linetype ortho
+
 ' Class styling, also works for other class stereotypes like Entity, ...
 '=================================================================
 skinparam Class {
