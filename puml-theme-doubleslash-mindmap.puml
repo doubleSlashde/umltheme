@@ -1,0 +1,20 @@
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+<style>
+node {
+    Padding 14
+    Margin 3
+    HorizontalAlignment center
+    LineColor blue
+    LineThickness 0.0
+    BackgroundColor #D7E9F4
+    FontSize 14
+    Margin 16
+}
+leafNode {
+    Fontsize 12
+    Padding 0
+    Margin 2
+    BackgroundColor white
+}
+</style>
