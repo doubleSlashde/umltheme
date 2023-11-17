@@ -2,14 +2,13 @@
 
 <style>
 node {
-    Padding 14
+    Padding 10
     Margin 3
     HorizontalAlignment center
     LineColor blue
     LineThickness 0.0
     BackgroundColor #D7E9F4
     FontSize 14
-    Margin 10
 }
 leafNode {
     Fontsize 12
