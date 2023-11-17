@@ -9,7 +9,7 @@ node {
     LineThickness 0.0
     BackgroundColor #D7E9F4
     FontSize 14
-    Margin 16
+    Margin 10
 }
 leafNode {
     Fontsize 12
