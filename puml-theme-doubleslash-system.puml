@@ -1,17 +1,15 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 left to right direction
+hide stereotypes
 
-skinparam Linetype ortho
+skinparam Linetype polyline
+skinparam ComponentStyle rectangle
 
-skinparam AgentFontColor<<external>> DS_GREY
-skinparam DatabaseFontColor<<external>> DS_GREY
-
-skinparam RectangleBackgroundColor ALICEBLUE
-skinparam RectangleBorderColor DS_BLUE
-skinparam RectangleBorderThickness 0
-skinparam RectangleBorderStyle solid
-skinparam RectangleFontColor black
+skinparam ComponentBorderThickness 0
+skinparam ComponentBackgroundColor DS_LIGHTBLUE
+skinparam ComponentFontColor black
+skinparam ComponentBorderColor DS_BLUE
 
 skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
@@ -19,34 +17,32 @@ skinparam PackageBorderThickness 0
 skinparam PackageFontColor black
 skinparam PackageFontsize 14
 
+
+skinparam RectangleBackgroundcolor transparent
+skinparam RectangleBorderColor DS_BLUE
+skinparam RectangleBorderThickness 1
+skinparam RectangleBorderStyle solid
+skinparam RectangleFontColor black
+
+skinparam AgentBackgroundcolor DS_LIGHTBLUE
+skinparam AgentFontColor black
+skinparam AgentBorderThickness 0
+skinparam AgentBackgroundcolor<<external>> DS_LIGHTGREY
+skinparam AgentFontColor<<external>> black
+skinparam AgentBorderThickness<<external>> 0
+
+skinparam DatabaseBackgroundcolor<<external>> DS_LIGHTGREY
+skinparam DatabaseFontColor<<external>> black
+skinparam DatabaseBorderThickness<<external>> 0
+
 skinparam ArrowThickness 1.5
 
+skinparam interfaceBackgroundColor DS_BLUE
+skinparam interfaceBorderColor DS_BLUE
+skinparam interfaceBorderThickness 2
+skinparam interfaceFontColor black
 
-' Component
-'=================================================================
-skinparam Component {
-    BorderColor DS_BLUE 
-    BackgroundColor DS_LIGHTBLUE
-    BorderThickness 0.0
-    FontColor black
-}
-
-' Interface
-'=================================================================
-skinparam interface {
-    BackgroundColor DS_BLUE
-    BorderColor DS_BLUE
-
-    BorderColor<<external>> DS_GREY
-    BackgroundColor<<external>> DS_GREY
-
-    FontColor black
-}
-
-
-
-
-
-
+skinparam interfaceBorderColor<<external>> DS_GREY
+skinparam interfaceBackgroundColor<<external>> DS_GREY
 
 
