@@ -7,6 +7,7 @@
 !define DS_DARKGREY       #515151
 
 !define SUPERLIGHTGREY    #F8F8F8
+!define ALICEBLUE         #F0F8FF
 !define STEELBLUE25       #374656
 !define STEELBLUE40       #8A9DB3
 !define BLACK50           #7F7F7F
