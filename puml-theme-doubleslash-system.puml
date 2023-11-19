@@ -7,16 +7,16 @@ skinparam Linetype ortho
 skinparam AgentFontColor<<external>> DS_GREY
 skinparam DatabaseFontColor<<external>> DS_GREY
 
-skinparam RectangleBackgroundColor transparent
+skinparam RectangleBackgroundColor ALICEBLUE
 skinparam RectangleBorderColor DS_BLUE
-skinparam RectangleBorderThickness 2.0
-skinparam RectangleBorderStyle 3.0,3.0
-skinparam RectangleFontColor DS_GREY
+skinparam RectangleBorderThickness 0
+skinparam RectangleBorderStyle solid
+skinparam RectangleFontColor black
 
-skinparam PackageBackgroundColor transparent
+skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
-skinparam PackageBorderThickness 1.0
-skinparam PackageFontColor DS_GREY
+skinparam PackageBorderThickness 0
+skinparam PackageFontColor black
 skinparam PackageFontsize 14
 
 skinparam ArrowThickness 1.5
@@ -27,8 +27,8 @@ skinparam ArrowThickness 1.5
 skinparam Component {
     BorderColor DS_BLUE 
     BackgroundColor DS_LIGHTBLUE
-    BorderThickness 1.5
-    FontColor DS_DARKGREY
+    BorderThickness 0.0
+    FontColor black
 }
 
 ' Interface
@@ -40,7 +40,7 @@ skinparam interface {
     BorderColor<<external>> DS_GREY
     BackgroundColor<<external>> DS_GREY
 
-    FontColor DS_DARKGREY
+    FontColor black
 }
 
 
