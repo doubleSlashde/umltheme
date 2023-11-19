@@ -27,11 +27,11 @@ skinparam RectangleFontColor black
 skinparam AgentBackgroundcolor DS_LIGHTBLUE
 skinparam AgentFontColor black
 skinparam AgentBorderThickness 0
-skinparam AgentBackgroundcolor<<external>> DS_LIGHTGREY
+skinparam AgentBackgroundcolor<<external>> SUPERLIGHTGREY
 skinparam AgentFontColor<<external>> black
 skinparam AgentBorderThickness<<external>> 0
 
-skinparam DatabaseBackgroundcolor<<external>> DS_LIGHTGREY
+skinparam DatabaseBackgroundcolor<<external>> SUPERLIGHTGREY
 skinparam DatabaseFontColor<<external>> black
 skinparam DatabaseBorderThickness<<external>> 0
 
