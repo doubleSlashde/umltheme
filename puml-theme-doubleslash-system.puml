@@ -11,11 +11,6 @@ skinparam ComponentBackgroundColor DS_LIGHTBLUE
 skinparam ComponentFontColor black
 skinparam ComponentBorderColor DS_BLUE
 
-skinparam PackageBackgroundColor ALICEBLUE
-skinparam PackageBorderColor DS_BLUE
-skinparam PackageBorderThickness 0
-skinparam PackageFontColor black
-skinparam PackageFontsize 14
 
 
 skinparam RectangleBackgroundcolor transparent
@@ -24,6 +19,20 @@ skinparam RectangleBorderThickness 1
 skinparam RectangleBorderStyle solid
 skinparam RectangleFontColor black
 
+skinparam RectangleBackgroundcolor<<container>> ALICEBLUE
+skinparam RectangleBorderColor<<container>> DS_BLUE
+skinparam RectangleBorderThickness<<container>> 0
+skinparam RectangleBorderStyle<<container>> solid
+skinparam RectangleFontColor<<container>> black
+skinparam RectangleFontsize<<container>> 14
+
+skinparam PackageBackgroundColor ALICEBLUE
+skinparam PackageBorderColor DS_BLUE
+skinparam PackageBorderThickness 0
+skinparam PackageFontColor black
+skinparam PackageFontsize 14
+
+' Agent shapes ----------------------------
 skinparam AgentBackgroundcolor DS_LIGHTBLUE
 skinparam AgentFontColor black
 skinparam AgentBorderThickness 0
