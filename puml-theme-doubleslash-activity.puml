@@ -29,4 +29,7 @@ skinparam SwimlaneBorderThickness 1.0
 'skinparam SwimlaneWidth 40
 'skinparam SwimlaneWrapTitleWidth 50
 
+!define format_swimlaneheader(x) \n<b>x\n
+
+
 
