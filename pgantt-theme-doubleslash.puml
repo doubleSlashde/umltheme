@@ -1,67 +1,65 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+skinparam Roundcorner 2
+
 <style>
 ganttDiagram {
+  task {
+    FontName FONTNAME
+    FontSize 12
+    FontColor DS_DARKGREY
+    FontStyle normal
+    BackGroundColor DS_LIGHTBLUE
+    LineColor DS_BLUE
+    LineThickness 0.0
+    Padding 3
+   }
 
-	task {
-		FontName FONTNAME
-		FontSize 12
-		FontColor DS_DARKGREY
-		FontStyle normal
-		BackGroundColor DS_LIGHTBLUE
-		LineColor DS_BLUE
-		Padding 2
-	}
+  timeline {
+    FontName FONTNAME
+    BackgroundColor SUPERLIGHTGREY
+  }
 
-	timeline {
-		FontName FONTNAME
-		BackgroundColor SUPERLIGHTGREY
-	}
+  milestone {
+    FontColor black
+    FontSize 14
+    FontStyle normal
+    BackGroundColor DS_BLUE
+    LineColor DS_BLUE
+    LineThickness 5.0
+    Margin 4
+  }
 
-	milestone {
-		FontColor black
-		FontSize 14
-		FontStyle normal
-		BackGroundColor DS_BLUE
-		LineColor DS_BLUE
-		LineThickness 5.0
-		Margin 4
-	}
-
-	note {
-		FontColor black
-		FontSize 10
-		LineColor DS_LIGHTGREY
-	}
+  note {
+    FontColor black
+    FontSize 10
+    LineColor DS_LIGHTGREY
+  }
 	
-	closed {
-		BackgroundColor SUPERLIGHTGREY
-		FontColor DS_DARKGREY
-	}
+  closed {
+    BackgroundColor SUPERLIGHTGREY
+    FontColor DS_DARKGREY
+  }
 
-	Arrow {
-		LineColor DS_GREY
-      LineStyle solid
-		LineThickness 1.5
-		
-      FontName FONTNAME
-      FontColor DS_DARKGREY
-      FontSize 12
-	}
+  Arrow {
+    LineColor DS_GREY
+    LineStyle solid
+    LineThickness 1.5
+    FontName FONTNAME
+    FontColor DS_DARKGREY
+    FontSize 12
+  }
 
-	Separator {
-		LineStyle 8.0;13.0
-		LineColor black
-		LineThickness 1.5
+  Separator {
+    LineStyle 8.0;13.0
+    LineColor black
+    LineThickness 1.5
 
-		FontSize 14
-		FontStyle bold
-		FontColor DS_DARKGREY
-
-		Margin 5
-		Padding 5
-	}
-
-
+    FontSize 14
+    FontStyle bold
+    FontColor DS_DARKGREY
+    Margin 5
+    Padding 5
+  }
 }
 </style>
