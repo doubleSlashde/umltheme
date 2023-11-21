@@ -4,7 +4,7 @@
 'sunday are closed
 'language de
 
-skinparam Roundcorner 2
+skinparam Roundcorner 6
 
 saturday are colored in SUPERLIGHTGREY
 sunday are colored in SUPERLIGHTGREY
@@ -18,8 +18,7 @@ ganttDiagram {
     FontColor DS_DARKGREY
     FontStyle normal
     BackGroundColor DS_LIGHTBLUE
-    LineColor DS_BLUE
-    LineThickness 0.0
+    LineColor DS_LIGHTBLUE
     Padding 3
    }
 
@@ -30,7 +29,7 @@ ganttDiagram {
 
   milestone {
     FontColor black
-    FontSize 14
+    FontSize 12
     FontStyle normal
     BackGroundColor DS_BLUE
     LineColor DS_BLUE
