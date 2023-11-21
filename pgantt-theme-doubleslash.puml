@@ -1,6 +1,14 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+'saturday are closed
+'sunday are closed
+'language de
+
 skinparam Roundcorner 2
+
+saturday are colored in SUPERLIGHTGREY
+sunday are colored in SUPERLIGHTGREY
+printscale weekly zoom 4
 
 <style>
 ganttDiagram {
