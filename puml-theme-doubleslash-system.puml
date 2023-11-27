@@ -26,6 +26,14 @@ skinparam RectangleBorderStyle<<container>> solid
 skinparam RectangleFontColor<<container>> black
 skinparam RectangleFontsize<<container>> 14
 
+skinparam RectangleBackgroundcolor<<context>> transparent
+skinparam RectangleBorderColor<<context>> DS_BLUE
+skinparam RectangleBorderThickness<<context>> 1
+skinparam RectangleBorderStyle<<context>> solid
+skinparam RectangleFontColor<<context>> black
+skinparam RectangleFontsize<<context>> 14
+
+
 skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
 skinparam PackageBorderThickness 0
