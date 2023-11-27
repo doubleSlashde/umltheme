@@ -1,7 +1,7 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 'allowmixing 'if flag is set, different diagram types could mixed up
-show circle 
+hide circle
 hide empty members
 hide stereotype
 
@@ -12,19 +12,20 @@ skinparam Linetype ortho
 skinparam Class {
     BackgroundColor DS_LIGHTBLUE
     BorderColor DS_BLUE
-    BorderThickness 1.5
+    BorderThickness 0
 
     BackgroundColor<<external>> SUPERLIGHTGREY
     BorderColor<<external>> DS_GREY
-    BorderThickness<<external>> 1.0
+    BorderThickness<<external>> 0
 
     AttributeFontName FONTNAME
     AttributeFontSize 12
-    AttributeFontColor BLACK25
+    AttributeFontColor black
 
     FontName FONTNAME
-    FontSize 16
-    FontColor BLACK25
+    FontSize 15
+    FontColor black
+    Fontstyle bold
 }
 
 skinparam ClassFontSize 16
