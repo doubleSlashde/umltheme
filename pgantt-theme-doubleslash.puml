@@ -24,6 +24,7 @@ ganttDiagram {
 
   timeline {
     FontName FONTNAME
+	 FontSize 12
     BackgroundColor SUPERLIGHTGREY
   }
 
