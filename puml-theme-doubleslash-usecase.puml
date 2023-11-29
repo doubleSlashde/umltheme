@@ -12,19 +12,19 @@ skinparam ActorBackgroundColor DS_LIGHTGREY
 skinparam ActorBorderThickness 5.0
 skinparam ActorFontName FONTNAME
 
-
-' Usecase
-'=================================================================
-skinparam UsecaseBackgroundColor DS_LIGHTBLUE
-skinparam UsecaseBorderColor DS_BLUE
-skinparam UsecaseBorderThickness 0.0
-skinparam UseCaseFontName FONTNAME
-
-skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
-skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
-
 ' Rectangle for system boundary
 '=================================================================
 skinparam RectangleBackgroundColor ALICEBLUE
 skinparam RectangleBorderThickness 0.0
 skinparam RectangleBorderStyle solid
+
+' Usecase
+'=================================================================
+skinparam UsecaseBackgroundColor DS_LIGHTBLUE
+skinparam UsecaseBorderThickness 0.0
+skinparam UseCaseFontName FONTNAME
+
+' External Usecase
+skinparam UsecaseBackgroundColor<<External>> SUPERLIGHTGREY
+
+
