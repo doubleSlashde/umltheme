@@ -17,7 +17,7 @@
 !define TIPBGCOLOR       #FFF6E7
 !define TIPBORDERCOLOR   #FFD999
 
-!define FONTNAME          Arial
+!define FONTNAME          "Arial Nova Light"
 
 skinparam Shadowing false
 skinparam Padding 2
