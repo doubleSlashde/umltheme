@@ -11,6 +11,12 @@ skinparam maxMessageSize 100
 skinparam ParticipantPadding 50
 skinparam SequenceParticipantBorderThickness 0.0
 
+skinparam ParticipantFontname FONTNAME
+skinparam SequenceFontname FONTNAME
+skinparam ActorFontname FONTNAME
+skinparam SequenceArrowFontname FONTNAME
+skinparam SequenceDividerFontname FONTNAME
+
 skinparam Padding 6
 
 ' Sequence
