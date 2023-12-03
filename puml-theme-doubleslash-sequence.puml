@@ -35,8 +35,12 @@ skinparam Sequence {
     ParticipantFontColor DS_DARKGREY
     ParticipantFontSize 12
 
-    DividerBorderThickness .5
-    DividerFontSize 10
+    DividerBackgroundColor SUPERLIGHTGREY
+    DividerBorderColor SUPERLIGHTGREY
+    DividerBorderThickness 1.0
+    DividerFontStyle normal
+    DividerFontSize 14
+
     ArrowColor DS_GREY
     ArrowFontSize 11
 
