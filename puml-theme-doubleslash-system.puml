@@ -48,8 +48,9 @@ skinparam AgentBackgroundcolor<<external>> SUPERLIGHTGREY
 skinparam AgentFontColor<<external>> black
 skinparam AgentBorderThickness<<external>> 0
 
+skinparam DatabaseBackgroundcolor DS_LIGHTBLUE
+skinparam DatabaseBorderThickness 0.0
 skinparam DatabaseBackgroundcolor<<external>> SUPERLIGHTGREY
-skinparam DatabaseFontColor<<external>> black
 skinparam DatabaseBorderThickness<<external>> 0
 
 skinparam ArrowThickness 1.5
