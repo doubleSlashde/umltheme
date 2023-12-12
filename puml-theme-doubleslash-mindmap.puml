@@ -3,17 +3,16 @@
 <style>
 node {
     Padding 10
-    Margin 3
+    Margin 10
     HorizontalAlignment center
-    LineColor blue
     LineThickness 0.0
     BackgroundColor #D7E9F4
-    FontSize 14
+    FontSize 12
 }
 leafNode {
-    Fontsize 12
-    Padding 0
-    Margin 2
+    Fontsize 11
+    Padding 1
+    Margin 1
     BackgroundColor white
 }
 </style>
