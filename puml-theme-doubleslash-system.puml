@@ -11,8 +11,6 @@ skinparam ComponentBackgroundColor DS_LIGHTBLUE
 skinparam ComponentFontColor black
 skinparam ComponentBorderColor DS_BLUE
 
-
-
 skinparam RectangleBackgroundcolor transparent
 skinparam RectangleBorderColor DS_BLUE
 skinparam RectangleBorderThickness 1
@@ -32,7 +30,6 @@ skinparam RectangleBorderThickness<<context>> 1.5
 skinparam RectangleBorderStyle<<context>> solid
 skinparam RectangleFontColor<<context>> black
 skinparam RectangleFontsize<<context>> 14
-
 
 skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
