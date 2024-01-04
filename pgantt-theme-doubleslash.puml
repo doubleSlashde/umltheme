@@ -59,10 +59,9 @@ ganttDiagram {
   }
 
   Separator {
-    LineColor black
+    LineColor DS_GREY
     LineThickness 1.0
-    FontSize 14
-    FontStyle bold
+    FontSize 12
     FontColor black
     Margin 5
     Padding 5
