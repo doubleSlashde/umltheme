@@ -34,12 +34,12 @@ skinparam Sequence {
 
     ParticipantBackgroundColor DS_LIGHTBLUE
     ParticipantBorderThickness 0.0
-    ParticipantFontColor DS_BLACK
+    ParticipantFontColor BLACK
     ParticipantFontSize 12
 
     ParticipantBackgroundColor<<External>> SUPERLIGHTGREY
     ParticipantBorderThickness<<External>> 0.0
-    ParticipantFontColor<<External>> DS_BLACK
+    ParticipantFontColor<<External>> BLACK
     ParticipantFontSize<<External>> 12
 
     DividerBackgroundColor SUPERLIGHTGREY
