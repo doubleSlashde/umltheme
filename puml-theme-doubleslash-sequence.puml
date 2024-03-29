@@ -31,9 +31,14 @@ skinparam Sequence {
     ReferenceBackgroundColor DS_LIGHTGREY
 
     ParticipantBackgroundColor DS_LIGHTBLUE
-    ParticipantBorderColor DS_BLUE
-    ParticipantFontColor DS_DARKGREY
+    ParticipantBorderThickness 0.0
+    ParticipantFontColor DS_BLACK
     ParticipantFontSize 12
+
+    ParticipantBackgroundColor<<External>> SUPERLIGHTGREY
+    ParticipantBorderThickness<<External>> 0.0
+    ParticipantFontColor<<External>> DS_BLACK
+    ParticipantFontSize<<External>> 12
 
     DividerBackgroundColor SUPERLIGHTGREY
     DividerBorderColor SUPERLIGHTGREY
