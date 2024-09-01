@@ -8,7 +8,7 @@ left to right direction
 skinparam Ranksep 30
 
 skinparam DefaultTextAlignment left
-skinparam Linetype ortho
+skinparam Linetype polyline
 
 ' Class styling, also works for other class stereotypes like Entity, ...
 '=================================================================
