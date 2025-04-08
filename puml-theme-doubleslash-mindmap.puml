@@ -1,18 +1,31 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
 <style>
-node {
+footer, header {
+    FontColor       DS_DARKGREY
+}
+node, legend {
     Padding 10
     Margin 10
     HorizontalAlignment center
     LineThickness 0.0
-    BackgroundColor #D7E9F4
+    BackgroundColor DS_LIGHTBLUE
     FontSize 12
+    FontColor DS_DARKGREY
 }
 leafNode {
-    Fontsize 11
+    FontColor black
+    FontSize 11
     Padding 1
     Margin 1
     BackgroundColor white
+}
+rootNode {
+    FontStyle       bold
+    FontColor       white
+    BackgroundColor DS_BLUE
+}
+arrow {
+    LineColor       STEELBLUE40
 }
 </style>
