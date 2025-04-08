@@ -2,7 +2,7 @@
 
 <style>
 footer, header {
-    FontColor       DS_DARKGREY
+    FontColor DS_DARKGREY
 }
 node, legend {
     Padding 10
@@ -21,11 +21,11 @@ leafNode {
     BackgroundColor white
 }
 rootNode {
-    FontStyle       bold
-    FontColor       white
+    FontStyle bold
+    FontColor white
     BackgroundColor DS_BLUE
 }
 arrow {
-    LineColor       STEELBLUE40
+    LineColor STEELBLUE40
 }
 </style>
