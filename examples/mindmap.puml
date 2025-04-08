@@ -1,4 +1,5 @@
 @startmindmap
+'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-mindmap.puml
 !include ../puml-theme-doubleslash-mindmap.puml
 
 caption figure 1
