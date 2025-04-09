@@ -12,6 +12,7 @@ node, legend {
     BackgroundColor DS_LIGHTBLUE
     FontSize 12
     FontColor DS_DARKGREY
+    LineColor white
 }
 leafNode {
     FontColor black
@@ -19,6 +20,7 @@ leafNode {
     Padding 1
     Margin 1
     BackgroundColor white
+    LineColor white
 }
 rootNode {
     FontStyle bold
