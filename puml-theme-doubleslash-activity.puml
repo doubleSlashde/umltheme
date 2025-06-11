@@ -1,5 +1,7 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+!pragma layout smetana
+
 ' Activity
 '=================================================================
 skinparam conditionStyle diamond
@@ -30,6 +32,3 @@ skinparam SwimlaneBorderThickness 1.0
 'skinparam SwimlaneWrapTitleWidth 50
 
 !define format_swimlaneheader(x) \n<b>x\n
-
-
-

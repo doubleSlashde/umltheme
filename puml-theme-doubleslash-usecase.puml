@@ -1,6 +1,7 @@
 'Include this theme with:
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+!pragma layout smetana
 hide stereotypes
 skinparam padding 2
 left to right direction

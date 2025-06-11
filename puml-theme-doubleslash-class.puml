@@ -1,5 +1,7 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+!pragma layout klassviz
+
 'allowmixing 'if flag is set, different diagram types could mixed up
 hide circle
 hide empty members
@@ -30,4 +32,3 @@ skinparam Class {
     FontColor black
     Fontstyle bold
 }
-

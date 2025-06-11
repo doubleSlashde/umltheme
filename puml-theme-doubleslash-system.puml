@@ -1,9 +1,10 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
 
+!pragma layout smetana
 left to right direction
 hide stereotypes
 
-skinparam Linetype polyline
+skinparam Linetype ortho
 skinparam ComponentStyle rectangle
 
 skinparam ComponentBorderThickness 0
