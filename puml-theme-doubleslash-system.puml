@@ -18,19 +18,37 @@ skinparam RectangleBorderThickness 1
 skinparam RectangleBorderStyle solid
 skinparam RectangleFontColor black
 
-skinparam RectangleBackgroundcolor<<container>> ALICEBLUE
-skinparam RectangleBorderColor<<container>> DS_BLUE
-skinparam RectangleBorderThickness<<container>> 0
-skinparam RectangleBorderStyle<<container>> solid
-skinparam RectangleFontColor<<container>> black
-skinparam RectangleFontsize<<container>> 14
+' Define colors for each C4 level
+!define C4_CONTEXT_BG #FFFFFF
+!define C4_CONTAINER_BG #EEF8FE
+!define C4_FUNCTION_BG #D7E9F4
+!define C4_MODULE_BG #AFC1C7
+!define C4_CODE_BG #84999F
 
-skinparam RectangleBackgroundcolor<<context>> transparent
+' Context Level
+skinparam RectangleBackgroundColor<<context>> C4_CONTEXT_BG
 skinparam RectangleBorderColor<<context>> DS_BLUE
-skinparam RectangleBorderThickness<<context>> 1.5
-skinparam RectangleBorderStyle<<context>> solid
 skinparam RectangleFontColor<<context>> black
-skinparam RectangleFontsize<<context>> 14
+
+' Container Level  
+skinparam RectangleBackgroundColor<<container>> C4_CONTAINER_BG
+skinparam RectangleBorderColor<<container>> white
+skinparam RectangleFontColor<<container>> black
+
+' Function Level
+skinparam RectangleBackgroundColor<<function>> C4_FUNCTION_BG
+skinparam RectangleBorderColor<<function>> white
+skinparam RectangleFontColor<<function>> black
+
+' Module Level
+skinparam RectangleBackgroundColor<<module>> C4_MODULE_BG
+skinparam RectangleBorderColor<<module>> white
+skinparam RectangleFontColor<<module>> black
+
+' Code Level
+skinparam RectangleBackgroundColor<<code>> C4_CODE_BG
+skinparam RectangleBorderColor<<code>> white
+skinparam RectangleFontColor<<code>> white
 
 skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
