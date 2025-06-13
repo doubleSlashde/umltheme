@@ -18,19 +18,46 @@ skinparam RectangleBorderThickness 1
 skinparam RectangleBorderStyle solid
 skinparam RectangleFontColor black
 
-skinparam RectangleBackgroundcolor<<container>> ALICEBLUE
-skinparam RectangleBorderColor<<container>> DS_BLUE
-skinparam RectangleBorderThickness<<container>> 0
-skinparam RectangleBorderStyle<<container>> solid
-skinparam RectangleFontColor<<container>> black
-skinparam RectangleFontsize<<container>> 14
 
-skinparam RectangleBackgroundcolor<<context>> transparent
+' Summary Table
+' *C5 Level*	*Stereotype*    *Description*
+' Context	    <<context>>	    System in its environment
+' Container	    <<container>>	Applications/services/databases
+' Component	    <<component>>	Major logical parts inside a container
+' Module	    <<module>>	    Groupings of code/packages/namespaces/subsystems
+' Code          <<code>>	    Classes, files, functions, methods
+
+' Define colors for each C4+M level
+!define CONTEXT_BG #FFFFFF
+!define CONTAINER_BG #EEF8FE
+!define COMPONENT_BG #D7E9F4
+!define MODULE_BG #AFC1C7
+!define CODE_BG #84999F
+
+' Context Level
+skinparam RectangleBackgroundColor<<context>> CONTEXT_BG
 skinparam RectangleBorderColor<<context>> DS_BLUE
-skinparam RectangleBorderThickness<<context>> 1.5
-skinparam RectangleBorderStyle<<context>> solid
 skinparam RectangleFontColor<<context>> black
-skinparam RectangleFontsize<<context>> 14
+
+' Container Level  
+skinparam RectangleBackgroundColor<<container>> CONTAINER_BG
+skinparam RectangleBorderColor<<container>> white
+skinparam RectangleFontColor<<container>> black
+
+' Component Level
+skinparam RectangleBackgroundColor<<component>> COMPONENT_BG
+skinparam RectangleBorderColor<<component>> white
+skinparam RectangleFontColor<<component>> black
+
+' Module Level
+skinparam RectangleBackgroundColor<<module>> MODULE_BG
+skinparam RectangleBorderColor<<module>> white
+skinparam RectangleFontColor<<module>> black
+
+' Code Level
+skinparam RectangleBackgroundColor<<code>> CODE_BG
+skinparam RectangleBorderColor<<code>> white
+skinparam RectangleFontColor<<code>> white
 
 skinparam PackageBackgroundColor ALICEBLUE
 skinparam PackageBorderColor DS_BLUE
