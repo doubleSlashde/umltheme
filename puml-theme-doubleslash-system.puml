@@ -18,35 +18,44 @@ skinparam RectangleBorderThickness 1
 skinparam RectangleBorderStyle solid
 skinparam RectangleFontColor black
 
-' Define colors for each C4 level
-!define C4_CONTEXT_BG #FFFFFF
-!define C4_CONTAINER_BG #EEF8FE
-!define C4_FUNCTION_BG #D7E9F4
-!define C4_MODULE_BG #AFC1C7
-!define C4_CODE_BG #84999F
+
+' Summary Table
+' *C5 Level*	*Stereotype*    *Description*
+' Context	    <<context>>	    System in its environment
+' Container	    <<container>>	Applications/services/databases
+' Component	    <<component>>	Major logical parts inside a container
+' Module	    <<module>>	    Groupings of code/packages/namespaces/subsystems
+' Code          <<code>>	    Classes, files, functions, methods
+
+' Define colors for each C4+M level
+!define CONTEXT_BG #FFFFFF
+!define CONTAINER_BG #EEF8FE
+!define COMPONENT_BG #D7E9F4
+!define MODULE_BG #AFC1C7
+!define CODE_BG #84999F
 
 ' Context Level
-skinparam RectangleBackgroundColor<<context>> C4_CONTEXT_BG
+skinparam RectangleBackgroundColor<<context>> CONTEXT_BG
 skinparam RectangleBorderColor<<context>> DS_BLUE
 skinparam RectangleFontColor<<context>> black
 
 ' Container Level  
-skinparam RectangleBackgroundColor<<container>> C4_CONTAINER_BG
+skinparam RectangleBackgroundColor<<container>> CONTAINER_BG
 skinparam RectangleBorderColor<<container>> white
 skinparam RectangleFontColor<<container>> black
 
-' Function Level
-skinparam RectangleBackgroundColor<<function>> C4_FUNCTION_BG
-skinparam RectangleBorderColor<<function>> white
-skinparam RectangleFontColor<<function>> black
+' Component Level
+skinparam RectangleBackgroundColor<<component>> COMPONENT_BG
+skinparam RectangleBorderColor<<component>> white
+skinparam RectangleFontColor<<component>> black
 
 ' Module Level
-skinparam RectangleBackgroundColor<<module>> C4_MODULE_BG
+skinparam RectangleBackgroundColor<<module>> MODULE_BG
 skinparam RectangleBorderColor<<module>> white
 skinparam RectangleFontColor<<module>> black
 
 ' Code Level
-skinparam RectangleBackgroundColor<<code>> C4_CODE_BG
+skinparam RectangleBackgroundColor<<code>> CODE_BG
 skinparam RectangleBorderColor<<code>> white
 skinparam RectangleFontColor<<code>> white
 

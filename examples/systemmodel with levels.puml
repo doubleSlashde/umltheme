@@ -1,0 +1,54 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
+title "C5 Example: Online Shop System"
+
+' Context Level
+rectangle "Online Shop System" <<context>> {
+
+    ' Container Level
+    package "Web Application" <<container>> {
+        ' Component Level
+        rectangle "Order Management" <<component>> {
+            ' Module Level
+            rectangle "Order Service" <<module>> {
+                ' Code Level
+                rectangle "OrderController.java" <<code>>
+                rectangle "OrderRepository.java" <<code>>
+            }
+            rectangle "Payment Service" <<module>> {
+                rectangle "PaymentController.java" <<code>>
+                rectangle "PaymentGatewayAdapter.java" <<code>>
+            }
+        }
+        rectangle "User Management" <<component>> {
+            rectangle "User Service" <<module>> {
+                rectangle "UserController.java" <<code>>
+                rectangle "UserRepository.java" <<code>>
+            }
+        }
+    }
+    package "DWH" <<container>> {
+        database "PostgreSQL" <<component>>
+    }
+}
+
+agent "Payment Provider" as PaymentProvider <<external>>
+agent "Shipping Service" as ShippingService <<external>>
+
+' Example relationships
+[Order Service] --> [PostgreSQL] : stores data
+[User Service] --> [PostgreSQL] : stores data
+[Order Service] --> ShippingService : requests shipping
+
+' Legend
+rectangle "Legend" <<context>> {
+  rectangle "Context" <<context>>
+  rectangle "Container" <<container>>
+  rectangle "Component" <<component>>
+  rectangle "Module" <<module>>
+  rectangle "Code" <<code>>
+  agent "External Service" as ExtService <<external>>
+  database "External DB" as ExtDB <<external>>
+}
+
+@enduml
