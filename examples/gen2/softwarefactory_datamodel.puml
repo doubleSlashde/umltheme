@@ -1,0 +1,7 @@
+@startuml SoftwareFactory datamodel
+!include ../../doubleslash/doubleslash-gen2.puml
+hide circle
+hide empty members
+hide stereotype
+!include ../input/softwarefactory_datamodel.puml
+@enduml 

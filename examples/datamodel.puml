@@ -3,7 +3,3 @@
 '!include ../puml-theme-doubleslash-class.puml
 !include input/datamodel.puml
 @enduml
-
-
-
-

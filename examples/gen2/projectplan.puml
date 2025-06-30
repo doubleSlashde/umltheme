@@ -1,0 +1,5 @@
+@startgantt projectplan
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../../doubleslash/puml-theme-gen2-gantt.puml
+!include ../input/projectplan.puml
+@endgantt 

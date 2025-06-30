@@ -1,0 +1,4 @@
+@startuml activitymodel
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../input/activity_model.puml
+@enduml

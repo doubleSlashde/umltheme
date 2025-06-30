@@ -1,0 +1,4 @@
+@startuml object
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../input/Object.puml
+@enduml 

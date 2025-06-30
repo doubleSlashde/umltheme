@@ -1,0 +1,5 @@
+' System diagram specific rectangle styling (blue borders)
+skinparam RectangleBorderColor #00A5E1
+skinparam RectangleBorderThickness 1
+skinparam RectangleBorderStyle solid
+hide stereotype

@@ -1,0 +1,5 @@
+'' Gantt-specific settings
+skinparam Roundcorner 6
+saturday are colored in #F8F8F8
+sunday are colored in #F8F8F8
+printscale weekly zoom 4

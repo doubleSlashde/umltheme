@@ -1,0 +1,7 @@
+@startuml systemmodel
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../../doubleslash/puml-theme-gen2-system.puml
+left to right direction
+
+!include ../input/systemmodel.puml
+@enduml 
