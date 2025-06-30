@@ -2,20 +2,13 @@
 
 hide stereotypes
 
-' Actor
-'=================================================================
-skinparam ActorBorderColor DS_LIGHTGREY
-skinparam ActorBackgroundColor DS_LIGHTGREY
-skinparam ActorBorderThickness 2.0
-skinparam ActorFontName FONTNAME
-
 skinparam maxMessageSize 100
 skinparam ParticipantPadding 50
 skinparam SequenceParticipantBorderThickness 0.0
 
 skinparam ParticipantFontname FONTNAME
 skinparam SequenceFontname FONTNAME
-skinparam ActorFontname FONTNAME
+skinparam ActorFontName FONTNAME
 skinparam SequenceArrowFontname FONTNAME
 skinparam SequenceDividerFontname FONTNAME
 

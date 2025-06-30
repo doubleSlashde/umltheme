@@ -78,8 +78,6 @@ skinparam DatabaseBorderThickness 0.0
 skinparam DatabaseBackgroundcolor<<external>> SUPERLIGHTGREY
 skinparam DatabaseBorderThickness<<external>> 0
 
-skinparam ArrowThickness 1.5
-
 skinparam interfaceBackgroundColor DS_BLUE
 skinparam interfaceBorderColor DS_BLUE
 skinparam interfaceBorderThickness 2

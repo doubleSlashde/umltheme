@@ -3,15 +3,11 @@
 
 !pragma layout smetana
 hide stereotypes
-skinparam padding 2
 left to right direction
 
-' Actor
-'=================================================================
-skinparam ActorBorderColor DS_LIGHTGREY
-skinparam ActorBackgroundColor DS_LIGHTGREY
-skinparam ActorBorderThickness 5.0
-skinparam ActorFontName FONTNAME
+skinparam padding 6
+skinparam nodesep 28
+skinparam ranksep 1
 
 ' Rectangle for system boundary
 '=================================================================
