@@ -46,7 +46,7 @@ skinparam useBetaStyle false
 
 !$FONTNAME          = "Helvetica"
 ''
-'' DoubleSlash Corporate Colors
+'' DoubleSlash Corporate Colors (Base - will be adjusted for dark mode)
 ''
 !$DS_BLUE           = "#00A5E1"
 !$DS_LIGHTBLUE      = "#D7E9F4"
@@ -71,12 +71,25 @@ skinparam useBetaStyle false
 !$LIGHT      = $DS_LIGHTGREY
 !$DARK       = $DS_DARKGREY
 !$BLACK      = "#000"
+
+''
+'' Dark mode specific colors (will be used when PUML_MODE = "dark")
+''
+!$DARK_BG           = "#1E1E1E"
+!$DARK_SURFACE      = "#2D2D2D"
+!$DARK_CARD         = "#3A3A3A"
+!$DARK_HOVER        = "#4A4A4A"
+!$DARK_BORDER       = "#5A5A5A"
+!$DARK_TEXT         = "#FFFFFF"
+!$DARK_TEXT_SECONDARY = "#B6B6B6"
+!$DARK_TEXT_DISABLED = "#7A7A7A"
+
 ''
 '' define colors based on PUML_MODE
 ''
 !if ($PUML_MODE == "light")
+    '' Light mode - use original doubleSlash colors
     !$SECONDARY      = $DS_LIGHTBLUE
-    '' hardcode $SECONDARY_LIGHT since it is so close to white
     !$SECONDARY_LIGHT = $SUPERLIGHTGREY
     !$SUCCESS        = $LIGHTGREEN
     !$INFO           = $DS_BLUE
@@ -90,14 +103,36 @@ skinparam useBetaStyle false
     ''
     !assume transparent light
 !else
-    !$SECONDARY      = $STEELBLUE25
-    !$SECONDARY_LIGHT = %lighten($SECONDARY, $PUML_GRADIENT)
-    !$SUCCESS        = $LIGHTGREEN
-    !$INFO           = $DS_LIGHTBLUE
+    '' Dark mode - adjust colors for dark background
+    '' Adjust primary doubleSlash colors for better dark mode contrast
+    !$DS_BLUE        = "#4FA8E1"
+    !$DS_LIGHTBLUE   = "#2A5B7A"  
+    !$DS_DARKGREY    = "#CCCCCC"
+    !$DS_LIGHTGREY   = "#B6B6B6"
+    !$PRIMARY        = $DS_BLUE
+    !$LIGHT          = $DS_LIGHTGREY
+    !$DARK           = $DS_DARKGREY
+    
+    '' Dark mode color assignments
+    !$SECONDARY      = $DS_LIGHTBLUE
+    !$SECONDARY_LIGHT = $DARK_SURFACE
+    !$SUCCESS        = "#90D478"
+    !$INFO           = $DS_BLUE
     !$DANGER         = "#ff5d64"
-    !$SECONDARY_TEXT = $WHITE
-    !$FGCOLOR        = $WHITE
+    !$SECONDARY_TEXT = $DARK_TEXT
+    !$FGCOLOR        = $DARK_TEXT
 	!$DIAMOND_BD     = %lighten($SECONDARY, $PUML_GRADIENT)
+    
+    '' Update additional colors for dark mode
+    !$SUPERLIGHTGREY = $DARK_SURFACE
+    !$ALICEBLUE      = $DARK_CARD
+    !$WHITE          = $DARK_TEXT
+    !$BLACK          = $DARK_TEXT
+    
+    '' Set dark background if not explicitly set
+    !if %not(%variable_exists("$PUML_BGCOLOR")) || ($PUML_BGCOLOR == "white")
+        !$PUML_BGCOLOR = $DARK_BG
+    !endif
     ''
     '' Assume if the background is transparent, that the 
     '' background will be dark for this theme
@@ -207,13 +242,13 @@ skinparam stereotype {
 skinparam title {
 	FontSize	    	         28
 	BorderRoundCorner            16
-	FontColor $DS_DARKGREY
+	FontColor $FGCOLOR
 	FontName $FONTNAME
 	FontStyle normal
 }
 
 skinparam legend {
-    FontColor $DS_DARKGREY
+    FontColor $FGCOLOR
     BorderColor $DS_GREY
     BackgroundColor transparent
 }
@@ -277,7 +312,7 @@ skinparam sequence {
 	ArrowFontSize 11
 	BorderColor $DS_BLUE
 	' For some reason sequence title font color does not pick up from global
-	TitleFontColor $DS_DARKGREY
+	TitleFontColor $FGCOLOR
 	BackgroundColor $PUML_BGCOLOR
 	StartColor $DS_BLUE
 	EndColor $DS_BLUE
@@ -321,7 +356,7 @@ skinparam sequence {
 	ReferenceHeaderFontColor $DS_BLUE
 	ReferenceHeaderBackgroundColor $DS_LIGHTGREY
 	''
-	StereotypeFontColor $DS_DARKGREY
+	StereotypeFontColor $FGCOLOR
 	StereotypeFontSize 12
 }
 !endsub
@@ -372,7 +407,7 @@ skinparam agent {
 	FontColor $BLACK
 	BorderThickness 0
 	BackgroundColor<<external>> $SUPERLIGHTGREY
-	FontColor<<external>> black
+	FontColor<<external>> $BLACK
 	BorderThickness<<external>> 0
 }
 !endsub
@@ -382,7 +417,7 @@ skinparam note {
 	BorderThickness 0.0
 	BackgroundColor transparent
 	BorderColor transparent
-	FontColor $DS_DARKGREY
+	FontColor $FGCOLOR
 	FontSize 11
 	TextAlignment left
 }
@@ -462,7 +497,7 @@ skinparam class {
 	FontSize 15
 	Fontstyle bold
 	HeaderBackgroundColor $DS_LIGHTBLUE
-	StereotypeFontColor $DS_DARKGREY
+	StereotypeFontColor $FGCOLOR
 	AttributeFontColor $BLACK
 	AttributeFontName $FONTNAME
 	AttributeFontSize 12
@@ -478,7 +513,7 @@ skinparam object {
 	BorderColor $DS_BLUE
 	BorderThickness 0
 	FontColor $BLACK
-	StereotypeFontColor $DS_DARKGREY
+	StereotypeFontColor $FGCOLOR
 	AttributeFontColor $BLACK
 	AttributeFontSize 11
 }
@@ -489,7 +524,7 @@ skinparam usecase {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderThickness 0.0
 	FontName $FONTNAME
-	FontColor $DS_DARKGREY
+	FontColor $FGCOLOR
 	StereotypeFontColor $DS_BLUE
 	BackgroundColor<<External>> $SUPERLIGHTGREY
 }
@@ -555,7 +590,7 @@ skinparam card {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
 	BorderThickness 0.4
-	FontColor $DS_DARKGREY
+	FontColor $FGCOLOR
 	BackgroundColor<<external>> $SUPERLIGHTGREY
 	BorderColor<<external>> $DS_GREY
 }
@@ -565,7 +600,7 @@ skinparam card {
 skinparam file {
 	BackgroundColor $SUPERLIGHTGREY
 	BorderColor $DS_GREY
-	FontColor $DS_DARKGREY
+	FontColor $FGCOLOR
 }
 !endsub
 
@@ -589,11 +624,20 @@ skinparam map {
 ''
 '' C4+M Level Styling (System Architecture)
 ''
-!define CONTEXT_BG #FFFFFF
-!define CONTAINER_BG #EEF8FE
-!define COMPONENT_BG #D7E9F4
-!define MODULE_BG #AFC1C7
-!define CODE_BG #84999F
+!if ($PUML_MODE == "light")
+    !define CONTEXT_BG #FFFFFF
+    !define CONTAINER_BG #EEF8FE
+    !define COMPONENT_BG #D7E9F4
+    !define MODULE_BG #AFC1C7
+    !define CODE_BG #84999F
+!else
+    '' Dark mode C4 colors
+    !define CONTEXT_BG #2A2A2A
+    !define CONTAINER_BG #353535
+    !define COMPONENT_BG #404040
+    !define MODULE_BG #4A4A4A
+    !define CODE_BG #555555
+!endif
 
 ' Context Level
 skinparam RectangleBackgroundColor<<context>> CONTEXT_BG
@@ -635,6 +679,8 @@ skinparam ComponentStyle rectangle
 '' When mixing skinparam and <style>, it is very important to put <style> after skinparam
 ''
 '' Style settings.
+'' Note: Style sections cannot reference variables, so dark mode colors are hardcoded.
+'' For comprehensive dark mode support, consider using separate theme files or skinparam only.
 ''
 <style>
 mindmapDiagram {

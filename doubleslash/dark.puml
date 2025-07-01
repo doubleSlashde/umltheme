@@ -1,0 +1,6 @@
+@startuml
+!$PUML_MODE = "dark"
+!$PUML_BGCOLOR = "#1E1E1E"
+!$PUML_GRADIENT = 15
+!include doubleslash/doubleslash-gen2.puml
+@enduml
