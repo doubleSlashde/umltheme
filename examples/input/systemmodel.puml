@@ -1,13 +1,6 @@
 @startuml
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
-
-
-'skinparam nodesep 32
-'skinparam ranksep 10
-
 
 title "System model with C4-Level 1-System context and 2-Containers"
-
 
 ' Definition of objects
 rectangle "System context" {
@@ -16,13 +9,11 @@ rectangle "System context" {
         [Component 1]
         [Component 2]
     }
-
     interface "Interface 1" as IF1
     note top of IF1
         This is a short
         description of the interface
     end note
-
 }
 
 agent "Calling System" as No2<<external>>

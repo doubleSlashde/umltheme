@@ -1,14 +1,7 @@
 @startuml datamodel
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
-
-hide circle
-skinparam ClassFontSize 12
-skinparam Padding 8
 
 title Class diagram of doubleSlash Software Factory artefacts
 footer doubleSlash Software Factory artefacts
-
-
 
 'Das ProductModel beschreibt eine Capability in den Dimensionen People, Process, System und Data vollständig.
 'Diese vier Perspektiven sichern ab, dass keine Missverständnisse oder Lücken in der weiteren
@@ -26,7 +19,6 @@ rectangle "Capability > Product Model " {
     ' Frontend, Backend, Datenbank, Infrastruktur, Entwicklungswerkzeuge und Bibliotheken
     class TechnologyStack
 }
-
 
 'Dokumentation der Anforderungen nach dem Schema:
 ' Als [Rolle] möchte ich [Funktion], damit [Nutzen].
@@ -47,10 +39,9 @@ class DeploymentCode
 class InfrastructureCode
 class DeploymentArtefact
 
-class Incident #DS_LIGHTGREY
-class Defect #DS_LIGHTGREY
-class PullRequest #DS_LIGHTGREY
-
+class Incident
+class Defect
+class PullRequest
 
 'Ableitung der Use Cases aus dem Benutzer- und Prozessmodell
 People  -- UseCase
@@ -59,12 +50,10 @@ System -- TechnologyStack
 Data -- TechnologyStack
 UseCase -- Backlog : wird zu >
 
-
 TechnologyStack --> DataModel
 Backlog --- "0..1" Mockup
 Backlog --- "0..1" APIDesign
 Backlog "1" --- "n" AcceptanceCriteria
-
 
 AcceptanceCriteria -- TestCase
 TestCase - ModuleDesign
@@ -94,7 +83,4 @@ DeploymentArtefact "1" -- "0..n" Incident
 Defect "1" --- "1..n" TestCase
 Incident "1" -- "1..n" TestCase
 
-
-
 @enduml
-

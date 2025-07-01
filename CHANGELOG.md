@@ -9,6 +9,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- changelog -->
 
+## [2.0.0] - 2025-07-01
+
+### Added
+
+- Gen2 styling architecture with improved theme organization
+- Light and dark mode support with dedicated theme files
+- New consolidated theme files in `doubleslash/` directory:
+  - `dark.puml` - Dark mode theme
+  - `light.puml` - Light mode theme  
+  - `doubleslash-gen2.puml` - Main gen2 theme
+  - `puml-theme-gen2-gantt.puml` - Gen2 Gantt chart theme
+  - `puml-theme-gen2-system.puml` - Gen2 system diagram theme
+- Comprehensive gen2 example files in `examples/gen2/` directory
+- Enhanced color schemes optimized for both light and dark environments
+- Improved theme modularity and maintainability
+
+### Changed
+
+- Existing theme files now redirect to gen2 themes to preserve backward compatibility
+- Theme architecture restructured for better organization and consistency
+- Color palettes updated for improved accessibility and modern design standards
+- Example files updated to demonstrate gen2 capabilities
+
+### Deprecated
+
+- Legacy theme files (individual `puml-theme-doubleslash-*.puml` files) are now deprecated
+- Old styling approach superseded by gen2 architecture
+- Direct usage of individual theme files discouraged in favor of consolidated gen2 themes
+
+### Fixed
+
+- Improved theme consistency across different diagram types
+- Better color contrast ratios for accessibility compliance
+- Enhanced readability in both light and dark environments
+
 ## [1.4.0] - 2025-07-01
 
 ### Added

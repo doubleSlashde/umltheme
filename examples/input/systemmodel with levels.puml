@@ -1,5 +1,5 @@
-@startuml
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
+@startuml C5 Example: Online Shop System
+top to bottom direction
 title "C5 Example: Online Shop System"
 
 ' Context Level
@@ -27,7 +27,7 @@ rectangle "Online Shop System" <<context>> {
             }
         }
     }
-    package "DWH" <<container>> {
+    rectangle "DWH" <<container>> {
         database "PostgreSQL" <<component>>
     }
 }
@@ -39,16 +39,5 @@ agent "Shipping Service" as ShippingService <<external>>
 [Order Service] --> [PostgreSQL] : stores data
 [User Service] --> [PostgreSQL] : stores data
 [Order Service] --> ShippingService : requests shipping
-
-' Legend
-rectangle "Legend" <<context>> {
-  rectangle "Context" <<context>>
-  rectangle "Container" <<container>>
-  rectangle "Component" <<component>>
-  rectangle "Module" <<module>>
-  rectangle "Code" <<code>>
-  agent "External Service" as ExtService <<external>>
-  database "External DB" as ExtDB <<external>>
-}
 
 @enduml

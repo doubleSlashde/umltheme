@@ -1,18 +1,8 @@
 @startgantt projectplan
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
 
-'saturday are closed
-'sunday are closed
-
-saturday is colored SUPERLIGHTGREY
-sunday is colored SUPERLIGHTGREY
-'language de
 printscale weekly zoom 4
 
 title Projektplan mit Vorgängen, Meilensteinen und Abhängigkeiten
-
-'2024-01-24 is colored in DS_LIGHTGREY
-
 
 Project starts 2024-01-07
 
@@ -37,8 +27,6 @@ Project starts 2024-01-07
 2024-02-12 to 2024-02-22 are named [When is deployment?]
 [PROD Deployment] starts at [Test completed]'s end
 [PROD Deployment] lasts 2 days
-
-
 
 [Prototype design] is 100% completed
 [Develop prototype] is 100% completed

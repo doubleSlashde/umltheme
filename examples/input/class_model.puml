@@ -1,11 +1,7 @@
 @startuml class model
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 
 title Klassenmodell
 left to right direction
-
-'hide circle
-
 
 interface Schnittstelle
 

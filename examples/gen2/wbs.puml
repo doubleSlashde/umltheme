@@ -1,0 +1,4 @@
+@startwbs WBS
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../input/WBS.puml
+@endwbs 

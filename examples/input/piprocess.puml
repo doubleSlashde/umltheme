@@ -1,8 +1,4 @@
 @startuml piprocess
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-activity.puml
-
-skinparam padding 3
-'skinparam ConditionStyle normal
 
 title "Prozess: Aufwandsänderung innerhalb eines Product Increments"
 
@@ -37,7 +33,6 @@ else (Nein)
 endif
 
 :Ende der Entwicklung;
-
 
 |Abrechnung|
 note left:

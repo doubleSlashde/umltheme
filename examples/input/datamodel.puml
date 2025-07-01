@@ -1,10 +1,6 @@
 @startuml data model
-!include ../puml-theme-doubleslash-class.puml
-'!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 
 left to right direction
-'hide circle
-
 title Datenmodell 
 
 entity Entität1  {
@@ -74,7 +70,3 @@ Entität2 }o---|| Entität1
 Entität2 }o---|{ OtherEntity
 
 @enduml
-
-
-
-

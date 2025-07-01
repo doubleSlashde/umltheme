@@ -1,11 +1,4 @@
 @startuml usecase model
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-usecase.puml
-'You will find help here https://plantuml.com/de/use-case-diagram
-
-left to right direction
-skinparam padding 6
-skinparam nodesep 28
-skinparam ranksep 1
 
 title Usecase Diagramm
 
