@@ -43,6 +43,8 @@ inspiration: doubleSlash CI colors
 ''
 skinparam BackgroundColor $PUML_BGCOLOR
 skinparam useBetaStyle false
+
+!$FONTNAME          = "Helvetica"
 ''
 '' DoubleSlash Corporate Colors
 ''
@@ -68,6 +70,7 @@ skinparam useBetaStyle false
 !$WARNING    = $DS_ORANGE
 !$LIGHT      = $DS_LIGHTGREY
 !$DARK       = $DS_DARKGREY
+!$BLACK      = "#000"
 ''
 '' define colors based on PUML_MODE
 ''
@@ -178,7 +181,7 @@ skinparam useBetaStyle false
 ''
 '' Global Default Values (DoubleSlash Style)
 ''
-skinparam defaultFontName       "Helvetica"
+skinparam defaultFontName       $FONTNAME
 skinparam defaultFontSize       12
 skinparam dpi                   100
 skinparam shadowing             false
@@ -205,7 +208,7 @@ skinparam title {
 	FontSize	    	         28
 	BorderRoundCorner            16
 	FontColor $DS_DARKGREY
-	FontName "Helvetica"
+	FontName $FONTNAME
 	FontStyle normal
 }
 
@@ -217,7 +220,7 @@ skinparam legend {
 
 !startsub swimlane
 skinparam swimlane {
-	TitleFontColor black
+	TitleFontColor $BLACK
 	TitleFontSize 16
 	TitleBackgroundColor $SUPERLIGHTGREY
 	BorderColor $DS_LIGHTGREY
@@ -230,14 +233,14 @@ skinparam conditionStyle diamond
 skinparam activity {
 	StartColor $DS_DARKGREY
 	EndColor $DS_DARKGREY
-	FontColor black
+	FontColor $BLACK
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
 	BorderThickness 0.0
 	DiamondBorderColor $DS_BLUE
 	DiamondBackgroundColor $DS_BLUE
-	DiamondFontColor black
-	DiamondFontName "Helvetica"
+	DiamondFontColor $BLACK
+	DiamondFontName $FONTNAME
 	DiamondFontSize 11
 	ArrowThickness 1.2
 	ArrowColor $DS_GREY
@@ -250,7 +253,7 @@ skinparam participant {
 
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 	ParticipantBorderThickness 0.0
 }
 !endsub
@@ -262,7 +265,7 @@ skinparam actor {
 	BorderColor $DS_LIGHTGREY
 	BorderThickness 3
 	FontColor $DS_DARKGREY
-	FontName "Helvetica"
+	FontName $FONTNAME
 }
 !endsub
 
@@ -304,12 +307,12 @@ skinparam sequence {
 	''
 	ParticipantBackgroundColor $DS_LIGHTBLUE
 	ParticipantBorderThickness 0.0
-	ParticipantFontColor black
+	ParticipantFontColor $BLACK
 	ParticipantFontSize 12
 	''
 	ParticipantBackgroundColor<<External>> $SUPERLIGHTGREY
 	ParticipantBorderThickness<<External>> 0.0
-	ParticipantFontColor<<External>> black
+	ParticipantFontColor<<External>> $BLACK
 	ParticipantFontSize<<External>> 12
 	''
 	ReferenceBackgroundColor $DS_LIGHTGREY
@@ -335,7 +338,7 @@ skinparam partition {
 skinparam collections {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -343,7 +346,7 @@ skinparam collections {
 skinparam control {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -351,7 +354,7 @@ skinparam control {
 skinparam entity {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -359,14 +362,14 @@ skinparam entity {
 skinparam boundary {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
 !startsub agent
 skinparam agent {
 	BackgroundColor $DS_LIGHTBLUE
-	FontColor black
+	FontColor $BLACK
 	BorderThickness 0
 	BackgroundColor<<external>> $SUPERLIGHTGREY
 	FontColor<<external>> black
@@ -398,7 +401,7 @@ skinparam component {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
 	BorderThickness 0
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -407,7 +410,7 @@ skinparam interface {
 	BackgroundColor $DS_BLUE
 	BorderColor $DS_BLUE
 	BorderThickness 2
-	FontColor black
+	FontColor $BLACK
 	BorderColor<<external>> $DS_GREY
 	BackgroundColor<<external>> $DS_GREY
 }
@@ -441,10 +444,11 @@ skinparam cloud {
 skinparam database {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderThickness 0.0
-	FontColor black
-	StereotypeFontColor black
+	FontColor $BLACK
+	StereotypeFontColor $BLACK	
 	BackgroundColor<<external>> $SUPERLIGHTGREY
 	BorderThickness<<external>> 0
+	FontColor<<external>> $BLACK
 }
 !endsub
 
@@ -453,14 +457,14 @@ skinparam class {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
 	BorderThickness 0
-	FontColor black
-	FontName "Helvetica"
+	FontColor $BLACK
+	FontName $FONTNAME
 	FontSize 15
 	Fontstyle bold
 	HeaderBackgroundColor $DS_LIGHTBLUE
 	StereotypeFontColor $DS_DARKGREY
-	AttributeFontColor black
-	AttributeFontName "Helvetica"
+	AttributeFontColor $BLACK
+	AttributeFontName $FONTNAME
 	AttributeFontSize 12
 	BackgroundColor<<external>> $SUPERLIGHTGREY
 	BorderColor<<external>> $DS_GREY
@@ -473,9 +477,9 @@ skinparam object {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
 	BorderThickness 0
-	FontColor black
+	FontColor $BLACK
 	StereotypeFontColor $DS_DARKGREY
-	AttributeFontColor black
+	AttributeFontColor $BLACK
 	AttributeFontSize 11
 }
 !endsub
@@ -484,7 +488,7 @@ skinparam object {
 skinparam usecase {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderThickness 0.0
-	FontName "Helvetica"
+	FontName $FONTNAME
 	FontColor $DS_DARKGREY
 	StereotypeFontColor $DS_BLUE
 	BackgroundColor<<External>> $SUPERLIGHTGREY
@@ -493,10 +497,10 @@ skinparam usecase {
 
 !startsub rectangle
 ' Rectangle styling for use case system boundaries (no border)
-skinparam RectangleBackgroundcolor $ALICEBLUE
+skinparam RectangleBackgroundColor $ALICEBLUE
 skinparam RectangleBorderThickness 0.0
 skinparam RectangleBorderStyle solid
-skinparam RectangleFontColor black
+skinparam RectangleFontColor $BLACK
 skinparam RectangleFontSize 14
 !endsub
 
@@ -504,7 +508,7 @@ skinparam RectangleFontSize 14
 skinparam PackageBackgroundColor $ALICEBLUE
 skinparam PackageBorderColor $DS_BLUE
 skinparam PackageBorderThickness 0
-skinparam PackageFontColor black
+skinparam PackageFontColor $BLACK
 skinparam PackageFontsize 14
 !endsub
 
@@ -530,10 +534,10 @@ skinparam frame {
 skinparam state {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 	StartColor $DS_BLUE
 	EndColor $DS_BLUE
-	AttributeFontColor black
+	AttributeFontColor $BLACK
 	AttributeFontSize 11
 }
 !endsub
@@ -542,7 +546,7 @@ skinparam state {
 skinparam queue {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -569,7 +573,7 @@ skinparam file {
 skinparam stack {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
 
@@ -578,37 +582,9 @@ skinparam stack {
 skinparam map {
 	BackgroundColor $DS_LIGHTBLUE
 	BorderColor $DS_BLUE
-	FontColor black
+	FontColor $BLACK
 }
 !endsub
-
-
-
-''
-'' Additional DoubleSlash-specific styling
-''
-' Agent shapes
-skinparam AgentBackgroundcolor $DS_LIGHTBLUE
-skinparam AgentFontColor black
-skinparam AgentBorderThickness 0
-skinparam AgentBackgroundcolor<<external>> $SUPERLIGHTGREY
-skinparam AgentFontColor<<external>> black
-skinparam AgentBorderThickness<<external>> 0
-
-' Database shapes  
-skinparam DatabaseBackgroundcolor $DS_LIGHTBLUE
-skinparam DatabaseBorderThickness 0.0
-skinparam DatabaseBackgroundcolor<<external>> $SUPERLIGHTGREY
-skinparam DatabaseFontColor<<external>> black
-skinparam DatabaseBorderThickness<<external>> 0
-
-' Interface shapes
-skinparam interfaceBackgroundColor $DS_BLUE
-skinparam interfaceBorderColor $DS_BLUE
-skinparam interfaceBorderThickness 2
-skinparam interfaceFontColor black
-skinparam interfaceBorderColor<<external>> $DS_GREY
-skinparam interfaceBackgroundColor<<external>> $DS_GREY
 
 ''
 '' C4+M Level Styling (System Architecture)
@@ -622,27 +598,27 @@ skinparam interfaceBackgroundColor<<external>> $DS_GREY
 ' Context Level
 skinparam RectangleBackgroundColor<<context>> CONTEXT_BG
 skinparam RectangleBorderColor<<context>> $DS_BLUE
-skinparam RectangleFontColor<<context>> black
+skinparam RectangleFontColor<<context>> $BLACK
 
 ' Container Level  
 skinparam RectangleBackgroundColor<<container>> CONTAINER_BG
 skinparam RectangleBorderThickness<<container>> 0
-skinparam RectangleFontColor<<container>> black
+skinparam RectangleFontColor<<container>> $BLACK
 
 ' Component Level
 skinparam RectangleBackgroundColor<<component>> COMPONENT_BG
 skinparam RectangleBorderThickness<<component>> 0
-skinparam RectangleFontColor<<component>> black
+skinparam RectangleFontColor<<component>> $BLACK
 
 ' Module Level
 skinparam RectangleBackgroundColor<<module>> MODULE_BG
 skinparam RectangleBorderThickness<<module>> 0
-skinparam RectangleFontColor<<module>> black
+skinparam RectangleFontColor<<module>> $BLACK
 
 ' Code Level
 skinparam RectangleBackgroundColor<<code>> CODE_BG
 skinparam RectangleBorderThickness<<code>> 0
-skinparam RectangleFontColor<<code>> white
+skinparam RectangleFontColor<<code>> $WHITE
 
 ''
 '' System diagram specific settings (applied globally, may affect system boundaries in use case diagrams)
@@ -658,7 +634,7 @@ skinparam ComponentStyle rectangle
 ''
 '' When mixing skinparam and <style>, it is very important to put <style> after skinparam
 ''
-'' Style settings
+'' Style settings.
 ''
 <style>
 mindmapDiagram {
@@ -762,7 +738,7 @@ nwdiagDiagram {
 }
 ganttDiagram {
   task {
-    FontName Helvetica
+    FontName $FONTNAME
     FontSize 12
     FontColor black
     FontStyle normal
@@ -772,7 +748,7 @@ ganttDiagram {
   }
 
   timeline {
-    FontName Helvetica
+    FontName $FONTNAME
     FontSize 12
     BackgroundColor $SUPERLIGHTGREY
   }
@@ -802,7 +778,7 @@ ganttDiagram {
     LineColor $DS_GREY
     LineStyle solid
     LineThickness 1.5
-    FontName Helvetica
+    FontName $FONTNAME
     FontColor black
     FontSize 12
   }
