@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- changelog -->
 
-## [Unreleased]
+## [1.4.0] - 2025-07-01
 
 ### Added
 
@@ -17,7 +17,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Default font changed to "Arial"
 - Refactored skin parameters across multiple theme files for consistency
 - Updated border color settings for C4 levels to 'none'
 - Improved example files with local input files and consistent include paths
@@ -93,7 +92,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consistent styling across all diagram types established
 - Theme parameter conflicts resolved
 
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/doubleSlashde/umltheme/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/doubleSlashde/umltheme/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/doubleSlashde/umltheme/compare/v1.0.0...v1.1.0
