@@ -1,42 +1,62 @@
 # umltheme
+
 This repo contains doubleSlash CI styling information to include in plantUML drawings
 Use stylings by including the theme file at the top of your code.
+
+## Changelog
+
+The changelog is maintained in [CHANGELOG.md](./CHANGELOG.md). For the latest version, see [releases](https://github.com/doubleSlashde/umltheme/releases).
+
+## Supported themes
+
 ### Include for use case diagram
-```
+
+``` txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-usecase.puml
 ```
+
 ### Include for activity diagram
-```
+
+``` txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-activity.puml
 ```
+
 ### Include for system diagram (C4 level 1 and 2)
-```
+
+``` txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-system.puml
 ```
+
 ### Include for class diagram (also for ER-diagrams)
-```
+
+``` txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 ```
-### Include for sequence diagram 
-```
+
+### Include for sequence diagram
+
+``` txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
 ```
 
 ### Include for Gantt diagram
-```
+
+``` txt
 @startgantt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
 ...
 ```
 
 ### Include for mind map
-```
+
+``` txt
 @startmindmap
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-mindmap.puml
 ...
 ```
 
 ## Support for the following diagrams
+
 1. Use Cases (see [examples/usecase.puml](examples/usecase.puml)): diagram to support documentation of PEOPLE and PROCESS.
 2. Activity (see [examples/activity_model.puml](examples/activity_model.puml)): diagram to illustrate activities in a PROCESS. It can be used as an alternative to BPMN diagrams.  
 3. System model (see [examples/systemmodel.puml](examples/systemmodel.puml)): diagram for a functional SYSTEM view. Represents the first two layers of a C4 model (System context and Containers)
