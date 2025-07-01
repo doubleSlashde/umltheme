@@ -1,3 +1,4 @@
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
 ' System diagram specific rectangle styling (blue borders)
 skinparam RectangleBorderColor #00A5E1
 skinparam RectangleBorderThickness 1

@@ -1,5 +1,5 @@
 @startuml piprocess
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-activity.puml
-'!include ../puml-theme-doubleslash-activity.puml
-!include input/piprocess.puml
+'!include ../../puml-theme-doubleslash-activity.puml
+!include ../input/piprocess.puml
 @enduml

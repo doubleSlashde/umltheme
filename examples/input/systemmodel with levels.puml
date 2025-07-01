@@ -1,5 +1,5 @@
 @startuml C5 Example: Online Shop System
-
+top to bottom direction
 title "C5 Example: Online Shop System"
 
 ' Context Level
@@ -27,7 +27,7 @@ rectangle "Online Shop System" <<context>> {
             }
         }
     }
-    package "DWH" <<container>> {
+    rectangle "DWH" <<container>> {
         database "PostgreSQL" <<component>>
     }
 }

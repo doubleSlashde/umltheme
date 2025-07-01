@@ -1,5 +1,5 @@
-@startuml class model
+@startuml data model
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
-'!include ../puml-theme-doubleslash-class.puml
-!include input/class_model.puml
+'!include ../../puml-theme-doubleslash-class.puml
+!include ../input/datamodel.puml
 @enduml
