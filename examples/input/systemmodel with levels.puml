@@ -1,4 +1,4 @@
-@startuml
+@startuml C5 Example: Online Shop System
 
 title "C5 Example: Online Shop System"
 
@@ -6,7 +6,7 @@ title "C5 Example: Online Shop System"
 rectangle "Online Shop System" <<context>> {
 
     ' Container Level
-    package "Web Application" <<container>> {
+    rectangle "Web Application" <<container>> {
         ' Component Level
         rectangle "Order Management" <<component>> {
             ' Module Level
@@ -39,6 +39,5 @@ agent "Shipping Service" as ShippingService <<external>>
 [Order Service] --> [PostgreSQL] : stores data
 [User Service] --> [PostgreSQL] : stores data
 [Order Service] --> ShippingService : requests shipping
-[PaymentGatewayAdapter.java] --> PaymentProvider : requests payment
 
 @enduml

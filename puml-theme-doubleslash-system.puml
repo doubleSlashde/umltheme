@@ -17,7 +17,7 @@ skinparam RectangleBorderColor DS_BLUE
 skinparam RectangleBorderThickness 1
 skinparam RectangleBorderStyle solid
 skinparam RectangleFontColor black
-
+skinparam RectangleFontStyle normal
 
 ' Summary Table
 ' *C5 Level*	*Stereotype*    *Description*
@@ -26,7 +26,6 @@ skinparam RectangleFontColor black
 ' Component	    <<component>>	Major logical parts inside a container
 ' Module	    <<module>>	    Groupings of code/packages/namespaces/subsystems
 ' Code          <<code>>	    Classes, files, functions, methods
-
 ' Define colors for each C4+M level
 !define CONTEXT_BG #FFFFFF
 !define CONTAINER_BG #EEF8FE
@@ -41,22 +40,22 @@ skinparam RectangleFontColor<<context>> black
 
 ' Container Level  
 skinparam RectangleBackgroundColor<<container>> CONTAINER_BG
-skinparam RectangleBorderColor<<container>> white
+skinparam RectangleBorderColor<<container>> none
 skinparam RectangleFontColor<<container>> black
 
 ' Component Level
 skinparam RectangleBackgroundColor<<component>> COMPONENT_BG
-skinparam RectangleBorderColor<<component>> white
+skinparam RectangleBorderColor<<component>> none
 skinparam RectangleFontColor<<component>> black
 
 ' Module Level
 skinparam RectangleBackgroundColor<<module>> MODULE_BG
-skinparam RectangleBorderColor<<module>> white
+skinparam RectangleBorderColor<<module>> none
 skinparam RectangleFontColor<<module>> black
 
 ' Code Level
 skinparam RectangleBackgroundColor<<code>> CODE_BG
-skinparam RectangleBorderColor<<code>> white
+skinparam RectangleBorderColor<<code>> none
 skinparam RectangleFontColor<<code>> white
 
 skinparam PackageBackgroundColor ALICEBLUE
@@ -85,5 +84,3 @@ skinparam interfaceFontColor black
 
 skinparam interfaceBorderColor<<external>> DS_GREY
 skinparam interfaceBackgroundColor<<external>> DS_GREY
-
-
