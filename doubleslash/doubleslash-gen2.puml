@@ -646,22 +646,22 @@ skinparam RectangleFontColor<<context>> $BLACK
 
 ' Container Level  
 skinparam RectangleBackgroundColor<<container>> CONTAINER_BG
-skinparam RectangleBorderThickness<<container>> 0
+skinparam RectangleBorderColor<<container>> none
 skinparam RectangleFontColor<<container>> $BLACK
 
 ' Component Level
 skinparam RectangleBackgroundColor<<component>> COMPONENT_BG
-skinparam RectangleBorderThickness<<component>> 0
+skinparam RectangleBorderColor<<component>> none
 skinparam RectangleFontColor<<component>> $BLACK
 
 ' Module Level
 skinparam RectangleBackgroundColor<<module>> MODULE_BG
-skinparam RectangleBorderThickness<<module>> 0
+skinparam RectangleBorderColor<<module>> none
 skinparam RectangleFontColor<<module>> $BLACK
 
 ' Code Level
 skinparam RectangleBackgroundColor<<code>> CODE_BG
-skinparam RectangleBorderThickness<<code>> 0
+skinparam RectangleBorderColor<<code>> none
 skinparam RectangleFontColor<<code>> $WHITE
 
 ''
