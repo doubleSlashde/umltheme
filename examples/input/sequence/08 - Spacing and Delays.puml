@@ -1,0 +1,26 @@
+@startuml Spacing_and_Delays
+
+title Spacing and Delays - Sequence Diagram
+
+skinparam sequenceMessageAlign center
+
+Jerry --> George : Hi
+George --> Jerry : Give me one second
+
+'To generate white space:
+||50||
+
+George --> Jerry : Ok, I can talk now
+Jerry --> George : How have you been?
+George --> Jerry : I've been ok, very busy with work
+Jerry --> George : Hang on, the doorbell just rang
+
+'use ...Text... to include text in between messages
+...After Jerry answers the doorbell...
+
+Jerry --> George : I have to go, let's talk later
+George --> Jerry : Ok, bye
+
+
+
+@enduml

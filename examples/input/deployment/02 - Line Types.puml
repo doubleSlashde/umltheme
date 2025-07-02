@@ -1,0 +1,9 @@
+@startuml Line_Types
+
+1 -- 2 : solid
+1 .. 3 : dashed
+1 -[hidden]- 4 : hidden
+1 ~~ 5 : dotted
+1 == 6 : bold
+
+@enduml

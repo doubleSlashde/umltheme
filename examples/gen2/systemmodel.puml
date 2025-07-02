@@ -1,5 +1,5 @@
 @startuml systemmodel
 !include ../../doubleslash/puml-theme-gen2-system.puml
 left to right direction
-!include ../input/systemmodel.puml
+!include ../input/component/11 - Systemmodel.puml
 @enduml 

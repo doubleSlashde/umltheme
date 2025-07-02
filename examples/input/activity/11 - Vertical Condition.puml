@@ -1,0 +1,35 @@
+@startuml Vertical_Condition
+
+title Vertical Condition - Activity Diagram
+
+'The line below is the only difference between the previous diagram's code'
+!pragma useVerticalIf on   
+
+start
+
+:click on shopping cart;
+
+if (Payment Method == "Use Credit Card") then (yes)
+  :Insert Credit card number;
+  :Insert expiration date;
+  :Insert pin;
+elseif (Payment Method == "Use Paypal") then (yes)
+  :Link to Paypal;
+  :Insert username/password;
+elseif (Payment Method == "Use Venmow") then (yes)
+  :Insert code;
+  :Insert username;
+elseif (Payment Method == "Use Gift Card") then (yes)
+  :Insert 16 digits;
+  :Insert expiration date;
+else
+  :Invalid Payment Method;
+endif
+
+:Authorizing;
+:Pending Payment;
+:Payment Complete;
+
+stop
+
+@enduml

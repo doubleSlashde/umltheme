@@ -1,0 +1,13 @@
+@startwbs Icons
+
++ Software Project
+++ Design
++++ <&document>Build Design Document
+++++ <&text>Concise text description
+++++ <&share>Highly informative UML diagrams
++++ Build team
+++++ <&person>John (The database) Dawkins
+++++ <&person>Sally (The javascript) Marten
+++++ <&person>Fred (The Animal) Johnson
++++ <&person>Start detailed estimation
+@endwbs

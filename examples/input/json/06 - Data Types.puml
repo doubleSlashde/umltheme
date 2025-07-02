@@ -1,0 +1,18 @@
+@startjson Data_Types
+
+{
+  "null" : null,
+  "string" : "String", 
+  "boolean" : true,
+  "boolean" : false, 
+  "number" : 1000,
+  "array": ["Apple", "Banana", "Grapes"],
+  "object": { "type": "home", "number": "867-5309"},
+  "array of objects" :
+  [
+  { "type": "home", "number": "867-5309"},
+  { "type": "mobile", "number": "867-5309"},
+  { "type": "fax", "number": "867-5309"} ]
+}
+
+@endjson

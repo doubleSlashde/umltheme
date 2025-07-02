@@ -1,0 +1,49 @@
+@startwbs Style_Color
+
+<style>
+wbsDiagram {
+    
+    Linecolor black
+    .pinkname {
+        BackgroundColor pink
+    }
+    arrow {
+        LineColor green
+    }
+    :depth(0) {
+        BackgroundColor White
+        RoundCorner 10
+        LineColor red
+    }
+    arrow {
+        :depth(2) {
+            LineColor blue
+            LineStyle 4
+            LineThickness .5
+        }
+    }
+    node {
+        :depth(2) {
+            LineStyle 2
+            LineThickness 2.5
+        }
+    }
+    boxless {
+        FontColor darkgreen
+    }
+}
+</style>
+
+* Software Project
+**[#SkyBlue] Requirements
+***< ...
+**[#SkyBlue] Design
+***< Build Design Document
+****_ Concise text description
+****_ Highly informative UML diagrams
+***: Build team
+ - John (The database) Dawkins
+ - Sally (The javascript) Marten
+ - Fred (The Animal) Johnson; <<pinkname>>
+*** Start detailed estimation
+@endwbs

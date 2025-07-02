@@ -2,5 +2,5 @@
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-class.puml
 '!include ../../puml-theme-doubleslash-class.puml
 skinparam Padding 8
-!include ../input/softwarefactory_datamodel.puml
+!include ../input/class/22 - Softwarefactory Datamodel.puml
 @enduml

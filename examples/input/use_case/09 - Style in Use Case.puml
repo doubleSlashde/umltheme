@@ -1,0 +1,29 @@
+@startuml Style_in_Use_Case
+
+title Style - Use Case Diagram
+
+actor "User 1" as U1 #green;line:hotpink;line.dashed;text:purple
+actor "User 2" as U2 #pink;line:black;line.dotted;text:crimson
+actor "User 3" as U3 #yellow;line:brown;line.bold;text:fuchsia
+
+'To style all elements of a certain type the same way, use the format below
+skinparam usecase {
+  BackgroundColor orange
+  BorderColor Purple
+}
+
+U1 -[thickness=3]-+ (Use 1) 
+U2 -[#blue,dotted]-* (Use 2)
+U3 -[#purple,dashed]-o (Use 3) 
+U3 -[#red;#green,thickness=2]-> (Use 4) 
+
+note left of U1
+  You can style elements and links 
+  similarly to how you would style
+  other diagrams such as a
+  deployment diagram
+end note
+
+
+
+@enduml

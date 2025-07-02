@@ -1,5 +1,5 @@
 @startgantt Gantt
 !include ../../doubleslash/doubleslash-gen2.puml
 !include ../../doubleslash/puml-theme-gen2-gantt.puml
-!include ../input/Gantt.puml
+!include ../input/gantt/12 - Gantt.puml
 @endgantt

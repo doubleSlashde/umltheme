@@ -2,5 +2,5 @@
 !include ../../doubleslash/doubleslash-gen2.puml
 left to right direction
 hide stereotype
-!include ../input/usecase 2.puml
+!include ../input/use_case/12 - Usecase 2.puml
 @enduml 

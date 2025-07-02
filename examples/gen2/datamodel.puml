@@ -3,5 +3,5 @@
 hide circle
 hide empty members
 hide stereotype
-!include ../input/datamodel.puml
+!include ../input/class/21 - Datamodel.puml
 @enduml 

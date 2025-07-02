@@ -1,0 +1,35 @@
+@startuml Boxes
+
+title Boxes - Sequence Diagram
+
+box "IT" #LightGreen
+
+  actor "Senior Manager" as S2
+
+'Must use this pragma line to nest boxes
+  !pragma teoz true
+  
+  box "Data Team" #LightBlue
+    actor "Data Analyst" as D1
+  end box
+  
+  actor "Support Analyst" as S1
+end box
+
+box "Corporate" #Pink
+  actor "Business User" as B1
+end box
+
+B1 -> S1 : Request Usage Data
+S1 --> S2 : Report if Request is Serious
+S1 -> D1 : Communicate Request
+D1 -> S1 : Send Data
+S1 -> B1 : Provide Data
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

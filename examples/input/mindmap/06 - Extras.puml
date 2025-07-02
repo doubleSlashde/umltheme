@@ -1,0 +1,63 @@
+@startmindmap Extras
+
+caption Save World Diagram
+title Save the World
+
+header
+Draft One
+endheader
+
+center footer 1 of 3
+
+legend left
+|= |= Type |
+|<back:#FFBBCC>   </back>| Problem |
+|<back:lightgreen>   </back>| Areas |
+|<back:Orange>   </back>| Actions |
+endlegend
+
+<style>
+mindmapDiagram {
+  .green {
+    BackgroundColor lightgreen
+  }
+  .rose {
+    BackgroundColor #FFBBCC
+  }
+}
+</style>
+
+* Solving \n Global \n Warming <<rose>>
+
+**[#lightgreen] Eating differently
+***[#Orange] Vegan
+***[#Orange] Vegetarian
+***[#Orange] Less processed foods
+***[#Orange] Buy local food
+** Travel <<green>>
+***[#Orange]:Bike more
+Skateboard more
+Walk more
+;
+***[#Orange]:Ride buses
+Ride UBER
+Ride carpool
+;
+***[#Orange]:Buy an electric car
+Buy an electric scooter
+Buy an electric skateboard
+;
+
+left side
+
+** Home <<green>>
+***[#Orange] Energy audit
+***[#Orange] Use a cloths line
+***[#Orange] Add insulation
+***[#Orange] Get solar panels
+**[#lightgreen] Be a role model
+***_ Vote
+***_ Encourage others
+***_ Teach your kids
+
+@endmindmap

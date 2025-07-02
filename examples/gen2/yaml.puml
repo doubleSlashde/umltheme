@@ -1,4 +1,4 @@
 @startyaml YAML
 !include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/YAML.puml
+!include ../input/yaml/07 - Yaml.puml
 @endyaml

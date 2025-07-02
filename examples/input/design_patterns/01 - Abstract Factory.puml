@@ -1,0 +1,61 @@
+@startuml Abstract_Factory
+
+title AbstractFactory
+
+interface AbstractFactory {
+    +createProductA(): AbstractProductA
+    +createProductB(): AbstractProductB
+}
+
+class ConcreteFactory1 {
+    +createProductA(): AbstractProductA
+    +createProductB(): AbstractProductB
+}
+
+class ConcreteFactory2 {
+    +createProductA(): AbstractProductA
+    +createProductB(): AbstractProductB
+}
+
+interface AbstractProductA {
+    +operation(): void
+}
+
+interface AbstractProductB {
+    +operation(): void
+}
+
+
+
+class ConcreteProductA1 {
+    +operation(): void
+}
+
+class ConcreteProductB1 {
+    +operation(): void
+}
+
+class ConcreteProductA2 {
+    +operation(): void
+}
+
+class ConcreteProductB2 {
+    +operation(): void
+}
+
+AbstractFactory <|.. ConcreteFactory1
+AbstractFactory <|.. ConcreteFactory2
+AbstractProductA <|..up- ConcreteProductA1
+AbstractProductB <|..up- ConcreteProductB1
+AbstractProductA <|..up- ConcreteProductA2
+AbstractProductB <|..up- ConcreteProductB2
+ConcreteFactory1 ..> ConcreteProductA1
+ConcreteFactory1 ..> ConcreteProductB1
+ConcreteFactory2 ..> ConcreteProductA2
+ConcreteFactory2 ..> ConcreteProductB2
+
+AbstractFactory <-up- "Client" : operation()
+AbstractProductA <-up- "Client" : operation()
+AbstractProductB <-up- "Client" : operation()
+
+@enduml

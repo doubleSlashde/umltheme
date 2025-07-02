@@ -1,0 +1,13 @@
+@startuml Interfaces
+
+storage Thing1
+storage Thing2
+storage Thing3
+storage Thing4
+storage Thing5
+Thing1 -0- Thing2
+Thing1 -0)- Thing3
+Thing1 -(0- Thing4
+Thing1 -(0)- Thing5
+
+@enduml

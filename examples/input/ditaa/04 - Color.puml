@@ -1,0 +1,13 @@
+@startditaa Color
+
+' https://github.com/stathissideris/ditaa
+
++---------+   +---------+
+|   cBLU  |   |    cRED |  
+|         |   |         |
+|  Server +-->|  AWS S3 |
+|         |   |         |
+|{tr}     |   |   mo{mo}|
++---------+   +---------+
+
+@endditaa

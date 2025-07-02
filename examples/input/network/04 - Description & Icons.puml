@@ -1,0 +1,30 @@
+@startuml Description_Icons
+
+nwdiag {
+    
+    internet [ shape = cloud];
+    internet -- router;
+    
+    group {
+        description = "This is my web group"
+        color = "#FFAAAA";
+        webserver;
+        database;
+    }
+    
+    network dmz {
+        address = "45.x.x.x/24"
+        router
+        webserver [address = "45.x.x.1, 45.x.x.2", description = "<&spreadsheet*4>\n db"];
+    
+    }
+    network internal {
+        description = "This is my home network"
+        color = "palegreen"
+        address = "192.x.x.x/24"
+        router [description = "<&cog*4>\n router"]
+        database [address = "192.x.x.1", description = "<&spreadsheet*4>\n db", shape = database];
+        mars [address = "192.x.x.2", description = "<&star*4>\n db"];
+    }
+}
+@endum

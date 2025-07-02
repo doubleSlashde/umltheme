@@ -1,0 +1,38 @@
+@startuml Style_in_Class
+
+title Style - Class Diagram
+
+skinparam class {
+'General styling for non stereotyped elements
+  BackgroundColor LightBlue
+  ArrowColor Fuchsia
+  BorderColor Red
+'Specific styling for stereotyped elements
+  BackgroundColor<<Composed>> Bisque
+  BorderColor<<Composed>> Purple
+  BackgroundColor<<Inherited>> Cyan
+  BorderColor<<Inherited>> Green
+}
+
+skinparam stereotypeCBackgroundColor Orange
+
+class Dwelling {
+  +Int Windows
+  +void LockTheDoor()
+}
+
+class Apartment <<Inherited>>
+class House <<Inherited>>
+class Commune <<Inherited>>
+class Window <<Composed>>
+class Door <<Composed>>
+
+Dwelling <|-down- Apartment
+Dwelling <|-down- Commune
+Dwelling <|-down- House
+Dwelling *-up- Window
+Dwelling *-up- Door
+
+
+
+@enduml

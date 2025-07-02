@@ -1,0 +1,20 @@
+@startuml Grouping
+
+title Grouping - Sequence Diagram
+
+group Data Migration [2025]
+
+    IT -> Business: Usage Stats
+
+else Secure Data
+
+    IT -> Business: Passwords
+    IT -> Business : Contracts
+        group Confirmation
+            Business --> IT : Success
+        end
+    end
+    
+
+
+@enduml

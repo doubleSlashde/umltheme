@@ -1,0 +1,36 @@
+@startuml Network_Objects
+
+nwdiag {
+  network Shapes1 {
+    Actor       [shape = actor]       
+    Agent       [shape = agent]       
+    Artifact    [shape = artifact]    
+    Boundary    [shape = boundary]    
+    Card        [shape = card]        
+    Cloud       [shape = cloud]       
+    Collections [shape = collections] 
+    Component   [shape = component]   
+  }
+    network Shapes2 {
+    Control     [shape = control]     
+    Database    [shape = database]    
+    Entity      [shape = entity]      
+    File        [shape = file]        
+    Folder      [shape = folder]      
+    Frame       [shape = frame]       
+    Hexagon     [shape = hexagon]     
+    Interface   [shape = interface]   
+  }
+  network Shapes3 {
+    Label       [shape = label]       
+    Node        [shape = node]        
+    Package     [shape = package]     
+    Person      [shape = person]      
+    Queue       [shape = queue]       
+    Stack       [shape = stack]       
+    Rectangle   [shape = rectangle]   
+    Storage     [shape = storage]     
+    Usecase     [shape = usecase]     
+  }
+}
+@enduml

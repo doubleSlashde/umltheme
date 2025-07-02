@@ -1,0 +1,13 @@
+@startwbs Direction
+
+* Software Project
+** Design
+*** Build Design Document
+****< Concise text description
+**** Highly informative UML diagrams
+***< Build team
+****< John (The database) Dawkins
+****> Sally (The javascript) Marten
+****< Fred (The Animal) Johnson
+***< Start detailed estimation
+@endwbs

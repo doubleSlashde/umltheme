@@ -1,0 +1,13 @@
+@startyaml Array_of_Elements
+
+Hello:
+  - Thing 1
+  - Thing 2    
+  - Thing 3  
+
+World:
+  - Thing 1
+  - Thing 2    
+  - Thing 3   
+
+@endyaml

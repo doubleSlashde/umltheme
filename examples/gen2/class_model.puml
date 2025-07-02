@@ -3,5 +3,5 @@
 hide circle
 hide empty members
 hide stereotype
-!include ../input/class_model.puml
+!include ../input/class/20 - Class Model.puml
 @enduml

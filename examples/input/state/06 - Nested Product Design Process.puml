@@ -1,0 +1,37 @@
+@startuml Nested_Product_Design_Process
+
+title Nested Product Design Process - State Diagram
+
+state "Product Design And Release Process" as P1 {
+
+  state Q1 {
+    [*] --> Planning
+  }
+  
+  state Q2 {
+    Design --> Prototyping
+  }
+  
+  state Q3 {
+    state "Mass Production" as MP
+    state "Sales Negotiations" as SN
+    state "Final Preparations For Release" as FPFR
+    MP --> SN
+    MP --> FPFR
+  }
+    
+  state Q4 {
+    state "Release Product" as RP
+    RP --> [*]
+  }
+    
+  Q1 --> Q2
+  Q2 --> Q3
+  Q3 --> Q4
+  
+}
+
+
+
+
+@enduml

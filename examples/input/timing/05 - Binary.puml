@@ -1,0 +1,17 @@
+@startuml Binary
+clock clk with period 1
+binary "ReadWrite" as RW
+
+@0
+RW is low
+
+@2
+RW is high
+
+@5
+RW is low
+
+@6
+RW is high
+
+@enduml

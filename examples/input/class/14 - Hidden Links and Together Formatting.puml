@@ -1,0 +1,50 @@
+@startuml Hidden_Links_and_Together_Formatting
+
+title Hidden Links and Together Formatting - Class Diagram
+
+Animal <|-- Dog
+
+Car <|-- Ford
+Car <|-- Toyota
+
+Dwelling <|-- House
+Dwelling <|-- Apartment
+Dwelling <|-- Commune
+Dwelling *-- Door
+
+'Use the together keyword to force classes to clump together if possible
+together {
+  class School
+  class Library
+  class College
+}
+
+School ... Door
+
+note top of School
+  School is attached to Door,
+  but College and Library clump
+  together with School because
+  they were defined using "together".
+  Uncomment "together" to see the 
+  difference.
+end note
+
+'You can use hidden links to alter the format of your diagram 
+Animal -[hidden]> Car
+Dwelling -[hidden]> Dog
+
+note top of Dwelling
+  Dwelling is being forced next to Dog
+  and therefore below Animal and Car
+end note
+
+note right of Car
+  Car and Animal are 
+  connected by a hidden 
+  link so they stay aligned
+end note
+
+
+
+@enduml

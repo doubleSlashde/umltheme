@@ -3,5 +3,5 @@
 hide circle
 hide empty members
 hide stereotype
-!include ../input/softwarefactory_datamodel.puml
+!include ../input/class/22 - Softwarefactory Datamodel.puml
 @enduml 

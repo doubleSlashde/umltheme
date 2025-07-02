@@ -1,0 +1,37 @@
+@startuml Associations
+
+title Associations - Class Diagram
+
+hide empty members
+
+class Dwelling {
+  +Int Windows
+  +void LockTheDoor()
+}
+
+class Apartment
+class Window
+
+class Finances {
+  payTaxes()
+  payMortgage()
+}
+
+'To define an association:
+'Dwelling "0..*" - "1..*" Apartment
+'(Dwelling, Apartment) .. Finances
+Dwelling -left-- Apartment
+(Dwelling, Apartment) ... Finances
+
+class Installation {
+  drill()
+  bolt()
+}
+
+'Dwelling "0..*" - "1..*" Window
+Dwelling "0..*" --- "1..*" Window
+(Dwelling, Window) . Installation
+
+
+
+@enduml

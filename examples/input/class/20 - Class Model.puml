@@ -1,0 +1,26 @@
+@startuml Class_Model
+
+title Klassenmodell
+left to right direction
+
+interface Schnittstelle
+
+class Klasse implements Schnittstelle {
+  - Attribut : AndereKlasse
+  + Methode1()
+}
+class AndereKlasse {
+  - Attribut : Typ
+  + Methode2()
+}
+class Unterklasse extends Klasse {}
+
+class AufrufendeKlasse<<external>> {
+  + useInterface()
+}
+
+AufrufendeKlasse --> Schnittstelle : verwendet
+Klasse *-- AndereKlasse : aggregiert
+note top of Klasse: Diese Notiz liefert eine nähere\n Beschreibung der Klasse
+note top of Schnittstelle: Diese Notiz liefert eine nähere\n Beschreibung der Schnittstelle
+@enduml

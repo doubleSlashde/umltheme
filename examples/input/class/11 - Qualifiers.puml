@@ -1,0 +1,17 @@
+@startuml Qualifiers
+
+title Qualifiers - Class Diagram
+
+class Bank
+class "Car Dealership" as CD
+class Customer
+
+Bank [Account ID: int] --> Customer
+Bank [Account Email: string] --> Customer
+
+CD [Driver License Number: int] --> Customer
+CD [Credit Card Number: int] --> Customer
+
+
+
+@enduml

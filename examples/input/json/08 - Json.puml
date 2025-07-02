@@ -1,0 +1,7 @@
+@startjson Json
+{
+   "fruit":"Apple",
+   "size": "Large",
+   "color": ["Red", "Green"]
+}
+@endjson

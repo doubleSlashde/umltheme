@@ -1,0 +1,31 @@
+@startgantt Notes_in_Gantt
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[T1 - Requirements] as [T1R] lasts 8 days
+note bottom
+1. Chat w/ client
+2. Write doc
+3. Review with team
+end note
+[T1R] ends 2020-02-10
+
+[T1 - Design] as [T1D] lasts 7 days
+note bottom
+1. List test cases
+2. Think about performance
+3. Security
+end note
+
+'Adding constraint
+[T1D] starts at [T1R]'s end
+
+'Short Name
+[T1 - Implementation] as [I] lasts 13 days
+[I] starts at [T1D]'s end
+note bottom
+Go!!
+end note
+
+@endgantt

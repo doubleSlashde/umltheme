@@ -1,0 +1,57 @@
+@startuml Quadratics_standard_to_Function
+
+title Quadratics, standard to function
+
+:<math>F(x)=ax^2+bx+c</math>;
+  
+note left 
+  this is standard form
+end note 
+
+note left
+  <math>a,b,c</math>:Represent the constant coefficients
+end note 
+
+note right
+  <math>a</math>:the coefficient of the x^2 term (the quadratic term)
+  <math>b</math>:the coefficient of the x term (the linear term)
+  <math>c</math>: the constant term
+end note
+  
+:<math>y=a(x-r)(x-s)</math>;
+
+note left
+  this is function form
+end note 
+
+note right
+  The first thing you can do is find the greatest common factor
+  (optional)
+  The second step to finding function form is finding two numbers that
+  both multiply to ac and add up to b. 
+  lastly, Write the middle term (bx) as the sum of the two numbers.
+end note
+
+ :<math>F(x)=2x^2-4x-30</math>;
+ 
+note left
+  example
+end note
+
+note right 
+  First factor out the 2
+end note
+
+:<math>F(x)=2(x^2-2x-15)</math>;
+
+note right
+  Next find two numbers that both multiply to ac and add up to b. 
+end note
+
+:<math>F(x)=2(x-5)(x+3)</math>;
+
+note left
+  this is the finished equasion in function form
+end note
+
+@enduml

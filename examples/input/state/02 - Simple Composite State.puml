@@ -1,0 +1,16 @@
+@startuml Simple_Composite_State
+
+title Simple Composite State Model
+[*] --> NeilDiamond
+state NeilDiamond 
+
+state "Neil Diamond" as NeilDiamond {
+  state Dancing
+  state Singing
+  state Smiling
+  Dancing --> Singing
+  Singing --> Smiling
+  Smiling --> Dancing
+}
+
+@enduml

@@ -1,0 +1,7 @@
+@startsalt Open_Iconic_Example
+{
+  <&person*2> | "MyName                "
+  <&key*2> | "****                  "
+  [Cancel <&circle-x>] | [OK <&account-login>]
+}
+@endsalt

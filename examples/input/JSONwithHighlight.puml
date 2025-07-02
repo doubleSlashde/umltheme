@@ -1,8 +1,0 @@
-@startjson
-#highlight "color" / "0"
-{
-   "fruit":"Apple",
-   "size": "Large",
-   "color": ["Red", "Green"]
-}
-@endjson

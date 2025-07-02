@@ -1,4 +1,4 @@
 @startuml deployment
 !include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/Deployment.puml
+!include ../input/deployment/12 - Deployment.puml
 @enduml

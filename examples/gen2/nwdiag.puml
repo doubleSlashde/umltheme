@@ -1,4 +1,4 @@
 @startuml nwdiag
 !include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/Nwdiag.puml
+!include ../input/network/06 - Nwdiag.puml
 @enduml 

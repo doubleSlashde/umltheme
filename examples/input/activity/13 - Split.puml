@@ -1,0 +1,27 @@
+@startuml Split
+
+title Split - Activity Diagram 
+
+
+start
+
+:I am hungry;
+
+split
+	:Eat tacos;
+split again
+	:Eat pizza;
+split again
+	:Eat soup;
+end split
+
+:I am full;
+
+stop
+
+footer
+
+	This is a footer
+end footer
+
+@enduml

@@ -1,0 +1,37 @@
+@startuml Json_with_State
+
+title Empty Diagram - State - JSON
+
+left to right direction
+
+state "Airplane Flight" as AF 
+AF: * 8 AM
+AF: * United Airlines
+
+state Travelers {
+	json Employees {
+  	"John":"Smith",
+  	"Paul":"Jones",
+  	"Kevin": "Rogers"
+	}
+}	
+
+state Destinatinations {
+	json Cities {
+	"Houston" : ["North America", "USA"],
+	"Berlin" : ["Germany", "Europe"],
+	"Beijing" : ["China", "Asia"]
+	}
+}
+
+	Employees --> AF
+	AF --> Cities : Destination Options
+	
+note top of AF
+	You can display JSON data 
+	as state diagrams
+end note
+
+
+
+@enduml

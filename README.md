@@ -81,7 +81,7 @@ See [examples/gen2/systemmodel_with_levels.puml](examples/gen2/systemmodel_with_
 ## Legacy Theme Support (Deprecated)
 
 **Note:** Legacy themes are deprecated but still functional via redirects. Please migrate to gen2 themes above.
-
+<!-- markdownlint-disable MD033 -->
 <details>
 <summary>Click to view legacy includes (deprecated)</summary>
 
@@ -151,7 +151,8 @@ See [examples/gen2/systemmodel_with_levels.puml](examples/gen2/systemmodel_with_
 To migrate from legacy themes to gen2:
 
 1. **Replace** old include statements with the universal gen2 theme:
-   ```
+
+   ```txt
    // Old (deprecated)
    !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-[type].puml
    

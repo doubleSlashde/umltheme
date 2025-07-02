@@ -1,0 +1,23 @@
+@startuml Links
+
+title Links - Activity Diagram
+
+start
+
+:We have a blog;
+
+note right 
+  [[https://example.com Blog page]]
+end note
+
+:Click "SVG" and the link if you want to check it out;
+
+:[[https://example.com Blog Page]];
+
+note left
+  You can also put links in activities
+end note
+
+stop
+
+@enduml

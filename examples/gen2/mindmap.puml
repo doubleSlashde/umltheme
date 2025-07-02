@@ -1,4 +1,4 @@
 @startmindmap mindmap
 !include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/mindmap.puml
+!include ../input/mindmap/08 - Mindmap.puml
 @endmindmap
