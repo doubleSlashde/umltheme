@@ -1,0 +1,22 @@
+@startuml Slope_Intercept
+
+title Slope Intercept Formula
+  
+:<math>y=mx+b</math>;
+
+note right
+  <math>y</math>: the dependednt variable 
+  <math>x</math>: the independent variable
+  <math>m</math>: the slope of the line
+  <math>b</math>: the Y-intercept 
+end note
+
+:<math>y=3x+7</math>;
+
+note left
+  <math>y</math>: output value acording to the x
+  <math>3x</math>: the slope of the line
+  <math>7</math>  : the y-intercept of the line
+end note
+
+@enduml

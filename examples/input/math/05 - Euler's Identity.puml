@@ -1,0 +1,12 @@
+@startuml Euler_s_Identity
+
+title Euler's Identity
+
+:<math>e^("i" * π) + 1 = 0</math>;
+note right
+  <math>i</math>: Imaginary unit <math>sqrt(-1)</math>
+  <math>e</math>: Euler's number (~2.718), the base of natural logarithms
+  <math>\pi</math>: Pi (~3.14159), the ratio of a circle's circumference to its diameter
+ end note
+
+@enduml

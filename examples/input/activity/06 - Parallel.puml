@@ -1,0 +1,26 @@
+@startuml Parallel
+
+title Parallel - Activity Diagram 
+
+start
+
+:Eat;
+
+:Drink;
+
+if (Play?) then (yes)
+  fork
+    :Having Fun;
+  fork again
+    :Scream At TV;
+  end fork
+else (no)
+  :Not Having Fun;
+  :Eat;
+endif
+
+:Go To Bed;
+
+stop
+
+@enduml

@@ -1,0 +1,38 @@
+@startuml Activity_Model
+'You will find help on this page: https://plantuml.com/de/activity-diagram-beta
+
+title Activity diagram
+
+|Swimlane 1|
+start
+  :Activity 1; 
+  :Activity 2;
+  (M)
+note right 
+Diese Notiz 
+gibt eine 
+Erläuterung des 
+Zwischenzustandes
+end note
+
+|Swimlane 2|
+if (Alles OKAY?) then
+  -> nur zum Teil;
+  :do more research;
+else
+  -> Ja;
+  :do action; 
+endif  
+
+|Swimlane 1|
+  if () then
+    :my way;
+  else
+    :your way;
+  endif
+
+  :final execution;
+  
+end
+
+@enduml

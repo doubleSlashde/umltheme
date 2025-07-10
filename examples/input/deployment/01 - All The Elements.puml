@@ -1,0 +1,26 @@
+@startuml All_The_Elements
+
+entity entity
+file file
+folder folder
+boundary boundary
+card card
+cloud cloud
+collections collections
+component component
+frame frame
+actor actor
+agent agent
+artifact artifact
+control control
+database database
+rectangle rectangle
+storage storage
+interface interface
+label label
+node node
+package package
+queue queue
+stack stack
+usecase usecase
+@enduml

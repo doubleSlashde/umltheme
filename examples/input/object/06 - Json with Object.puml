@@ -1,0 +1,36 @@
+@startuml Json_with_Object
+
+title JSON Display - Object Diagram
+
+left to right direction
+
+object "Airplane Flight" {
+  Airline = United
+  Seats = A1, A2, A3
+  Time = 8 AM 
+}
+
+	json Employees {
+  	"John":"Smith",
+  	"Paul":"Jones",
+  	"Kevin": "Rogers"
+	}
+	
+	json Cities {
+		"Houston" : ["North America", "USA"],
+		"Berlin" : ["Germany", "Europe"],
+		"Beijing" : ["China", "Asia"]
+	}
+	
+	Employees ... "Airplane Flight"
+	"Airplane Flight" --> Cities : Destination Options
+	
+note top of "Airplane Flight"
+	You can display JSON data 
+	as object diagrams
+end note
+
+
+
+
+@enduml

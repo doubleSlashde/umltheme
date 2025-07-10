@@ -1,0 +1,24 @@
+@startuml Color_Highlight_Hide_Constraint
+robust "Work" as W
+concise "General" as G
+
+@W
+0 is "Main Process"
++5 is "Start worker Process 1"
++1 is "Start worker Process 2"
++1 is "Start worker Process 3"
++1 is "Start worker Process 4"
++1 is "Main Process"
+
+@G
+0 is Waiting #yellow
++5 is "Process Images" #green
++4 is "Done" #pink
+
+@2 <-> @+1 : {Too long}
+
+highlight 6 to 7 #Gold;line:Red : "Process 2 Updated Database"
+
+hide time-axis
+
+@enduml

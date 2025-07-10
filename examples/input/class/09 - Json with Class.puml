@@ -1,0 +1,17 @@
+@startuml Json_with_Class
+
+title JSON With Classes - Class Diagram
+
+class Destinations
+
+json Cities {
+	"Houston" : ["North America", "USA"],
+	"Berlin" : ["Germany", "Europe"],
+	"Beijing" : ["China", "Asia"]
+	}
+	
+Destinations  *-down-  Cities: Composition
+
+
+
+@enduml

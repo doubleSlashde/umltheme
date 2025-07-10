@@ -1,0 +1,25 @@
+@startuml All_Stereotypes
+
+title All Stereotypes - State Diagram
+
+state Stereotypes {
+  state start1  <<start>>
+  state choice1 <<choice>>
+  state history1 <<history>>
+  state history2 <<history*>>
+  state fork1   <<fork>>
+  state join1   <<join>>
+  state end1    <<end>>
+  state sdlreceive <<sdlreceive>>
+  state e1 <<expansionInput>>
+  state e2 <<inputpin>>
+  state e3 <<entrypoint>>
+}
+
+note "These entries attached to the top of the state are also stereotypes" as N1
+
+N1 --> e1
+N1 --> e2
+N1 --> e3
+
+@enduml

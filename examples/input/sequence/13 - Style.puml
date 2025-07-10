@@ -1,0 +1,39 @@
+@startuml Style
+
+title Style - Sequence Diagram
+
+skinparam backgroundColor #A9DCD9
+
+'To remove bottom actors/boxes, use hide footbox
+hide footbox
+
+skinparam sequence {
+	ArrowColor Red
+	ActorBorderColor DarkGreen
+	LifeLineBorderColor Purple
+	LifeLineBackgroundColor #A9DDBA
+	
+	ActorBackgroundColor orange
+	ActorFontColor DarkRed
+	ActorFontSize 16
+	ActorFontName Impact
+}
+
+actor "Senior Manager" as S2
+actor "Data Analyst" as D1
+actor "Support Analyst" as S1
+actor "Business User" as B1
+
+B1 -> S1 : Request Usage Data
+S1 --> S2 : Report if Request is Serious
+S1 -> D1 : Communicate Request
+D1 -> S1 : Send Data
+S1 -> B1 : Provide Data
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

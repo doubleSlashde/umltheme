@@ -1,0 +1,19 @@
+@startuml Rectangle
+
+title Rectangle - Activity Diagram
+
+rectangle Making a payment {
+
+start
+
+:Insert credit card number;
+:Insert expiration date;
+:Insert pin;
+:Authorizing;
+:Pending Payment;
+:Payment Complete;
+
+end
+}
+
+@enduml

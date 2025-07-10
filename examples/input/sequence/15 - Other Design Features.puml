@@ -1,0 +1,29 @@
+@startuml Other_Design_Features
+
+title Other Design Features - Sequence Diagram
+
+Harry -> Ron : Do you know the answer?
+
+alt#Turquoise #LightGreen Successful case
+    Ron -> Harry: I know the answer
+    
+else #Orange Failure
+    Ron -> Harry: I don't know the answer
+    
+'You can add a number in parentheses after an arrowhead to slant it
+    Harry ->(25) Ron : Ask the professor
+    
+'To display messages in parallel, use the following command and a "&" to connect messages
+    !pragma teoz true
+    Professor -> Ron: I can help you
+    &Ron -> Harry: I figured it out
+    
+end
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

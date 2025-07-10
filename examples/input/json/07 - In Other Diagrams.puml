@@ -1,0 +1,21 @@
+@startuml In_Other_Diagrams
+
+title Classes - Class Diagram
+
+class Dwelling {
+  +Int Windows
+  +void Lock()
+}
+
+class House
+class Commune
+
+json HouseInfo {
+   "Doors":"2",
+   "Windows":"24",
+   "Color": ["Green", "White"]
+}
+
+House --> HouseInfo : "Details"
+
+@enduml

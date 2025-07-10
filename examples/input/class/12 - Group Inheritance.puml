@@ -1,0 +1,21 @@
+@startuml Group_Inheritance
+
+title Group Inheritance - Class Diagram
+
+'To group inheritance arrows together, use the following line 
+skinparam groupInheritance 2
+'Because the parameter number is 2, any inheritance arrow groups of two or more will be pooled, if the value was 3 then inheritance arrow groups of 3 or more would be pooled
+
+Animal <|-- Dog
+
+Car <|-- Ford
+Car <|-- Toyota
+
+Dwelling <|-- House
+Dwelling <|-- Apartment
+Dwelling <|-- Commune
+Dwelling *-- Door
+
+
+
+@enduml

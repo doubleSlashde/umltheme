@@ -1,0 +1,21 @@
+@startjson Array_of_Objects
+
+[
+  {
+    "name" : "Mark", 
+    "age" : 31, 
+    "city" : "New York"
+  },
+  {
+    "name" : "Amy", 
+    "age" : 24, 
+    "city" : "Denver"
+  },
+  {
+    "name" : "Steve", 
+    "age" : 75, 
+    "city" : "San Angelo"
+  }
+]
+
+@endjson

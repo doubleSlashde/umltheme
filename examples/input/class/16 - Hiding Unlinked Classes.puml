@@ -1,0 +1,25 @@
+@startuml Hiding_Unlinked_Classes
+
+title Hiding Unlinked Components - Component Diagram
+
+class Dwelling
+class Apartment
+class Commune
+class "Elephants and Bananas" as E
+
+Dwelling <|.. Apartment
+Dwelling <|.. Commune
+
+note right of Dwelling
+	There is a class to the right of this note, 
+	but it has been hidden because it is unlinked. 
+	Comment out the "hide @unlinked" line to see it.
+end note
+
+hide @unlinked
+
+'You can also use "remove @unlinked" to remove any elements and their spacing to clean up a diagram
+
+
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml Map_Tables
+
+title Map Tables - Object Diagram
+
+map Continents {
+ Japan => Asia
+ USA => North America
+ India => Asia
+}
+
+map Currency {
+ Japan => Yen
+ USA => Dollar
+ India => Rupee
+}
+
+Continents ... Currency
+
+
+
+
+@enduml

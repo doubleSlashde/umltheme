@@ -1,0 +1,43 @@
+@startyaml Styling
+
+<style>
+
+yamlDiagram {
+
+  node {
+    FontSize 16
+    FontStyle normal
+    FontColor blue
+    BackGroundColor lightgray
+    LineColor blue
+
+    RoundCorner 10
+    LineThickness 1
+    LineStyle 6-10
+    
+    separator {
+      LineStyle 3
+      LineThickness 2
+      LineColor red
+    }
+    
+  }
+  
+  arrow {
+    LineColor green
+    LineThickness 5
+    LineStyle 2-5
+  }
+  
+}
+
+</style>
+
+HealthCheck:
+  Target: !Join 
+    - ''
+    - - 'HTTP:'
+      - !Ref WebServerPort
+      - /
+
+@endyaml

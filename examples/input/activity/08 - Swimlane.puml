@@ -1,0 +1,40 @@
+@startuml Swimlane
+
+title Swimlane - Activity Diagram
+
+|At wing stop|
+
+start
+
+skinparam activity {
+  StartColor Blue
+  EndColor Green
+  BackgroundColor DarkGray
+  BorderColor Brown
+}
+
+:Eat Hot Wings;
+
+|#lightgray|At the bar|
+
+:Drink Homebrew;
+
+if (Turn On The Game?) then (yes)
+  fork
+    :__Having Fun__!!!;
+  fork again
+    :Scream At TV!!;
+  end fork
+else (no)
+  :Not Having Fun;
+endif
+
+:Want to go home;
+
+|At home|
+
+:Go To Bed;
+
+end
+
+@enduml

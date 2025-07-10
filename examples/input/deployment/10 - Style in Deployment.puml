@@ -1,0 +1,23 @@
+@startuml Style_in_Deployment
+
+title Style - Deployment Diagram
+
+cloud 1 #green;line:hotpink;line.dashed;text:purple
+node 2 #pink;line:black;line.dotted;text:crimson
+file 3 #yellow;line:brown;line.bold;text:fuchsia
+
+
+1 -[thickness=3]-+ 5 
+2 -[#blue,dotted]-* 6 
+3 -[#purple,dashed]-o 7 
+3 -[#red;#green,thickness=2]-> 8 
+
+
+note left of 1
+  You can style elements and links
+end note
+
+
+
+
+@enduml

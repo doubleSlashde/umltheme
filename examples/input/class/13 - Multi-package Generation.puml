@@ -1,0 +1,39 @@
+@startuml Multi_package_Generation
+
+title Multi-Package Generation - Class Diagram
+
+'You can create multiple packages surrounding a class at once using the format below:
+class A.B.C.D.E {
+}
+
+'If you don't want "." to create another package and instead you are just trying to include a “.” in the name of a single class, use the command below:
+set separator none
+class 1.2.3.4.5 {
+}
+
+'You can also change the set separator from "." to something else, as seen below:
+set separator ;;
+class X;;Y;;Z{
+}
+
+note top of 1.2.3.4.5
+  Single class
+end note
+
+note top of E
+  Class within many packages
+end note
+
+note top of Z
+  This class was created
+  using ";" separators,
+  though there will never
+  be a visual difference
+end note
+
+'To group the packages together and change their style, uncomment the line below:
+'!pragma useIntermediatePackages false
+
+
+
+@enduml

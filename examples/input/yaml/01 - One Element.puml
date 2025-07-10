@@ -1,0 +1,5 @@
+@startyaml One_Element
+
+Hello:  World <&globe>
+
+@endyaml

@@ -1,0 +1,33 @@
+@startuml Entries_and_Exits
+
+title Entries - State Diagram
+
+hide empty description
+
+state "Information Processing System" as IFS {
+  state Mail <<entryPoint>>
+  state  "Vendor Data" as VD <<inputpin>>
+  state "Emails" as EM <<expansionInput>>
+  state "Physical Processing" as PP
+  state "Digital Processing" as DP
+  state "Secure Legal Processing" as SLP
+  state "Records Storage" as RS
+  state "File Repository" as FR
+  state "Return to Sender" as RTS
+  Mail --> PP
+  EM -> DP
+  VD -> SLP
+  SLP --> RS <<exitPoint>>
+  PP --> RS <<exitPoint>>
+  DP --> FR <<expansionOutput>>
+  PP -[dashed]-> RTS <<outputPin>>
+}
+
+[*] --> Mail
+[*] --> VD
+[*] --> EM
+
+
+
+
+@enduml

@@ -1,0 +1,67 @@
+@startuml Objects_and_Separators
+
+title Objects and Separators - Deployment Diagram
+
+rectangle Data {
+
+	node MainServer [
+		Main Server
+		====
+		Accounting
+		....
+		IT Systems
+	]
+	
+	database Database [
+		Stored Data
+		====
+		Salaries
+		....
+		Subscriptions
+		....
+		Hardware Inventory
+	]
+
+}
+
+rectangle Use {
+
+	folder Users [
+
+		Users
+		====
+		Payroll
+		----
+		Engineering
+		....
+		Corporate Services
+	]
+	
+	usecase Usecases [
+		Usecases
+		====
+		Salary distribution
+		....
+		Budgeting
+	]
+	
+	card Administrators [
+		Administrators
+		====
+		CEO
+		----
+		CFO
+		....
+		CTO
+	]
+
+}
+
+MainServer <.. Database
+Users ... Usecases
+Administrators ... Users
+
+
+
+
+@enduml

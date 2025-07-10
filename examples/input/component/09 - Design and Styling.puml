@@ -1,0 +1,67 @@
+@startuml Design_and_Styling
+
+title Design and Styling - Component Diagram
+
+skinparam component {
+
+'general style settings
+  BorderColor black
+  BackgroundColor silver
+  ArrowFontName Impact
+  ArrowColor #FF9000
+  ArrowFontColor #E3664A
+  FontName Courier
+  
+'style settings for specific elements
+  BackgroundColor<<A>> Pink
+  BackgroundColor<<B>> Green
+  BackgroundColor<<C>> Orange
+  FontSize 15
+  BorderColor<<A>> #FF6400
+  BorderColor<<B>> #FF2000
+  BorderColor<<C>> #FF2900
+  
+}
+
+package "Corporate IT System" {
+    
+		component "Standard Portal" as SP <<C>>
+    component "Employee Portal" as EP <<B>>
+    component "Authentication Service" as AS <<A>>
+    
+    SP --> [Authentication Compliance]
+    EP --> [Authentication Compliance]
+    
+    AS --> [User Management Service] :Critical
+    AS --> [Logging Service]
+
+    SP --> [Documentation]
+    EP --> [Documentation]
+    EP --> [Data Reporting]
+    
+    [Documentation] --> [Database]
+    [User Management Service] --> [Database]
+    [Data Reporting] --> [Database]
+    [Logging Service] --> [Log Data Storage]
+
+    [Documentation] --> [External File Storage API]
+    [Data Reporting] --> [External Analytics API]
+}
+
+note top of [Corporate IT System]
+	To apply formatting to specific components, components must be stereotyped
+end note
+
+note left of [Corporate IT System]
+	It is recommended to apply skinparam 
+	and styling at the top of the plantUML program
+	to ensure the styles are being applied properly
+end note
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

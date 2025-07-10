@@ -1,0 +1,32 @@
+@startuml Autonumber
+
+title Autonumber - Sequence Diagram
+
+autonumber
+Steve -> Nancy : Request
+Steve -> Nancy : Respone
+Steve -> Nancy : Goodbye
+
+'autonumber's starting value and incremental value can be changed
+autonumber 10 2
+Carol -> Jane : Request
+Carol -> Jane : Response
+Carol -> Jane : Goodbye
+
+'autonumbers can also be formatted
+autonumber "<b>[100]"
+Ted -> Harold  : Report 1
+Ted <- Harold : Report 2
+
+autonumber 1.1.1 "<font color=blue><b>Communication 0 "
+Larry -> Tanya : Request
+Larry <- Tanya : Request
+
+'inc A will increment the first value, inc B would increment the second value, and so on
+autonumber inc A
+Larry -> Tanya : Report
+Larry <- Tanya : Report
+
+
+
+@enduml

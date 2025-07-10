@@ -1,0 +1,23 @@
+@startuml Concise
+
+clock clk with period 1
+robust "Job Queue" as JQ
+concise "User" as U
+
+@0
+JQ is Idle
+U is "Run Feature"
+
+@2
+JQ is Processing
+U is Waiting
+
+@12
+JQ is Logging
+U is "Checking Log"
+
+@15
+JQ is Idle
+U is Done
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml Relative_Timing
+
+robust "Job Queue" as JQ
+concise "User" as U
+
+@0
+JQ is Idle
+U is "Wait"
+
+@2
+JQ is Processing
+U is Waiting
+U -> JQ : "Clicked Button"
+
+@6
+JQ -> U@+1 : Almost Complete Message
+
+@7
+U is "Waiting"
+
+@12
+U -> JQ : "DB Job Status"
+JQ is Logging
+U is "Checking Log"
+
+@15
+JQ is Idle
+U is Done
+
+@enduml

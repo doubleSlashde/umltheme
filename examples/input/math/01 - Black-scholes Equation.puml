@@ -1,0 +1,14 @@
+@startuml Black_scholes_Equation
+
+title Black-Scholes Equation
+
+:<math>\frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + r S \frac{\partial V}{\partial S} - r V = 0</math>;
+note right
+ <math>V</math>: Option price
+ <math>t</math>: Time
+ <math>\sigma</math>: Volatility of the underlying asset
+ <math>S</math>: Stock price
+ <math>r</math>: Risk-free interest rate 
+end note
+
+@enduml

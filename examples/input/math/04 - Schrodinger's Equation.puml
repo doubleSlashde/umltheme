@@ -1,0 +1,14 @@
+@startuml Schrodinger_s_Equation
+
+title Schrodinger's Equation
+
+:<math>i\hbar \frac{\partial}{\partial t} \Psi = \hat{H} \Psi</math>;
+note right
+  <math>i</math>: Imaginary unit <math>sqrt(-1)</math>
+  <math>\hbar</math>: Reduced Planck's constant (~1.055×10⁻³⁴ Js)
+  <math>\frac{\partial}{\partial t}</math>: Partial derivative with respect to time
+  <math>\Psi</math>: Wave function
+  <math>\hat{H}</math>: Hamiltonian operator (total energy operator)
+end note
+
+@enduml

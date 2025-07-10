@@ -1,0 +1,17 @@
+@startuml Links
+
+title Links - Deployment Diagram
+
+1 --+ 2 : X
+1 --* 3 : black diamond
+1 --o 4 : white diamond
+1 --# 5 : square
+1 --0 6 : circle
+1 -->> 7 : black arrow
+1 --^ 8 : white arrow
+1 --( 9 : arc
+
+
+
+
+@enduml

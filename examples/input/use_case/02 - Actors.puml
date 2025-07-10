@@ -1,0 +1,10 @@
+@startuml Actors
+
+title Actors - Use Case Diagram 
+
+:Administrator:
+:Standard User: as SU  
+actor Accountant
+actor :Client: as C
+
+@enduml

@@ -1,0 +1,25 @@
+@startuml Ports
+
+title Ports - Component Diagram
+
+component Message
+
+component Servers{
+  port p1
+  port p2
+  port p3
+  portout p4
+	component S1
+	component S2
+}
+
+
+Message --> p1
+Message --> p2
+Message --> p3
+
+component Output
+
+p4 --> Output
+
+@enduml

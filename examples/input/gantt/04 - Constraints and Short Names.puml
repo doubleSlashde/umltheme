@@ -1,0 +1,18 @@
+@startgantt Constraints_and_Short_Names
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[T1 - Requirements] lasts 6 days
+[T1 - Design] lasts 7 days
+
+[T1 - Requirements] ends 2020-02-07
+
+'Adding constraint
+[T1 - Design] starts at [T1 - Requirements]'s end
+
+'Short Name
+[T1 - Implementation] as [I] lasts 13 days
+[I] starts at [T1 - Design]'s end
+
+@endgantt

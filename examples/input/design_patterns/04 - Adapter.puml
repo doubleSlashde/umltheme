@@ -1,0 +1,33 @@
+@startuml Adapter
+
+title Adapter
+
+interface Target {
+  + request(): void
+}
+
+class Adapter implements Target {
+  - adaptee: Adaptee
+  + Adapter(adaptee: Adaptee)
+  + request(): void
+}
+
+class Adaptee {
+  + specificRequest(): void
+}
+
+' Relationships
+Client ..> Target
+Adapter o-- Adaptee
+
+note right of Client: Client Class (Optional)
+note right of Target: Target Interface
+note right of Adaptee: Adaptee (Existing Incompatible Class)
+
+note right of Adapter
+  The Adapter translates 
+  the Target interface 
+  to the Adaptee's interface
+end note
+
+@enduml

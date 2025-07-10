@@ -1,0 +1,56 @@
+@startuml Corporate_System
+
+title Corporate System - Component Diagram
+
+component FakeCorp {
+
+	package HR {
+		
+		component Payroll
+		component Recruiting
+		component Training
+	
+	}
+	
+	package IT {
+	
+		component [Data Warehousing]
+		component [Data Analytics]
+	
+	}
+	
+	package Finance {
+	
+		component Accounting
+		component Investing
+		component Taxes
+		
+	}
+	
+	component CEO #red
+	component CFO #green
+	component CTO #blue
+}
+
+Payroll .. Accounting
+Investing -- Taxes
+Recruiting ..> Training
+Accounting ~~ Taxes
+[Data Warehousing] -right-> [Data Analytics] : sends data to
+IT =up= CTO
+HR =up= CEO
+Finance =up= CFO
+CTO .up.* CEO
+CFO .up.* CEO
+
+note as N
+	Use different kinds of links to show different relationships
+end note
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

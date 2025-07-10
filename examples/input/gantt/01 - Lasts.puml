@@ -1,0 +1,14 @@
+@startgantt Lasts
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[T1 - Requirements] lasts 6 days
+[T1 - Design] lasts 7 days
+[T1 - Implementation] lasts 13 days
+
+-- Team 2 --
+[T2 - Requirements] lasts 1 week and 4 days
+[T2 - Implementation] lasts 2 weeks
+
+@endgantt

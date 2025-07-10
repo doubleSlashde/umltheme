@@ -1,0 +1,20 @@
+@startuml Activity
+
+title Activity Diagram \n
+
+start
+
+:Eat;
+
+note left
+    This is a Note...
+    * Activity diagrams can begin with a Start
+    * An activity is colon, some words, and a semicolon
+    * Activity diagrams can end with a stop
+end note
+
+:Drink;
+
+stop
+
+@enduml

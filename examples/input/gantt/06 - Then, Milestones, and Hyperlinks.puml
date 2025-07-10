@@ -1,0 +1,17 @@
+@startgantt Then_Milestones_and_Hyperlinks
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[T1 - Requirements] as [T1R] lasts 6 days
+then [T1 - Design] as [T1D] lasts 7 days
+
+'Maps work when you use html map link type
+[T1R] links to [[http://www.google.com]]
+[T1D] links to [[http://www.yahoo.com]]
+
+'Milestones
+[Party for Team] as [PFT] happens at [T1D]'s end
+[PFT] is colored in Red
+
+@endgantt

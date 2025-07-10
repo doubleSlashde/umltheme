@@ -1,0 +1,34 @@
+@startuml Horizontal_Concurrent_State
+
+Title Horizontal Concurrent State - State Diagram
+
+'Margins are not exact for vertical separators
+
+state "In Danger" as InDanger {
+  [*] -> Worrying
+  Worrying --> Complaining 
+  Complaining --> Worrying
+  
+  ||
+  
+  state "Having Delusions of Grandeur" as grandeur
+  state "Calculating Odds of Survival" as survival
+  [*] -> grandeur
+  grandeur --> survival
+  survival --> grandeur
+  
+  ||
+  
+  state "Calculating the Odds of Survival" as calc
+  state "Arguing with Chewbacca" as chewbacca
+  [*] -> calc
+  calc --> chewbacca 
+  chewbacca --> calc
+}
+
+[*] -right-> InDanger
+
+
+
+
+@enduml

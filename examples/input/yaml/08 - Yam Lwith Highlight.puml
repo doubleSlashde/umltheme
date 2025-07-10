@@ -1,0 +1,8 @@
+@startyaml Yam_Lwith_Highlight
+#highlight "color" / "0"
+fruit: Apple
+size: Large
+color:
+ - Red
+ - Green
+@endyaml

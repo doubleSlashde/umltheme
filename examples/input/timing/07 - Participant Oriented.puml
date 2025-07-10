@@ -1,0 +1,17 @@
+@startuml Participant_Oriented
+robust "Work" as W
+concise "General" as G
+
+@W
+0 is "Main Process"
++5 is "Start worker Process 1"
++1 is "Start worker Process 2"
++1 is "Start worker Process 3"
++1 is "Start worker Process 4"
++1 is "Main Process"
+
+@G
+0 is Waiting
++5 is "Process Images"
++4 is "Done"
+@enduml

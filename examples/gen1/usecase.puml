@@ -1,0 +1,5 @@
+@startuml usecase model
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-usecase.puml
+'!include ../../puml-theme-doubleslash-usecase.puml
+!include ../input/use_case/12 - Usecase 2.puml
+@enduml

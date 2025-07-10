@@ -1,0 +1,25 @@
+@startuml Activate_Deactivate
+
+title Activate/Deactivate - Sequence Diagram
+
+Joe -> Sarah: Assign Task
+activate Sarah
+
+Sarah -> Fred: Delegate Task
+activate Fred
+
+Fred -> Roger: Delegate Task
+activate Roger
+
+Roger --> Fred: Complete Task
+destroy Roger
+
+Fred --> Sarah: Submit Task
+deactivate Fred
+
+Sarah -> Joe: Submit Task
+deactivate Sarah
+
+
+
+@enduml

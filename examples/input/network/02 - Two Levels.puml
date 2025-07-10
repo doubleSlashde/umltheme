@@ -1,0 +1,19 @@
+@startuml Two_Levels
+
+nwdiag {
+  network dmz {
+      address = "45.x.x.x/24"
+
+      webserver [address = "45.x.x.1"];
+
+  }
+  network internal {
+      address = "192.x.x.x/24"
+      
+      webserver [address = "45.x.x.1"];
+
+      venus [address = "192.x.x.1"];
+      mars [address = "192.x.x.2"];
+  }
+}
+@enduml

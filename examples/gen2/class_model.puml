@@ -1,0 +1,7 @@
+@startuml classmodel
+!include ../../doubleslash/doubleslash-gen2.puml
+hide circle
+hide empty members
+hide stereotype
+!include ../input/class/20 - Class Model.puml
+@enduml

@@ -1,0 +1,25 @@
+@startuml Floating_Notes
+
+title Floating Notes - Activity Diagram
+
+start
+
+:I am hungry;
+
+floating note: This is a floating note
+
+split
+	:Eat tacos;
+split again
+	:Eat pizza;
+split again
+	:Eat soup;
+end split
+
+:I am full;
+
+floating note right: You can move floating notes
+
+stop
+
+@enduml

@@ -1,0 +1,43 @@
+@startuml Notes_in_Sequence
+
+title Notes - Sequence Diagram
+
+actor User
+boundary "Web GUI" as GUI
+control "Shopping Cart" as SC
+entity Widget
+database Widgets
+
+User -> GUI : To boundary
+GUI -> SC : To control
+SC -> Widget : To entity
+Widget -> Widgets : To database
+
+hnote over User : Hexa note
+rnote over GUI : Rectangluar note
+note across: Note across all participants
+hnote across: Across notes can be hexagonal
+rnote across : Across notes can be rectangular
+
+note left of User
+	Use left and right
+	to help position notes
+end note
+
+note over Widget #orange
+	Notes can
+	be different
+	colors
+end note
+
+/note over Widgets
+	This note is 
+	aligned with 
+	the note to 
+	its left via
+	the "/"
+end note
+
+
+
+@enduml

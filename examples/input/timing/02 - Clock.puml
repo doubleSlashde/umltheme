@@ -1,0 +1,21 @@
+@startuml Clock
+
+clock clk with period 1
+robust "Job Queue" as JQ
+
+@0
+JQ is Idle
+
+@2
+JQ is Processing
+
+@5
+JQ is Logging
+
+@10
+JQ is Waiting
+
+@15
+JQ is Idle
+
+@enduml

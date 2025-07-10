@@ -1,0 +1,31 @@
+@startuml Switch_Case
+
+title Switch Case - Activity Diagram
+
+start
+
+:click on shopping cart;
+
+switch (Payment Method)
+  case ( Use Credit Card )
+    :Insert Credit card number;
+    :Insert expiration date;
+    :Insert pin;
+  case ( Use Paypal ) 
+    :Link to Paypal;
+    :Insert username/password;
+  case ( Use Venmow )
+    :Insert code;
+    :Insert username;
+  case ( Use Gift Card )
+    :Insert 16 didgits;
+    :Insert expiration date;
+endswitch
+
+:Authorizing;
+:Pending Payment;
+:Payment Complete;
+
+stop
+
+@enduml

@@ -1,0 +1,4 @@
+@startuml Sudoku
+'https://plantuml.com/sudoku
+sudoku
+@enduml

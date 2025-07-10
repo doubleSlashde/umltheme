@@ -1,0 +1,28 @@
+@startgantt Links_Colors
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[T1 - Requirements] as [T1R] lasts 8 days 
+note bottom
+1. Chat w/ client
+2. Write doc
+3. Review with team
+end note
+[T1R] ends 2020-02-10
+
+[T1 - Design] as [T1D] lasts 7 days and starts 3 days after [T1R]'s end with blue dotted link
+note bottom
+1. List test cases
+2. Think about performance
+3. Security
+end note
+
+'Short Name
+[T1 - Implementation] as [I] lasts 9 days and starts 5 days after [T1D]'s end with green dashed link
+
+note bottom
+Go!!
+end note
+
+@endgantt

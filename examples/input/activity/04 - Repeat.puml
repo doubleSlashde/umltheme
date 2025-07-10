@@ -1,0 +1,15 @@
+@startuml Repeat
+
+title Repeat - Activity Diagram 
+
+
+start
+
+repeat
+  :Eat;
+  :Drink;
+repeat while (Still Hungry?)
+
+stop
+
+@enduml

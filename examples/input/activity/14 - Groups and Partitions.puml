@@ -1,0 +1,21 @@
+@startuml Groups_and_Partitions
+
+title Groups and Partitions - Activity Diagram
+start
+group At Home
+	:Wake up;
+	:Eat breakfast;
+	:Brush teeth;
+	:Get dressed;
+end group
+
+	:Drive to work;
+
+partition At Work {
+	:Send emails;
+	:Have meetings;
+}
+
+end
+
+@enduml

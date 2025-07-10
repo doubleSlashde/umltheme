@@ -1,0 +1,44 @@
+@startuml Notes_in_Use_Case
+
+title Notes - Use Case Diagram
+
+rectangle Features {
+    (Login)
+    (Create / Delete User) as CDU
+}
+
+:Employee: 
+':Client:
+:Supervisor:
+
+Employee --> (Login)
+Supervisor --> (Login)
+'Client ..> (Login) : NO!!!!
+Supervisor ---> CDU: I am god
+
+note left of (Supervisor)
+  Notes can be on the left of objects
+end note
+
+note top of (Employee)
+  Notes can be on top of objects
+end note
+
+note bottom of (Employee)
+  Notes can be below objects
+end note
+
+note right of (Employee)
+  Notes can be on the right of objects
+end note
+
+note as N1
+  Notes can also just be 
+  floating in space
+end note
+
+note "Notes can be connected via dashed lines" as N2
+(Supervisor) .. N2
+N2 .. (CDU)
+
+@enduml

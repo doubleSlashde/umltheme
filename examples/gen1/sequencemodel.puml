@@ -1,0 +1,5 @@
+@startuml Sequence model
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
+'!include ../../puml-theme-doubleslash-sequence.puml
+!include ../input/sequence/19 - Sequencemodel.puml
+@enduml

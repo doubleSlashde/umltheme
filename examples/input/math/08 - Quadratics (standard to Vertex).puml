@@ -1,0 +1,65 @@
+@startuml Quadratics_standard_to_Vertex
+
+title Quadratic function (standard to vertex form)
+  
+:<math>F(x)=ax^2+bx+c</math>;
+  
+note left 
+  this is standard form
+end note 
+
+note left
+  <math>a,b,c</math>:Represent the constant coefficients
+end note 
+
+note right
+  <math>a</math>:the coefficient of the x^2 term (the quadratic term)
+  <math>b</math>:the coefficient of the x term (the linear term)
+  <math>c</math>: the constant term
+end note
+  
+:<math>F(x)=a(x-h)^2+k</math>;
+
+note left
+  this is vertex form
+end note 
+
+note right
+  To convert standard form to vertex form,
+  find the vertex coordinates (h, k) by calculating h = -b / (2a)
+  then substitute h into the standard form equation as x
+end note
+
+:<math>y=5x^2-10x+37</math>;
+    
+note left
+  example
+end note
+  
+note right
+  a=5        h=-(-10)/2(5)=1
+end note
+  
+:<math>y=5(1)^2-10(1)+37</math>;
+    
+note right
+  This is the original equasion with h put back into it
+end note
+    
+:<math>y=32</math>;
+      
+note right
+  this is simplified
+end note
+
+:<math>y=5(x-1)^2+32</math>;
+
+note left
+  put it all together and you have vertex form
+end note 
+
+note right
+  put the y in as k in your final equasion
+end note
+
+@enduml

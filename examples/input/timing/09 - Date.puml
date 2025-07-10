@@ -1,0 +1,14 @@
+@startuml Date
+
+robust "Business Process" as BP
+
+@2021/01/26
+BP is "New Work Order"
+
+@2021/02/02
+BP is "Picked Up By Team"
+
+@2021/02/04
+BP is "Product Delivered"
+
+@enduml

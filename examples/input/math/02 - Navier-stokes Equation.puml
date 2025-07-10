@@ -1,0 +1,17 @@
+@startuml Navier_stokes_Equation
+
+title Navier-Stokes Equation
+
+:<math>\rho \left( \frac{\partial \mathbf{v}}{\partial t} + \mathbf{v} \cdot \nabla \mathbf{v} \right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \mathbf{f} </math>;
+note right
+  <math>\rho</math>: Fluid density
+  <math>\mathbf{v}</math>: Velocity field
+  <math>\frac{\partial}{\partial t}</math>: Partial derivative with respect to time
+  <math>\nabla</math>: Del operator (gradient)
+  <math>p</math>: Pressure
+  <math>\mu</math>: Dynamic viscosity
+  <math>\nabla^2</math>: Laplacian operator
+  <math>\mathbf{f}</math>: External forces
+end note
+
+@enduml

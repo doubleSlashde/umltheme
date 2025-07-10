@@ -1,0 +1,33 @@
+@startuml Stereotypes
+
+title Stereotypes - Sequence Diagram
+
+actor "Senior Manager" as S2 << (M,#CCD1B2) Leadership >>
+Database "Database" as D1 << (T,#FBD1B2) Technology >>
+
+'You can change the position of stereotypes:
+skinparam stereotypePosition bottom
+
+actor "Data Analyst" as S1 << (S,#FFF1B2) Support >>
+actor "Business User" as B1 << (U,#ABD1B2) User >>
+
+B1 -> S1 : Request Usage Data
+S1 --> S2 : Report if Request is Serious
+S1 -> D1 : Pull Data
+D1 -> S1 : Send Data
+S1 -> B1 : Provide Data
+
+note left of S2
+  Stereotypes can include 
+  a title within the "<< >>" 
+  characters and/or a large 
+  and colorful letter
+end note
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

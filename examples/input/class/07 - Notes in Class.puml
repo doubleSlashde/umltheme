@@ -1,0 +1,61 @@
+@startuml Notes_in_Class
+
+title Notes - Class Diagram
+
+class C1 {
+  {static} int variable1
+}
+
+C1 <-- C2
+
+note top of C1
+  Notes can be on the top, bottom,
+  left or right of an object
+end note
+
+'Uncomment below for left, right or bottom notes
+/'
+note left of C1
+  Left note
+end note
+
+note right of C1
+  Right note
+end note
+
+note bottom of C1
+  Bottom note
+end note
+'/
+
+note as N1
+  Notes can be floating
+end note
+
+note left
+'Notes can include images
+  <img:https://placehold.co/200.png?text=Hello+World&font=roboto>
+end note
+
+class Last
+note right
+  If unspecified, notes 
+  are always attached 
+  to the most recently 
+  defined class
+end note
+
+class C3
+
+note "Notes can be connected\nto several objects." as N3
+Last .. N3
+N3 .. C3
+
+
+note right of C1::variable1
+  Notes can point to certain
+  fields within a class from
+  the right or left
+end note
+
+@enduml

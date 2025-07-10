@@ -1,0 +1,14 @@
+@startuml Default_Library
+
+' The "stdlib" keyword shows all the icon categories that
+' PlantUML supports natively. Use this to find the category
+' you want to include in your diagram. Then go to the URL 
+' specified. Look at the following samples to learn how to 
+' use a specific icon category. Below is the root URL for 
+' all the icon categories...
+' https://github.com/plantuml/plantuml-stdlib/tree/master/stdlib
+' Also, you can read more about this at...
+' https://plantuml.com/stdlib
+stdlib
+
+@enduml

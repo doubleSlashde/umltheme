@@ -1,0 +1,33 @@
+@startwbs Org_Mode_Syntax
+
+* Software Project
+** Requirements
+*** Purpose
+*** Description
+*** End-user needs
+*** High level estimation
+** Design
+*** Build Design Document
+**** Concise text description
+**** Highly informative UML diagrams
+*** Build team
+**** John (The database) Dawkins
+**** Sally (The javascript) Marten
+**** Fred (The Animal) Johnson
+*** Start detailed estimation
+** Implemetation
+*** Setup DevOps
+*** Write Unit Tests
+*** Write Code!!!!! :)
+** Testing
+*** Make sure unit tests are working
+*** Regression test everything
+*** Smoke test before release
+*** Performance testing
+** Deployment
+*** Please make sure this is automated!!
+** Maintenance
+*** Measure usage of all features
+*** Think about what functions can be removed
+*** Optimize any IT systems
+@endwbs

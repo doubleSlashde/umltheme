@@ -1,0 +1,26 @@
+@startuml More_Conditionals_and_Forks
+
+title More Conditionals and Forks - Activity Diagram
+
+start
+
+if (Payment Method) is (Credit Card) then 
+	:Digital;
+	fork
+		:Computer;
+	fork again
+		:Phone;
+	end merge
+	end
+else (Cash)
+	:In Person;
+	if (Distance to bank) equals (20+) then
+		:Pay tomorrow;
+		end
+	else (<20)
+		:Pay today;
+		end	
+endif
+
+
+@enduml

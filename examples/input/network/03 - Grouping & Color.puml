@@ -1,0 +1,28 @@
+@startuml Grouping_Color
+
+nwdiag {
+    
+    internet [ shape = cloud];
+    internet -- router;
+    
+    group {
+        color = "#FFAAAA";
+        
+        webserver;
+        database;
+    }
+    
+    network dmz {
+        address = "45.x.x.x/24"
+        router
+        webserver [address = "45.x.x.1, 45.x.x.2"];
+    
+    }
+    network internal {
+        address = "192.x.x.x/24"
+        router
+        database [address = "192.x.x.1"];
+        mars [address = "192.x.x.2"];
+    }
+}
+@enduml

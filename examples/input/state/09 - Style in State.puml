@@ -1,0 +1,33 @@
+@startuml Style_in_State
+
+title Style - State Diagram
+
+'Can be very useful for styling:
+hide empty description
+
+<style>
+stateDiagram {
+  BackgroundColor LightBlue
+  LineColor Red
+  FontName Courier
+  FontColor Brown
+  LineThickness 2
+'you can set the default formatting for an unformatted arrow, as seen below
+  arrow {
+    FontSize 15
+    LineColor white
+  }
+}
+</style>
+
+state 1 ##[dotted]purple
+state 2 #orange
+1 -[#FB00AA]-> 2
+1 -left[#blue,bold]-> 3
+1 -up[#orange,dashed]-> 4
+1 -right[dotted,#green]-> 5
+1 -down-> 6
+
+
+
+@enduml

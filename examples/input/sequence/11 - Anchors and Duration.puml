@@ -1,0 +1,23 @@
+@startuml Anchors_and_Duration
+
+title Anchors and Duration - Sequence Diagram
+
+'You must use the following pragma statement to use anchors
+!pragma teoz true
+
+{start} Boss -> Employee : Do this task
+
+||60||
+
+skinparam responseMessageBelowArrow true
+{end} Boss <- Employee : I am done
+
+{start} <-> {end} : Later
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

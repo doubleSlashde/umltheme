@@ -1,0 +1,17 @@
+@startuml While_Loop
+
+title While Loop - Activity Diagram 
+
+
+start
+
+while (Hungry?)  is (Yes)
+  :Eat;
+  :Drink;
+endwhile (No)
+
+:Go To Sleep;
+
+stop
+
+@enduml
