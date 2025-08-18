@@ -10,9 +10,9 @@
     "stroke" : "#00A5E1"
   }, {
     "tag" : "External",
-    "background" : "#7A7A7A",
+    "background" : "#F8F8F8",
     "color" : "#000000",
-    "stroke" : "#7A7A7A"
+    "stroke" : "#F8F8F8"
   }, {
     "tag" : "Container",
     "background" : "#EEF8FE",
