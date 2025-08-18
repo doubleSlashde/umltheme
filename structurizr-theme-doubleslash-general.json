@@ -6,7 +6,8 @@
   }, {
     "tag" : "Software System",
     "background" : "#FFFFFF",
-    "color" : "#000000"
+    "color" : "#000000",
+    "stroke" : "#00A5E1"
   }, {
     "tag" : "Container",
     "background" : "#EEF8FE",
