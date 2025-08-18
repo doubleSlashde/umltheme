@@ -1,0 +1,27 @@
+{
+  "name" : "Default theme",
+  "elements" : [ {
+    "tag" : "Element",
+    "shape" : "RoundedBox"
+  }, {
+    "tag" : "Software System",
+    "background" : "#FFFFFF",
+    "color" : "#000000"
+  }, {
+    "tag" : "Container",
+    "background" : "#EEF8FE",
+    "color" : "#ffffff"
+  }, {
+    "tag" : "Component",
+    "background" : "#D7E9F4",
+    "color" : "#000000"
+  }, {
+    "tag" : "Person",
+    "background" : "#C6C6C6",
+    "color" : "#000000",
+    "shape" : "Person"
+  }, {
+    "tag" : "Infrastructure Node",
+    "background" : "#ffffff"
+  } ]
+}
