@@ -1,1 +1,31 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+!pragma layout smetana
+hide stereotypes
+skinparam padding 2
+left to right direction
+
+' Actor
+'=================================================================
+skinparam ActorBorderColor DS_LIGHTGREY
+skinparam ActorBackgroundColor DS_LIGHTGREY
+skinparam ActorBorderThickness 5.0
+skinparam ActorFontName FONTNAME
+
+' Rectangle for system boundary
+'=================================================================
+skinparam RectangleBackgroundColor ALICEBLUE
+skinparam RectangleBorderThickness 0.0
+skinparam RectangleBorderStyle solid
+
+' Usecase
+'=================================================================
+skinparam UsecaseBackgroundColor DS_LIGHTBLUE
+skinparam UsecaseBorderThickness 0.0
+skinparam UseCaseFontName FONTNAME
+
+' External Usecase
+skinparam UsecaseBackgroundColor<<External>> SUPERLIGHTGREY
+
+

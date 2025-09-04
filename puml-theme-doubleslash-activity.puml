@@ -1,1 +1,34 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+!pragma layout smetana
+
+' Activity
+'=================================================================
+skinparam conditionStyle diamond
+skinparam padding 3
+
+skinparam ActivityFontColor black
+
+skinparam ActivityStartColor DS_DARKGREY
+skinparam ActivityEndColor DS_DARKGREY
+
+skinparam ActivityBackgroundColor DS_LIGHTBLUE
+skinparam ActivityBorderColor DS_BLUE
+skinparam ActivityBorderThickness 0.0
+
+skinparam ActivityDiamondBorderColor DS_BLUE
+skinparam ActivityDiamondBackgroundColor DS_BLUE
+skinparam ActivityDiamondFontColor black
+skinparam ActivityDiamondFontName FONTNAME
+
+skinparam ActivityArrowThickness 1.2
+
+skinparam SwimlaneTitleFontColor black
+skinparam SwimlaneTitleFontSize 16
+skinparam SwimlaneTitleBackgroundColor SUPERLIGHTGREY
+skinparam SwimlaneBorderColor DS_LIGHTGREY
+skinparam SwimlaneBorderThickness 1.0
+'skinparam SwimlaneWidth 40
+'skinparam SwimlaneWrapTitleWidth 50
+
+!define format_swimlaneheader(x) \n<b>x\n
