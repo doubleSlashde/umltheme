@@ -1,1 +1,55 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+hide stereotypes
+
+' Actor
+'=================================================================
+skinparam ActorBorderColor DS_LIGHTGREY
+skinparam ActorBackgroundColor DS_LIGHTGREY
+skinparam ActorBorderThickness 2.0
+skinparam ActorFontName FONTNAME
+
+skinparam maxMessageSize 100
+skinparam ParticipantPadding 50
+skinparam SequenceParticipantBorderThickness 0.0
+
+skinparam ParticipantFontname FONTNAME
+skinparam SequenceFontname FONTNAME
+skinparam ActorFontname FONTNAME
+skinparam SequenceArrowFontname FONTNAME
+skinparam SequenceDividerFontname FONTNAME
+
+skinparam Padding 6
+
+' Sequence
+'=================================================================
+skinparam Sequence {
+
+    LifeLineBackgroundColor DS_BLUE
+    LifeLineBorderColor DS_BLUE
+    LifeLineBorderThickness 0.0
+
+    GroupBackgroundColor SUPERLIGHTGREY
+    ReferenceBackgroundColor DS_LIGHTGREY
+
+    ParticipantBackgroundColor DS_LIGHTBLUE
+    ParticipantBorderThickness 0.0
+    ParticipantFontColor BLACK
+    ParticipantFontSize 12
+
+    ParticipantBackgroundColor<<External>> SUPERLIGHTGREY
+    ParticipantBorderThickness<<External>> 0.0
+    ParticipantFontColor<<External>> BLACK
+    ParticipantFontSize<<External>> 12
+
+    DividerBackgroundColor SUPERLIGHTGREY
+    DividerBorderColor SUPERLIGHTGREY
+    DividerBorderThickness 1.0
+    DividerFontStyle normal
+    DividerFontSize 14
+
+    ArrowColor DS_GREY
+    ArrowFontSize 11
+
+}
+

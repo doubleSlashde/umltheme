@@ -1,1 +1,148 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+'Include this theme with:
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-general.puml
+
+' Rectangle
+'=================================================================
+skinparam RectangleFontColor DS_GREY
+skinparam RectangleBackgroundColor SUPERLIGHTGREY
+skinparam RectangleBorderColor DS_DARKGREY
+skinparam RectangleFontSize 14
+
+' Package
+'=================================================================
+skinparam PackageFontColor DS_GREY
+skinparam PackageBackgroundColor SUPERLIGHTGREY
+skinparam PackageBorderColor DS_DARKGREY
+skinparam PackageFontSize 14
+
+' Arrow
+'=================================================================
+skinparam ArrowColor DS_GREY
+skinparam ArrowThickness 1.5
+skinparam ArrowFontName FONTNAME
+skinparam ArrowFontColor DS_GREY
+skinparam ArrowFontStyle normal
+
+
+' Rectangle
+'=================================================================
+skinparam RectangleBorderThickness 0.5
+skinparam RectangleBorderColor DS_GREY
+skinparam RectangleBackgroundColor SUPERLIGHTGREY
+
+
+' Actor
+'=================================================================
+skinparam ActorBorderColor DS_LIGHTGREY
+skinparam ActorBackgroundColor DS_LIGHTGREY
+skinparam ActorBorderThickness 3.5
+skinparam ActorFontName FONTNAME
+
+
+' Usecase
+'=================================================================
+skinparam UsecaseBackgroundColor DS_LIGHTBLUE
+skinparam UsecaseBorderColor STEELBLUE40
+skinparam UsecaseBorderThickness 1.5
+skinparam UsecaseBackgroundColor<<External>> DS_LIGHTGREY
+skinparam UsecaseBorderColor<<External>> DS_LIGHTGREY
+
+' Activity
+'=================================================================
+skinparam conditionStyle diamond
+skinparam Activity {
+    StartColor DS_DARKGREY
+    EndColor DS_DARKGREY
+    FontColor DS_DARKGREY
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+    DiamondBorderColor DS_BLUE
+    DiamondBackgroundColor DS_BLUE
+    DiamondFontColor DS_DARKGREY
+    DiamondFontName FONTNAME
+}
+
+
+
+' Sequence
+'=================================================================
+skinparam Sequence {
+
+    LifeLineBackgroundColor DS_BLUE
+    LifeLineBorderColor DS_BLUE
+    LifeLineBorderThickness 0.0
+
+    GroupBackgroundColor SUPERLIGHTGREY
+    ReferenceBackgroundColor DS_LIGHTGREY
+
+    ParticipantBackgroundColor DS_LIGHTBLUE
+    ParticipantBorderColor DS_BLUE
+    ParticipantFontColor DS_DARKGREY
+    ParticipantFontSize 12
+    ParticipantBorderThickness 1.5
+
+    DividerBorderThickness .5
+    DividerFontSize 10
+    ArrowColor DS_GREY
+    ArrowFontSize 11
+
+}
+
+
+' Component
+'=================================================================
+skinparam Component {
+    BorderColor DS_BLUE 
+    BackgroundColor DS_LIGHTBLUE
+    BorderThickness 1.5
+    FontColor DS_DARKGREY
+}
+
+' Card
+'=================================================================
+skinparam Card {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+    BorderThickness .4
+
+    FontColor DS_DARKGREY
+}
+
+' Interface
+'=================================================================
+skinparam interface {
+    BackgroundColor DS_BLUE
+    BorderColor DS_BLUE
+
+    BorderColor<<external>> DS_GREY
+    BackgroundColor<<external>> DS_GREY
+
+    FontColor DS_DARKGREY
+}
+
+
+skinparam AgentFontColor<<external>> DS_GREY
+skinparam DatabaseFontColor<<external>> DS_GREY
+
+' Class
+'=================================================================
+skinparam Class {
+    BackgroundColor DS_LIGHTBLUE
+    BorderColor DS_BLUE
+    BorderThickness 1.5
+
+    BackgroundColor<<external>> SUPERLIGHTGREY
+    BorderColor<<external>> DS_GREY
+
+    AttributeFontSize 12
+    AttributeFontColor BLACK25
+
+    FontName Helvetica
+    FontColor BLACK25
+    FontSize 14 
+}
+

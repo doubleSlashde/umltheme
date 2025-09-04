@@ -1,1 +1,59 @@
-!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+skinparam NoteBackgroundColor #D7E9F4
+skinparam NoteBorderColor #D7E9F4
+skinparam backgroundStyle crosshatch
+
+skinparam stereotypeCBackgroundColor #C6C6C6
+
+skinparam Sequence {
+    ParticipantBorderColor #D7E9F4
+    ParticipantBackgroundColor #D7E9F4
+    LifeLineBorderColor #C6C6C6
+    LifeLineBackgroundColor #C6C6C6
+    ArrowColor black
+    GroupBackgroundColor #C6C6C6
+    ActorBorderColor #00A5E1
+    ActorBackgroundColor #00A5E1
+    ActorBorderThickness 2.5
+    ReferenceHeaderBackgroundColor #C6C6C6
+}
+
+skinparam Activity {
+  StartColor #D7E9F4
+  BarColor #D7E9F4
+  EndColor #C6C6C6
+  BackgroundColor #D7E9F4
+  BackgroundColor #D7E9F4
+  BorderColor #D7E9F4
+  FontName Arial
+}
+
+skinparam Usecase {
+    BackgroundColor #D7E9F4
+    BorderColor #D7E9F4
+    ArrowColor black
+    ActorBorderColor #D7E9F4
+    ActorFontName Arial
+    ActorBackgroundColor #D7E9F4
+}
+
+skinparam class {
+    BackgroundColor #D7E9F4
+    ArrowColor black
+    BorderColor black
+    IconColor black
+}
+
+skinparam Interface {
+  backgroundColor #C6C6C6
+  borderColor #C6C6C6
+}
+
+skinparam Component {
+  FontSize 12
+  FontName Arial
+  BorderColor #D7E9F4
+  BackgroundColor #D7E9F4
+  ArrowFontName Arial
+  ArrowColor black
+  ArrowFontColor black
+}
