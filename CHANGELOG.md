@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- changelog -->
 
+## [2.0.1] - 2025-09-04
+
+### Added
+
+- SWEP Examples
+
+### Fixed
+
+- Includes in dark & light mode, gantt and system styles
+- Defined arrow font color to match general font color
+
 ## [2.0.0] - 2025-07-01
 
 ### Added
@@ -127,7 +138,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consistent styling across all diagram types established
 - Theme parameter conflicts resolved
 
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
+[2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
 [1.4.0]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/doubleSlashde/umltheme/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/doubleSlashde/umltheme/compare/v1.1.0...v1.2.0
