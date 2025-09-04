@@ -1,0 +1,29 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+'You will find help here https://plantuml.com/de/use-case-diagram
+
+Actor "Kunde" as actor1
+Actor "Kundensupport" as actor2
+
+rectangle "Einkaufssystem" {
+    UseCase "Produkt in den\n Warenkorb legen" as UC1
+}
+note right of UC1
+    Ermöglicht dem Kunden, Produkte 
+    in den Warenkorb zu legen
+end note
+
+rectangle  "Rückgabesystem" {
+    UseCase "Rückgabeantrag\n einreichen" as UC2
+    UseCase "Rückgabeantrag\n bearbeiten" as UC3
+}
+
+actor1 -- UC1
+actor2 -- UC3
+actor1 -- UC2
+
+UseCase "Historische\n Bestellungen einsehen" <<External>> as UC4
+UseCase "Produkt bewerten" <<External>> as UC5
+UC3 ..> UC4 : <<include>>
+UC2 <.. UC5 : <<extend>>
+@enduml

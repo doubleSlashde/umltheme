@@ -1,0 +1,83 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+skinparam classAttributeIconSize 0
+hide circle
+hide empty members
+hide stereotype
+
+class Kunde {
+  name: String
+  email: String
+  passwort: String
+  telefon: String
+}
+
+class Adresse {
+  straße: String
+  plz: String
+  stadt: String
+  land: String
+}
+
+class Produkt {
+  name: String
+  beschreibung: String
+  preis: Decimal
+  lagerbestand: int
+  bildUrl: String
+}
+
+class Warenkorb {
+  sessionId: String
+  zeitstempel: DateTime
+}
+
+class Warenkorbposition {
+  menge: int
+  einzelpreis: Decimal
+}
+
+class Bestellung {
+  bestellnummer: String
+  datum: DateTime
+  status: String
+  gesamtsumme: Decimal
+}
+
+class Bestellposition {
+  menge: int
+  einzelpreis: Decimal
+}
+
+class Zahlung {
+  id: UUID
+  zahlungsart: String
+  betrag: Decimal
+  status: String
+}
+
+class Lieferung {
+  trackingnummer: String
+  versanddatum: DateTime
+  dienstleister: String
+}
+
+' Beziehungen
+Kunde "1" -- "0..*" Bestellung
+Kunde "1" -- "0..1" Warenkorb
+Kunde "1" --- "0..*" Adresse
+
+Adresse "1" --- "0..*" Bestellung : Lieferadresse
+
+Produkt "1" --- "0..*" Warenkorbposition
+Produkt "1" --- "0..*" Bestellposition
+
+Warenkorb "1" -- "0..*" Warenkorbposition
+Warenkorbposition "1" -- "1" Produkt
+
+Bestellung "1" --- "1..*" Bestellposition
+Bestellposition "1" -- "1" Produkt
+
+Bestellung "1" --- "1" Zahlung
+Bestellung "1" --- "1" Lieferung
+@enduml

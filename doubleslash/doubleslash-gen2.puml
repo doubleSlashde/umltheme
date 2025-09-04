@@ -226,6 +226,7 @@ skinparam BoxPadding            40
 skinparam Padding               2
 skinparam ArrowColor            $DS_GREY
 skinparam ArrowThickness        1.5
+skinparam ArrowFontColor        $FGCOLOR
 skinparam DefaultTextAlignment  center
 skinparam stereotype {
     CBackgroundColor $SECONDARY_LIGHT
