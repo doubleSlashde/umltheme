@@ -1,0 +1,44 @@
+@startuml Aws_Icons_1
+
+!include <awslib/AWSCommon>
+!include <awslib/Groups/AWSCloud>
+!include <awslib/Groups/AvailabilityZone>
+!include <awslib/Groups/VPC>
+!include <awslib/Groups/PublicSubnet>
+!include <awslib/Groups/PrivateSubnet>
+!include <awslib/NetworkingContentDelivery/VPCInternetGateway>
+!include <awslib/NetworkingContentDelivery/VPCNATGateway>
+!include <awslib/Compute/EC2>
+
+AWSCloudGroup(cloud) {
+  VPCGroup(vpc) {
+    VPCInternetGateway(internet_gateway, "Internet gateway", "")
+
+    AvailabilityZoneGroup(az_1, "\tAvailability Zone 1\t") {
+      PublicSubnetGroup(az_1_public, "Public subnet") {
+        VPCNATGateway(az_1_nat_gateway, "NAT gateway", "") #Transparent
+      }
+      PrivateSubnetGroup(az_1_private, "Private subnet") {
+        EC2(az_1_ec2_1, "Instance", "") #Transparent
+      }
+
+      az_1_ec2_1 .u.> az_1_nat_gateway
+    }
+
+    AvailabilityZoneGroup(az_2, "\tAvailability Zone 2\t") {
+      PublicSubnetGroup(az_2_public, "Public subnet") {
+        VPCNATGateway(az_2_nat_gateway, "NAT gateway", "") #Transparent
+      }
+      PrivateSubnetGroup(az_2_private, "Private subnet") {
+        EC2(az_2_ec2_1, "Instance", "") #Transparent
+      }
+
+      az_2_ec2_1 .u.> az_2_nat_gateway
+    }
+
+    az_2_nat_gateway .[hidden]u.> internet_gateway
+    az_1_nat_gateway .[hidden]u.> internet_gateway
+  }
+}
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml Conditional
+
+title Conditional - Activity Diagram 
+
+
+start
+
+:Eat; 
+note right: This is a note to the right
+
+:Drink; 
+note left: This is a note to the left
+
+if (Play?) then (yes)
+  :Having Fun;
+else (no)
+  :Not Having Fun;
+endif
+
+:Go To Bed;
+
+stop
+
+@enduml

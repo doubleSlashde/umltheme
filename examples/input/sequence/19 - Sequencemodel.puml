@@ -1,0 +1,33 @@
+@startuml Sequencemodel
+
+title Sequenzmodell
+
+Actor Alice 
+Participant FrontEnd 
+Participant API 
+Participant Backend
+Participant DB 
+
+== Initialization ==
+Alice -> FrontEnd: klick Button
+activate FrontEnd
+FrontEnd -> API: call Service
+API -> Backend : Call Backend
+
+activate Backend
+Backend -> API : return value
+deactivate Backend
+
+API -> FrontEnd : return value
+FrontEnd -> Alice: Show status
+deactivate FrontEnd
+
+== Processing ==
+Backend -> DB : read detail data
+activate Backend
+DB -> Backend : return
+Backend -> Backend : process result
+Backend -> Alice : send email
+deactivate Backend
+
+@enduml

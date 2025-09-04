@@ -1,0 +1,31 @@
+@startuml Json_Display
+
+title JSON Display - Component Diagram
+
+component Component {
+
+	json People {
+  	"John":"Smith",
+  	"Paul":"Jones",
+  	"Kevin": "Rogers"
+	}
+	
+	json Cities {
+	"Houston" : ["North America", "USA"],
+	"Berlin" : ["Germany", "Europe"],
+	"Beijing" : ["China", "Asia"]
+	}
+}
+
+note left of Component
+	You can display JSON data as part of 
+	components and component diagrams
+end note
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

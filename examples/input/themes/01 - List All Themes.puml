@@ -1,0 +1,5 @@
+@startuml List_All_Themes
+
+help themes
+
+@enduml

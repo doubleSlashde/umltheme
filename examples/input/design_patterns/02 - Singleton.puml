@@ -1,0 +1,17 @@
+@startuml Singleton
+
+title Singleton
+
+class Singleton {
+    -{static} instance: Singleton
+    +{static} getInstance(): Singleton
+    +operation(): void
+}
+
+Singleton -> Singleton : getInstance()
+Singleton -up-> "Client" : operation()
+note left of Singleton::instance
+    private static Singleton instance;
+end note
+
+@enduml

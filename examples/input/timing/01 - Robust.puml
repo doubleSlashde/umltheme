@@ -1,0 +1,20 @@
+@startuml Robust
+
+robust "Job Queue" as JQ
+
+@0
+JQ is Idle
+
+@50
+JQ is Processing
+
+@250
+JQ is Logging
+
+@250
+JQ is Waiting
+
+@500
+JQ is Idle
+
+@enduml

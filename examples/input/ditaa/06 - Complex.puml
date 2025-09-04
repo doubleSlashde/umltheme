@@ -1,0 +1,21 @@
+@startditaa Complex
+
+split boxes       Dotted lines on shapes
++---------+           *----*
+| cBLU    |           |    |      /--*
+|         |           *    *      |
+|    +----+           |    |  -*--+
+|    |cYEL|           *----*
+|    |    |
++----+----+
+------------------------------------------------------
+Color codes                   lists with bullet points
+/-------------+-------------\   /-----------------\
+|cRED RED     |cBLU BLU     |   | Things to do    |
++-------------+-------------+   | cGRE            |
+|cGRE GRE     |cPNK PNK     |   | o Underpants    |
++-------------+-------------+   | o Unknown       |
+|cBLK BLK     |cYEL YEL     |   | o Proffit!      |
+\-------------+-------------/   \-----------------/
+
+@endditaa

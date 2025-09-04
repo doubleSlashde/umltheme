@@ -1,0 +1,18 @@
+@startgantt Daily_Closed_Days
+
+'Can be daily, weekly, or monthly
+ganttscale daily
+
+saturdays are closed
+sunday are closed
+
+2020/02/06 is closed
+2020/03/10 to 2020/03/12 is closed
+
+Project starts 2020-02-01
+
+-- Team 1 --
+[Version 1] as [V1] lasts 10 days
+then [Version 2] as [V2] lasts 21 days
+
+@endgantt

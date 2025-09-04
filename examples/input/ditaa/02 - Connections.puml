@@ -1,0 +1,32 @@
+@startditaa Connections
+
+' https://github.com/stathissideris/ditaa
+
+' Tag	Description:
+' {c}   Choice or Decision
+' {d}	  Document - Symbol representing a document
+' {io}	Input/Output - Symbol representing input/output
+' {mo}	Manual operation
+' {o}	  Ellipse
+' {s}	  Storage - Symbol representing a form of storage, like a database or a hard disk.
+' {tr}	Trapezoid
+
++---------+
+|         |
+|         |
+|  Server |
+|         |
+|{tr}     |
++----+----+ 
+     |
+     |
++----+----+
+|         |
+|Database |
+|         |
+|         |
+|{s}      |
++---------+
+
+
+@endditaa

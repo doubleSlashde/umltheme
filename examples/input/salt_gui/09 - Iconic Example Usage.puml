@@ -1,0 +1,17 @@
+@startsalt Iconic_Example_Usage
+
+
+
+{
+
+  <&person> Login    | "MyName   "
+
+  <&key> Password | "****     "
+
+  [OK <&account-login>] | [Cancel <&circle-x>]
+
+}
+
+
+
+@endsalt

@@ -1,0 +1,9 @@
+@startuml Properties
+
+object ObjectOne
+object "Object Two" as o2
+
+o2 : id = 1
+o2 : Name = "John"
+
+@enduml

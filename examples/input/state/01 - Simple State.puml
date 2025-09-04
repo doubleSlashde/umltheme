@@ -1,0 +1,16 @@
+@startuml Simple_State
+
+title Simple State Model
+[*] --> GlassEmpty
+GlassEmpty --> [*]
+GlassEmpty : Contents - void
+
+GlassEmpty -> GlassFull
+GlassFull : Water
+GlassFull --> [*]
+
+note right of GlassEmpty
+this is a note about the empty glass state
+end note
+
+@enduml

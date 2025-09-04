@@ -1,0 +1,26 @@
+@startuml Hiding_Unlinked_Components
+
+title Hiding Unlinked Components - Component Diagram
+
+component [Data Warehouse]
+component [Data Analytics]
+component [Data Delivery]
+component [Elephants and Bananas]
+
+[Data Warehouse] -> [Data Analytics]
+[Data Analytics] -> [Data Delivery]
+
+note right of [Data Delivery]
+	There is a component to the right of this note, 
+	but it's been hidden because it is unlinked. 
+	Comment out the "hide @unlinked" line to see it.
+end note
+
+hide @unlinked
+
+'You can also use "remove @unlinked" to remove any elements and their spacing to clean up a diagram
+
+
+
+
+@enduml

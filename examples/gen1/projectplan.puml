@@ -1,0 +1,5 @@
+@startgantt projectplan
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/pgantt-theme-doubleslash.puml
+'!include ../../pgantt-theme-doubleslash.puml
+!include ../input/gantt/15 - Projectplan.puml
+@endgantt

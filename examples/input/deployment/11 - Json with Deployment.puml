@@ -1,0 +1,31 @@
+@startuml Json_with_Deployment
+
+title JSON Display - Deployment Diagram
+
+left to right direction
+actor Employee
+
+	json Employees {
+  	"John":"Smith",
+  	"Paul":"Jones",
+  	"Kevin": "Rogers"
+	}
+	
+	json Cities {
+	"Houston" : ["North America", "USA"],
+	"Berlin" : ["Europe", "Germany"],
+	"Beijing" : ["Asia", "China"]
+	}
+	
+	Employees ... Employee
+	Employee --> Cities
+	
+note top of Employee
+	You can display JSON data as 
+	deployment diagrams
+end note
+
+
+
+
+@enduml

@@ -1,0 +1,9 @@
+@startsalt Grid
+
+{
+  User Name:| "Justin     "
+  Password: | "****       "
+  [Ok    ]  | [  Close   ]
+}
+
+@endsalt

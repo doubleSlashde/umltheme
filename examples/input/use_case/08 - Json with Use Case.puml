@@ -1,0 +1,22 @@
+@startuml Json_with_Use_Case
+
+title JSON With Use Case - Use Case Diagram
+
+'Needed to mix JSON with other diagram types:
+allowmixing
+
+actor User
+usecase (Retrieve Data) as U
+
+json Sales {
+   "Product 1":"$452,423",
+   "Product 2":"$234,854",
+   "Product 3": ["Domestic: $32,483", "International: $55,869"]
+}
+
+User -right-> U
+U .right.. Sales
+
+
+
+@enduml

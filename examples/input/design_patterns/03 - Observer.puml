@@ -1,0 +1,30 @@
+@startuml Observer
+
+title Observer
+
+interface Subject <<interface>> {
+    + registerObserver(observer: Observer)
+    + removeObserver(observer: Observer)
+    + notifyObservers()
+}
+
+interface Observer <<interface>> {
+    + update()
+}
+
+class MyTopic implements Subject {
+    - observers: Observer[]
+    + registerObserver(observer: Observer)
+    + removeObserver(observer: Observer)
+    + notifyObservers()
+}
+
+class User implements Observer {
+    - username: string
+    + update()
+}
+
+MyTopic --> "Observers 1..*" Observer
+User ..> Subject : "Topic 0..1"
+
+@enduml

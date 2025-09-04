@@ -1,0 +1,34 @@
+@startjson Complex
+
+{
+  "people" : [
+      {
+        "name" : "Mark", 
+        "age" : 31, 
+        "city" : "New York",
+        "phone": [
+          {
+            "type": "home",
+            "number": "867-5309"
+          },
+          {
+            "type": "mobile",
+            "number": "646 555-4567"
+          }
+        ]
+      },
+      {
+        "name" : "Amy", 
+        "age" : 24, 
+        "city" : "Denver",
+        "pets" : [ "Spot", "George", "Fred"]
+      },
+      {
+        "name" : "Steve", 
+        "age" : 75, 
+        "city" : "San Angelo"
+      }
+    ]
+}
+
+@endjson

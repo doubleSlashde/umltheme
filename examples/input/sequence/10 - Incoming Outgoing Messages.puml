@@ -1,0 +1,31 @@
+@startuml Incoming_Outgoing_Messages
+
+title Incoming/Outgoing Messages - Sequence Diagram
+
+'Incoming message
+[-> Company: External Email
+
+activate Company
+
+'Internal Message
+Company -> Company: Internal Email
+
+'Internal to External Message
+Company ->] : Call Contractor
+
+Company<-] : Contractor Response
+
+[<- Company: Respond to External Email
+
+'To create a shorter incoming/outgoing arrow, use a ? in place of ]/[
+?-> Company : Thanks!
+
+deactivate Company
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

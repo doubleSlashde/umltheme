@@ -1,0 +1,36 @@
+@startuml Component_Styles
+
+title Component Styles - Component Diagram
+
+note as N
+	You can change the style of components
+end note
+
+skinparam componentStyle rectangle
+[Business Logic]
+
+note top of [Business Logic]
+	Rectangle style
+end note
+
+skinparam componentStyle uml1
+[Data Access] 
+
+note top of [Data Access]
+	UML1 style
+end note
+
+skinparam componentStyle uml2
+[Graphic User\nInterface]
+
+note top of [Graphic User\nInterface]
+	Default UML2 style
+end note
+
+footer
+
+	Created by Alessio Berni
+	[[www.linkedin.com/in/alessio-berni-a39532245]]
+end footer
+
+@enduml

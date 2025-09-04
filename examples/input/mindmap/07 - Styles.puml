@@ -1,0 +1,70 @@
+@startmindmap Styles
+
+<style>
+
+node {
+    Padding 12
+    Margin 3
+    HorizontalAlignment center
+    LineColor blue
+    LineThickness 3.0
+}
+
+rootNode {
+    LineStyle 8.0;3.0
+    LineColor blue
+    BackgroundColor lightgreen
+    LineThickness 3.0
+    RoundCorner 0
+    Shadowing 5
+}
+
+leafNode {
+    LineStyle 1
+    LineColor red
+    LineThickness 1.0
+    RoundCorner 20
+    Padding 3
+}
+
+arrow {
+    LineStyle 4
+    LineThickness 1
+    LineColor blue
+}
+</style>
+
+* Solving \n Global \n Warming
+
+** Eating differently
+*** Vegan
+*** Vegetarian
+*** Less processed foods
+*** Buy local food
+** Travel
+***:Bike more
+Skateboard more
+Walk more
+;
+***:Ride buses
+Ride UBER
+Ride carpool
+;
+***:Buy an electric car
+Buy an electric scooter
+Buy an electric skateboard
+;
+
+left side
+
+** Home
+*** Energy audit
+*** Use a cloths line
+*** Add insulation
+*** Get solar panels
+** Be a role model
+***_ Vote
+***_ Encourage others
+***_ Teach your kids
+
+@endmindmap

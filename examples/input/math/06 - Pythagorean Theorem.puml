@@ -1,0 +1,12 @@
+@startuml Pythagorean_Theorem
+title Pythagorean Theorem
+
+:<math>a^2 + b^2 = c^2</math>;
+
+note right
+  <math>a</math>: One leg of a right triangle
+  <math>b</math>: The other leg of a right triangle
+  <math>c</math>: The hypotenuse (longest side, opposite the right angle)
+end note
+
+@enduml

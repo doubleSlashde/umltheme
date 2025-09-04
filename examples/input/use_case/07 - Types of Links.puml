@@ -1,0 +1,18 @@
+@startuml Types_of_Links
+
+title Types of Links - Use Case Diagram
+
+actor User
+
+User --+ (App 1) : X
+User --* (App 2) : black diamond
+User --o (App 3) : white diamond
+User --# (App 4) : square
+User --0 (App 5) : circle
+User -->> (App 6) : black arrow
+User --|> (App 7) : extension
+User --( (App 8) : arc
+
+
+
+@enduml

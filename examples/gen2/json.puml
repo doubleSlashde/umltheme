@@ -1,0 +1,4 @@
+@startjson JSON
+!include ../../doubleslash/doubleslash-gen2.puml
+!include ../input/json/08 - Json.puml
+@endjson 

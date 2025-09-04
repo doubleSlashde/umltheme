@@ -1,0 +1,5 @@
+@startuml Hello_World
+digraph G {
+    Hello -> World
+} 
+@enduml

@@ -1,0 +1,28 @@
+@startuml Extras
+
+Title Job Queue
+header: Software Department
+footer: Sprint 32
+legend
+Insert Legend Here
+end legend
+caption Team T-Rex
+
+robust "Job Queue" as JQ
+
+@0
+JQ is Idle
+
+@2
+JQ is Processing
+
+@5
+JQ is Logging
+
+@10
+JQ is Waiting
+
+@15
+JQ is Idle
+
+@enduml

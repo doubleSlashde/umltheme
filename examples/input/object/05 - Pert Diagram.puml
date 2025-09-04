@@ -1,0 +1,67 @@
+@startuml Pert_Diagram
+
+title PERT Diagram - Object Diagram
+
+map "Project Start" as m1 {
+}
+
+map "Speak With Potential Investors" as m2 {
+  Jan 1 => Jan 4
+}
+
+map "Acquire Steady Flow of Investments" as m3 {
+  Jan 5 => Jan 31
+}
+
+map "Develop Initial Product Design" as m4 {
+  Jan 10 => Feb 28
+}
+
+map "Create Prototype" as m5 {
+  Mar 1 => Apr 20
+}
+
+map "Mass Produce Product" as m6 {
+  Apr 21 => Jun 1
+}
+
+map "Conduct Market Research" as m7 {
+  Jan 14 => Mar 1
+}
+
+map "Purchase Promotional Material" as m8 {
+  Mar 2 => Apr 15
+}
+
+map "Enact Ad Campaign in Preparation for Release" as m9 {
+  Apr 16 => Jun 1
+}
+
+map "Release Product" as m10 {
+  Jun 2 => Jun 3
+}
+
+map "Project End" as m11 {
+}
+
+
+m1 -right-> m2
+m2 -right-> m3
+m3 -right-> m10
+
+m1 -up-> m4
+m4 -right-> m5
+m5 -right-> m6
+m6 -right-> m10
+
+m1 -down-> m7
+m7 -right-> m8
+m8 -right-> m9
+m9 -right-> m10
+
+m10 -right-> m11
+
+
+
+
+@enduml

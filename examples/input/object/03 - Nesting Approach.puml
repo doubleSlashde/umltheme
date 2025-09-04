@@ -1,0 +1,6 @@
+@startuml Nesting_Approach
+
+object "Object Two" as o2 {
+    id = 1
+    Name = "John"
+}
