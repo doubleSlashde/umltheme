@@ -1,0 +1,20 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+
+left to right direction
+
+actor User
+
+rectangle "Systemcontext" {
+  usecase "Edit object" as UC1 
+  usecase "Search objects" as UC2 
+  usecase "Login user" as UC3 
+  usecase "Provide feedback" as UC4 
+}
+
+User -- UC1
+User -- UC2
+User -- UC3
+User -- UC4
+
+@enduml

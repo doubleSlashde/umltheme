@@ -1,0 +1,57 @@
+@startmindmap 
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+
+*_ <size:20><&person>Anna,\n die regelmäßige\n Online-Shopperin
+** <b>Demografische Daten
+*** Alter: 30 Jahre
+*** Beruf: Marketing Managerin
+*** Bildung: Hochschulabschluss
+*** Wohnort: Großstadt
+** <b>Technologische Fähigkeiten
+*** Vertraut mit Smartphones und Laptops
+*** Nutzt regelmäßig Apps und Websites für Online-Shopping
+*** Mittlere bis fortgeschrittene Internetnutzungsfähigkeiten
+** <b>Einkaufsverhalten
+*** Kauft überwiegend Kleidung, Elektronik und Haushaltswaren online
+*** Bevorzugt Shops mit benutzerfreundlichen Schnittstellen
+*** Legt Wert auf Kundenbewertungen und detaillierte Produktinformationen
+*** Nutzt Vergleichsfunktionen, um Produkte zu evaluieren
+** <b>Motivationen und Bedürfnisse
+*** Zeitersparnis: Bevorzugt schnelle und effiziente Einkaufserlebnisse
+*** Qualität: Sucht nach hochwertigen Produkten mit gutem Preis-Leistungs-Verhältnis
+*** Bequemlichkeit: Schätzt einfache Rückgabebedingungen und zuverlässigen Kundenservice
+** <b>Herausforderungen und Frustrationen
+*** Frustration bei langsamen Ladezeiten oder komplizierten Check-out-Prozessen
+*** Misstrauen gegenüber Websites, die unsicher oder veraltet erscheinen
+*** Enttäuschung, wenn Produkte nicht den Beschreibungen oder Bewertungen entsprechen
+** <b>Kommunikationspräferenzen
+*** Bevorzugt E-Mail-Benachrichtigungen über Angebote und Rabatte
+*** Nutzt soziale Medien, um sich über neue Produkte und Trends zu informieren    
+
+*_ <size:20><&person> Max,\n der Kundensupport-\nMitarbeiter 
+** <b>Demografische Daten
+*** Alter: 35 Jahre
+*** Beruf: Kundensupport-Mitarbeiter
+*** Bildung: Ausbildung in Kommunikation oder ähnlichem Bereich
+*** Wohnort: Stadtrand
+** <b>Technologische Fähigkeiten
+*** Vertraut mit Computern, CRM-Systemen und Kundensupport-Software
+*** Erfahrung im Umgang mit verschiedenen Kommunikationskanälen (E-Mail, Telefon, Live-Chat)
+*** Grundkenntnisse in der Fehlerbehebung und technischen Unterstützung
+** <b>Arbeitsverhalten
+*** Bearbeitet Kundenanfragen und -beschwerden effizient und professionell
+*** Nutzt CRM-Systeme zur Verfolgung von Kundeninteraktionen und -historie
+*** Arbeitet oft unter Zeitdruck und muss Prioritäten setzen
+** <b>Motivationen und Bedürfnisse
+*** Effizienz: Sucht nach Wegen, die Arbeitsabläufe zu optimieren und Zeit zu sparen
+*** Kundenzufriedenheit: Motiviert, eine positive Kundenerfahrung zu schaffen
+*** Anerkennung: Schätzt Anerkennung für gute Leistung und Problemlösung
+** <b>Herausforderungen und Frustrationen
+*** Stress durch hohe Anzahl von Kundenanfragen, besonders während Spitzenzeiten
+*** Frustration bei unzureichenden Werkzeugen oder Systemen, die die Arbeit behindern
+*** Herausforderung, mit schwierigen oder unzufriedenen Kunden umzugehen
+** <b>Kommunikationspräferenzen
+*** Bevorzugt klare und strukturierte Kommunikation
+*** Schätzt schnelle und direkte Rückmeldungen von Vorgesetzten und Kollegen   
+
+@endmindmap
