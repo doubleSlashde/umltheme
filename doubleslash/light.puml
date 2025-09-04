@@ -2,5 +2,5 @@
 !$PUML_MODE = "light"
 !$PUML_BGCOLOR = "white"
 !$PUML_GRADIENT = 20
-!include doubleslash/doubleslash-gen2.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
 @enduml
