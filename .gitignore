@@ -1,5 +1,9 @@
 .idea
 *.iml
-.vscode
+.vscode/*
+!.vscode/settings.json
 out
 out\*
+
+# MkDocs build output (local previews / mkdocs build)
+site/

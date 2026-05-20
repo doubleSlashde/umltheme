@@ -1,0 +1,59 @@
+# MkDocs configuration for GitHub Pages.
+# Published via .github/workflows/docs.yml when pushes land on main.
+
+site_name: plantUML Theme User Guide
+site_description: >-
+  doubleSlash PlantUML themes — gen2 styling, diagram support, MkDocs integration
+site_author: doubleSlash
+site_url: https://doubleslashde.github.io/umltheme/
+
+repo_name: doubleSlashde/umltheme
+repo_url: https://github.com/doubleSlashde/umltheme
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.expand
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets:
+      base_path: docs
+      check_paths: true
+  - pymdownx.details:
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - doubleslash-theme
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Theme usage: theme-usage.md
+  - Examples & diagram types: examples.md
