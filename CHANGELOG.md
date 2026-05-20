@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- changelog -->
 
+## [2.0.2] - 2026-05-20
+
+### Added
+
+- MkDocs documentation site with getting-started, theme usage, and examples guides
+- GitHub Actions workflow for building and publishing docs
+- Gen2 examples split into `local_testing/` and `remote_testing/` directories
+- Extracted shared color definitions to `doubleslash/colors.puml`
+
+### Changed
+
+- README streamlined; detailed usage moved to the documentation site
+
+### Fixed
+
+- Reverted includes in legacy theme files for backwards compatibility with older PlantUML versions
+- Dark mode inverse text color
+
 ## [2.0.1] - 2025-09-04
 
 ### Added
@@ -138,7 +156,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consistent styling across all diagram types established
 - Theme parameter conflicts resolved
 
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
 [1.4.0]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...v1.4.0
