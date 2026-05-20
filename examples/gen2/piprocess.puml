@@ -1,4 +1,0 @@
-@startuml piprocess
-!include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/activity/20 - Piprocess.puml
-@enduml 

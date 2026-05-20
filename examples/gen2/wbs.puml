@@ -1,4 +1,0 @@
-@startwbs WBS
-!include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/work_breakdown_structure/08 - Wbs.puml
-@endwbs 

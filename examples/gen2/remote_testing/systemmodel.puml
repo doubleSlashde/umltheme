@@ -1,4 +1,6 @@
-@startuml Systemmodel
+@startuml systemmodel
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/puml-theme-gen2-system.puml
+left to right direction
 
 title "System model with C4-Level 1-System context and 2-Containers"
 

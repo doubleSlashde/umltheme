@@ -1,0 +1,8 @@
+@startjson JSON
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+{
+   "fruit":"Apple",
+   "size": "Large",
+   "color": ["Red", "Green"]
+}
+@endjson

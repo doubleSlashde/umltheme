@@ -1,0 +1,12 @@
+@startwbs WBS
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+* World
+** America 
+***_ Canada 
+***_ Mexico
+***_ USA
+** Europe
+***_  England
+***_  Germany
+***_  Spain
+@endwbs

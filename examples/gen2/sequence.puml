@@ -1,4 +1,0 @@
-@startuml sequencemodel 1
-!include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/sequence/16 - Sequence.puml
-@enduml 

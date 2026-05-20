@@ -1,0 +1,44 @@
+''
+'' # doubleSlash Corporate Colors v2
+''
+!$DS_CYAN           = "#00A5E1"
+'' ## Light Mode Colors
+'' ### Light Mode - Primary Color
+!$DS_CLICKABLE      = "#00759e"
+'' ### Light Mode - Secondary Color
+'' ### Light Mode - Text Colors
+!$TEXT_BLACK       = "#000000"
+!$TERTIARY_TINT    = "#6D6D6D"
+!$TEXT_WHITE       = "#FFFFFF"
+'' ### Light Mode - Background Colors
+!$DS_GRADIENT      = "#EFEFEF"
+!$DS_BASE_BACKGROUND = "#FFFFFF"
+!$DS_BRIGHT_BACKGROUND = "#F9F9F9"
+!$DS_MEDIUM_BACKGROUND = "#EFEFEF"
+'' ### Light Mode - Accent Colors
+!$DS_DARK_GREEN    = "#b9d478"
+!$DS_BRIGHT_CORAL  = "#f36295"
+!$DISABLED_GREY     = "#C6C6C6"
+!$DS_SHADOW         = "#000026"
+'' ### Light Mode - Validation Colors
+!$DS_GREEN         = "#6B9714"
+!$DS_ORANGE        = "#DB6A00"
+!$DS_RED           = "#C63328"
+'' ## Dark Mode Colors
+'' ### Dark Mode - Primary Color
+!$DS_DARK_CLICKABLE = "#77DDFF"
+'' ### Dark Mode - Secondary Color
+'' ### Dark Mode - Text Colors
+!$TEXT_DARK          = "#D7E9F4"
+!$TEXT_DARK_SECONDARY = "#AFC1C7"
+!$DS_DARK_DISABLED   = "#84999F"
+!$DS_DARK_CLICKABLE  = "#77DDFF"
+'' ### Dark Mode - Background Colors
+!$DARK_GRADIENT1     = "#22303C"
+!$DARK_GRADIENT2     = "#15202B"
+!$DS_DARK_BACKGROUND = "#15202B"
+!$DS_DARK_CONTAINER  = "#22303C"
+!$DS_DARK_HOVER      = "#2D3740"
+'' ### Dark Mode - Accent Colors
+!$DS_DARK_GREEN      = "#b9d478"
+!$DS_DARK_RED        = "#E85F63"

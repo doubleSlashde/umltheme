@@ -1,4 +1,0 @@
-@startuml timing
-!include ../../doubleslash/doubleslash-gen2.puml
-!include ../input/timing/11 - Timing.puml
-@enduml 
