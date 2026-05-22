@@ -260,9 +260,20 @@ skinparam defaultFontSize       12
 skinparam dpi                   100
 skinparam shadowing             false
 skinparam roundcorner           16
-skinparam ParticipantPadding    40
 skinparam BoxPadding            40
-skinparam Padding               2
+''
+'' ParticipantPadding / global Padding — CSS on PlantUML 1.2026.3+, skinparam fallback on older JARs
+'' Optional before include: !$PUML_FORCE_LEGACY_PADDING to force skinparam on new PlantUML builds
+''
+!$PUML_ELEMENT_PADDING = 2
+!$PUML_SEQUENCE_GAP_H = 40
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-eval-gate.puml
+!if ($PUML_PADDING_USE_CSS != 0)
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-css.puml
+!else
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-skinparam.puml
+!endif
+
 skinparam ArrowColor            $DS_GREY
 skinparam ArrowThickness        1.5
 skinparam ArrowFontColor        $FGCOLOR

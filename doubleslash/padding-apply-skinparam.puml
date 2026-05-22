@@ -1,0 +1,16 @@
+'' skinparam fallback (PlantUML before 1.2026.3, or forced legacy mode)
+'' Prerequisites:
+''   !$PUML_ELEMENT_PADDING — maps to skinparam Padding
+'' Optional:
+''   !$PUML_SEQUENCE_GAP_H — skinparam ParticipantPadding
+''   !$PUML_ACTIVITY_PAD — skinparam padding (activity / global tight spacing)
+
+skinparam Padding $PUML_ELEMENT_PADDING
+
+!if %variable_exists("$PUML_SEQUENCE_GAP_H")
+skinparam ParticipantPadding $PUML_SEQUENCE_GAP_H
+!endif
+
+!if %variable_exists("$PUML_ACTIVITY_PAD") && ($PUML_ACTIVITY_PAD != 0)
+skinparam padding $PUML_ACTIVITY_PAD
+!endif

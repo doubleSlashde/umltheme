@@ -20,7 +20,18 @@
 !define FONTNAME         "Helvetica"
 
 skinparam Shadowing false
-skinparam Padding 2
+
+''
+'' Global skinparam Padding replacement (CSS ≥ PlantUML 1.2026.3)
+''
+!$PUML_ELEMENT_PADDING = 2
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-eval-gate.puml
+!if ($PUML_PADDING_USE_CSS != 0)
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-css.puml
+!else
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-skinparam.puml
+!endif
+
 skinparam Roundcorner 16
 skinparam BackgroundColor white
 skinparam DefaultFontName FONTNAME

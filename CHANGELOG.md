@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <!-- changelog -->
 
+## [Unreleased]
+
+### Changed
+
+- Gen2 and legacy themes use PlantUML `<style>` for global `Padding` and sequence `ParticipantPadding` on **PlantUML 1.2026.3 and newer**, eliminating deprecation warnings; older JARs keep `skinparam` via a version gate ([`doubleslash/padding-eval-gate.puml`](https://github.com/doubleSlashde/umltheme/blob/main/doubleslash/padding-eval-gate.puml)).
+
 ## [2.0.2] - 2026-05-20
 
 ### Added

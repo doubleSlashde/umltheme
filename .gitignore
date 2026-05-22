@@ -4,6 +4,7 @@
 !.vscode/settings.json
 out
 out\*
-
+.tmp/
+.tmp/*
 # MkDocs build output (local previews / mkdocs build)
 site/

@@ -10,7 +10,6 @@ skinparam ActorBorderThickness 2.0
 skinparam ActorFontName FONTNAME
 
 skinparam maxMessageSize 100
-skinparam ParticipantPadding 50
 skinparam SequenceParticipantBorderThickness 0.0
 
 skinparam ParticipantFontname FONTNAME
@@ -19,7 +18,17 @@ skinparam ActorFontname FONTNAME
 skinparam SequenceArrowFontname FONTNAME
 skinparam SequenceDividerFontname FONTNAME
 
-skinparam Padding 6
+''
+'' Legacy sequence spacing: wider global Padding + participant gap (CSS ≥ 1.2026.3)
+''
+!$PUML_ELEMENT_PADDING = 6
+!$PUML_SEQUENCE_GAP_H = 50
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-eval-gate.puml
+!if ($PUML_PADDING_USE_CSS != 0)
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-css.puml
+!else
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/padding-apply-skinparam.puml
+!endif
 
 ' Sequence
 '=================================================================

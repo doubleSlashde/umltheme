@@ -5,7 +5,19 @@
 ' Activity
 '=================================================================
 skinparam conditionStyle diamond
+
+'' Extra activity-node padding ($PUML_PADDING_USE_CSS set by general include)
+!if ($PUML_PADDING_USE_CSS != 0)
+<style>
+activityDiagram {
+  activity {
+    Padding 3
+  }
+}
+</style>
+!else
 skinparam padding 3
+!endif
 
 skinparam ActivityFontColor black
 

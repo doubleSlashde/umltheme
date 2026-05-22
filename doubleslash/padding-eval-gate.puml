@@ -1,0 +1,18 @@
+'' Sets global !$PUML_PADDING_USE_CSS — 1 = use <style> for Padding / Participant-spacing, 0 = skinparam fallback (PlantUML older than 1.2026.3).
+'' Threshold: first PlantUML release that deprecates skinparam padding / ParticipantPadding for CSS (matches official theme migration).
+'' Optional !$PUML_FORCE_LEGACY_PADDING forces skinparam branch when truthy.
+
+!$PUML_PADDING_USE_CSS = 0
+!$TOK = %splitstr(%version(), ".")
+
+!if %size($TOK) >= 3
+!$PUML_VER_YEAR = %intval($TOK[1])
+!$PUML_VER_REL = %intval($TOK[2])
+!if ($PUML_VER_YEAR > 2026) || (($PUML_VER_YEAR == 2026) && ($PUML_VER_REL >= 3))
+!$PUML_PADDING_USE_CSS = 1
+!endif
+!endif
+
+!if %variable_exists("$PUML_FORCE_LEGACY_PADDING") && $PUML_FORCE_LEGACY_PADDING
+!$PUML_PADDING_USE_CSS = 0
+!endif

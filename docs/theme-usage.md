@@ -105,6 +105,10 @@ Older per-diagram URLs under the repo root (e.g. `puml-theme-doubleslash-*.puml`
 @endmindmap
 ```
 
+### Padding & PlantUML ≥ 1.2026.3
+
+Legacy bundles under the repo root include [`doubleslash/padding-eval-gate.puml`](https://github.com/doubleSlashde/umltheme/blob/main/doubleslash/padding-eval-gate.puml) through [`puml-theme-doubleslash-general.puml`](https://github.com/doubleSlashde/umltheme/blob/main/puml-theme-doubleslash-general.puml): same behaviour as gen2 ([CSS `<style>` on new JARs, `skinparam` fallback on older ones](getting-started.md#plantuml-version-padding-styling)).
+
 </details>
 
 ## Migration cheat sheet

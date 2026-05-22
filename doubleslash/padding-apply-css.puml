@@ -1,0 +1,34 @@
+'' CSS path for Padding / participant spacing (PlantUML ≥ 1.2026.3)
+'' Prerequisites:
+''   !$PUML_ELEMENT_PADDING
+'' Optional !$PUML_SEQUENCE_GAP_H plus inner box tuning:
+!if %not(%variable_exists("$PUML_SEQ_MARGIN_V"))
+!$PUML_SEQ_MARGIN_V = 5
+!endif
+!if %not(%variable_exists("$PUML_SEQ_INNER_V"))
+!$PUML_SEQ_INNER_V = 15
+!endif
+!if %not(%variable_exists("$PUML_SEQ_INNER_H"))
+!$PUML_SEQ_INNER_H = 20
+!endif
+
+<style>
+element {
+  Padding $PUML_ELEMENT_PADDING
+}
+!if %variable_exists("$PUML_SEQUENCE_GAP_H")
+participant {
+  Margin $PUML_SEQ_MARGIN_V $PUML_SEQUENCE_GAP_H
+  Padding $PUML_SEQ_INNER_V $PUML_SEQ_INNER_H
+}
+!endif
+
+!if %variable_exists("$PUML_ACTIVITY_PAD") && ($PUML_ACTIVITY_PAD != 0)
+activityDiagram {
+  activity {
+    Padding $PUML_ACTIVITY_PAD
+  }
+}
+!endif
+
+</style>

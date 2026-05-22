@@ -8,6 +8,11 @@ Add a remote `!include` for the gen2 bundle you need. Replace `TAG` only if you 
 
     `https://raw.githubusercontent.com/doubleSlashde/umltheme/vX.Y.Z/doubleslash/doubleslash-gen2.puml`
 
+!!! note "PlantUML version (padding styling)"
+    From **PlantUML 1.2026.3** onward, the engine deprecates `skinparam Padding` and `skinparam ParticipantPadding` in favor of `<style>` rules. Themes in this repo follow that migration automatically: on 1.2026.3+ they emit CSS-like styles; on older builds they fall back to the previous `skinparam` settings.
+
+    To force the legacy `skinparam` path even on a newer JAR (for debugging), set **`!$PUML_FORCE_LEGACY_PADDING = true`** in your `.puml` **before** the theme `!include`.
+
 ## Universal Gen2 theme (recommended)
 
 Works for **most diagram types**:
