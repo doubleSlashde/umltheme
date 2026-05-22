@@ -11,9 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.3] - 2026-05-22
+
 ### Changed
 
 - Gen2 and legacy themes use PlantUML `<style>` for global `Padding` and sequence `ParticipantPadding` on **PlantUML 1.2026.3 and newer**, eliminating deprecation warnings; older JARs keep `skinparam` via a version gate ([`doubleslash/padding-eval-gate.puml`](https://github.com/doubleSlashde/umltheme/blob/main/doubleslash/padding-eval-gate.puml)).
+
+### Fixed
+
+- Removed non-functional `doubleslash-theme` MkDocs plugin from site build configuration
 
 ## [2.0.2] - 2026-05-20
 
@@ -162,7 +168,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consistent styling across all diagram types established
 - Theme parameter conflicts resolved
 
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.2...HEAD
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.3...HEAD
+[2.0.3]: https://github.com/doubleSlashde/umltheme/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
