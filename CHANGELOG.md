@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Padding version gate defaults to the CSS `<style>` path when `%version()` is unparseable; legacy `skinparam` is selected only for releases strictly before **1.2026.3** ([`doubleslash/padding-eval-gate.puml`](doubleslash/padding-eval-gate.puml)).
+
 ## [2.0.3] - 2026-05-22
 
 ### Changed
@@ -58,7 +62,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Light and dark mode support with dedicated theme files
 - New consolidated theme files in `doubleslash/` directory:
   - `dark.puml` - Dark mode theme
-  - `light.puml` - Light mode theme  
+  - `light.puml` - Light mode theme
   - `doubleslash-gen2.puml` - Main gen2 theme
   - `puml-theme-gen2-gantt.puml` - Gen2 Gantt chart theme
   - `puml-theme-gen2-system.puml` - Gen2 system diagram theme
@@ -168,13 +172,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Consistent styling across all diagram types established
 - Theme parameter conflicts resolved
 
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.3...HEAD
-[2.0.3]: https://github.com/doubleSlashde/umltheme/compare/v2.0.2...v2.0.3
-[2.0.2]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...v2.0.2
-[2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
-[2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
-[1.4.0]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...v1.4.0
-[1.3.0]: https://github.com/doubleSlashde/umltheme/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/doubleSlashde/umltheme/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/doubleSlashde/umltheme/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/doubleSlashde/umltheme/releases/tag/v1.0.0
+[1.1.0]: https://github.com/doubleSlashde/umltheme/compare/v1.0.0...v1.1.0
+[1.2.0]: https://github.com/doubleSlashde/umltheme/compare/v1.1.0...v1.2.0
+[1.3.0]: https://github.com/doubleSlashde/umltheme/compare/v1.2.0...v1.3.0
+[1.4.0]: https://github.com/doubleSlashde/umltheme/compare/v1.3.0...v1.4.0
+[2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
+[2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
+[2.0.2]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...v2.0.2
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.3...HEAD
