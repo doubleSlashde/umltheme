@@ -1,0 +1,172 @@
+---
+name: light
+display_name: doubleSlash (Light)
+description: Light-mode — CSS-style theme for canvas, elements, arrows, and meta elements
+author: doubleSlash
+release:
+license: MIT
+version: 3.0.0
+source: https://github.com/doubleSlashde/umltheme
+inspiration: https://plantuml.com/de/style
+---
+
+skinparam useBetaStyle false
+skinparam dpi 100
+skinparam Shadowing false
+skinparam BackgroundColor #FFFFFF
+skinparam DefaultTextAlignment center
+skinparam linetype polyline
+' Direction is not set globally in v3 theme.
+' Set "top to bottom direction" or "left to right direction"
+' in the concrete diagram where the diagram type supports it.
+
+<style>
+  root {
+    BackGroundColor #FFFFFF
+  }
+
+  element {
+
+    LineColor             #00759E
+    LineThickness         1
+    'LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+    HorizontalAlignment   center
+  }
+
+  arrow {
+    LineColor             #7A7A7A
+    LineThickness         1.5
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+  }
+
+  note {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+    HorizontalAlignment   left
+  }
+
+  legend {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  title {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              28
+    FontColor             #000000
+    FontStyle             normal
+    BorderRoundCorner     16
+    Shadowing             0
+  }
+
+  caption {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  footer {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  stereotype {
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #000000
+    FontStyle             normal
+  }
+
+  group {
+    BackGroundColor       #F8F8F8
+    LineColor             #00759E
+    LineThickness         1
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #000000
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+  }
+  database {
+    BackGroundColor       #D7E9F4
+  }
+  actor {
+    BackGroundColor     #C6C6C6
+    LineColor           #C6C6C6
+    LineThickness       3
+    FontColor           #6D6D6D
+  }
+  separator {
+    BackGroundColor     #F8F8F8
+    LineColor           #F8F8F8
+    LineThickness 0
+  }
+  .external {
+      BackGroundColor     #F8F8F8
+      LineThickness       0
+  }
+  .interface {
+    BackGroundColor       #00A5E1
+    LineColor             #00759E
+    LineThickness         2
+    FontColor             #000000
+  }
+' =============================================================
+' Ende — Globale Defaults (Light Mode)
+' =============================================================
+
+  sequenceDiagram {
+    participant {
+      BackGroundColor     #D7E9F4
+      LineColor           #00759E
+      LineThickness       0
+      Margin              4 32
+      Padding             16 16
+    }
+
+    group {
+      BackGroundColor     #F8F8F8
+      LineColor           #7A7A7A
+      Padding             32
+    }
+
+    box {
+      BackGroundColor     #F8F8F8
+      LineColor           #7A7A7A
+      Padding             32
+    }
+  }
+
+</style>

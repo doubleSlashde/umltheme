@@ -1,0 +1,172 @@
+---
+name: dark
+display_name: doubleSlash (Dark)
+description: Dark-mode — CSS-style theme for canvas, elements, arrows, and meta elements
+author: doubleSlash
+release:
+license: MIT
+version: 3.0.0
+source: https://github.com/doubleSlashde/umltheme
+inspiration: https://plantuml.com/de/style
+---
+
+skinparam useBetaStyle false
+skinparam dpi 100
+skinparam Shadowing false
+skinparam BackgroundColor #15202B
+skinparam DefaultTextAlignment center
+skinparam linetype polyline
+' Direction is not set globally in v3 theme.
+' Set "top to bottom direction" or "left to right direction"
+' in the concrete diagram where the diagram type supports it.
+
+<style>
+  root {
+    BackGroundColor #15202B
+  }
+
+  element {
+
+    LineColor             #77DDFF
+    LineThickness         1
+    'LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+    HorizontalAlignment   center
+  }
+
+  arrow {
+    LineColor             #7A7A7A
+    LineThickness         1.5
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+  }
+
+  note {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    HorizontalAlignment   left
+  }
+
+  legend {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  title {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              28
+    FontColor             #D7E9F4
+    FontStyle             normal
+    BorderRoundCorner     16
+    Shadowing             0
+  }
+
+  caption {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  footer {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  stereotype {
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+  }
+
+  group {
+    BackGroundColor       #2D2D2D
+    LineColor             #77DDFF
+    LineThickness         1
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+  }
+  database {
+    BackGroundColor       #22303C
+  }
+  actor {
+    BackGroundColor     #B6B6B6
+    LineColor           #B6B6B6
+    LineThickness       3
+    FontColor           #AFC1C7
+  }
+  separator {
+    BackGroundColor     #2D2D2D
+    LineColor           #2D2D2D
+    LineThickness 0
+  }
+  .external {
+      BackGroundColor     #2D2D2D
+      LineThickness       0
+  }
+  .interface {
+    BackGroundColor       #00A5E1
+    LineColor             #77DDFF
+    LineThickness         2
+    FontColor             #D7E9F4
+  }
+' =============================================================
+' Ende — Globale Defaults (Dark Mode)
+' =============================================================
+
+  sequenceDiagram {
+    participant {
+      BackGroundColor     #22303C
+      LineColor           #77DDFF
+      LineThickness       0
+      Margin              4 32
+      Padding             16 16
+    }
+
+    group {
+      BackGroundColor     #2D2D2D
+      LineColor           #7A7A7A
+      Padding             32
+    }
+
+    box {
+      BackGroundColor     #2D2D2D
+      LineColor           #7A7A7A
+      Padding             32
+    }
+  }
+
+</style>
