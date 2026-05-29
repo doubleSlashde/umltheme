@@ -1,0 +1,4 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+class BillingService <<external>>
+@enduml

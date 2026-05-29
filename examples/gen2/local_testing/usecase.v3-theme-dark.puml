@@ -1,0 +1,38 @@
+@startuml v3-usecase-dark
+!theme dark from ../../../doubleslash/v3
+left to right direction
+hide stereotype
+
+title UML Theme v3 — Use Case (Dark)
+
+actor Kunde
+actor Support
+
+rectangle "Online Shop" {
+  usecase "Bestellung aufgeben" as UC1
+}
+
+rectangle "Backoffice" {
+  usecase "Bestellung bearbeiten" as UC2
+  usecase "Storno verarbeiten" as UC3
+}
+
+Kunde --> UC1
+Support --> UC2
+Support --> UC3
+
+usecase "Legacy-Zahlung" <<external>> as UC4
+UC1 ..> UC4 : <<include>>
+UC3 ..> UC2 : <<extends>>
+
+legend right
+  |= Element |= CSS-Selektor |
+  | Actor | actor (global) |
+  | Use Case | usecase |
+  | Systemgrenze | rectangle |
+  | Extern | .external (global) |
+endlegend
+
+footer Smoke test for puml-theme-dark.puml — Use Case
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+!$PUML_MODE = "light"
+!$PUML_BGCOLOR = "white"
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+note as AntiPattern
+  **Do not** set !$PUML_MODE = "dark" after this include —
+  tokens are already assigned for light mode.
+end note
+class BrokenExample
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+class OrderService
+class LegacyBilling <<external>>
+OrderService --> LegacyBilling : uses
+@enduml

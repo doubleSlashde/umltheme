@@ -1,0 +1,48 @@
+@startuml v3-theme-light-sequence
+!theme light from ../../../doubleslash/v3
+
+title UML Theme — Light Mode Sequence
+
+participant "Sequence Starter" as Seq
+participant "Client" as Client
+Client -> Seq : init sequence
+actor User as Alice
+boundary "Web App" as Web
+control "Order API" as Api
+entity "Order Service" as Service
+database "Order DB" as DB
+queue "Event Bus" as Bus
+participant "Payment Provider" as Pay <<external>>
+
+activate Alice
+box "Checkout Flow"
+  Alice -> Web : open checkout
+  Web -> Seq : handoff
+  Seq -> Api : POST /orders
+  Api -> Service : createOrder()
+  Service -> DB : insert(order)
+  Service -> Pay : authorize()
+  Service -> Bus : publish OrderCreated
+end box
+
+group Response
+  Bus --> Service : ack
+  Service --> Api : orderId
+  Api --> Web : 201 Created
+  Web --> Alice : confirmation
+end
+deactivate Alice
+== Async Follow-up ==
+Service -> Service : schedule reminder
+
+legend right
+  |= Token |= Selector |
+  | Sequence participants | sequenceDiagram participant |
+  | External participant | <<external>> / .external |
+  | Group and box | sequenceDiagram group / box |
+  | Divider label | sequenceDiagram divider |
+endlegend
+
+footer Smoke test for puml-theme-dark.puml (v3 sequence)
+
+@enduml

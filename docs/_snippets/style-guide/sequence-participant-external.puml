@@ -1,0 +1,6 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+participant "Internal API" as API
+participant "Payment Provider" as Pay <<external>>
+API -> Pay : authorize payment
+@enduml

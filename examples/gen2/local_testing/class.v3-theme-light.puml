@@ -1,0 +1,40 @@
+@startuml v3-theme-light
+!theme light from ../../../doubleslash/v3
+left to right direction
+
+title UML Theme v3 — Light Mode Smoke Test
+
+class Customer {
+  +name: String
+  +placeOrder(): Order
+}
+
+interface "Payment API" as Payment <<interface>>
+
+note left of Customer
+  Covers global selectors:
+  element, note, arrow,
+  group, legend, title
+end note
+
+together {
+  class Order {
+    +total: Decimal
+  }
+  class "Line Item" as LineItem
+}
+
+Customer --> Order : places
+Order --> Payment : uses
+
+legend right
+  |= Token |= Selector |
+  | Canvas | root |
+  | Elements | element |
+  | Interface | .interface |
+  | Container | group |
+endlegend
+
+footer Smoke test for puml-theme-light.puml (v3)
+
+@enduml

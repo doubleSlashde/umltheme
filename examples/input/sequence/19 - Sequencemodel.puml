@@ -6,7 +6,7 @@ Actor Alice
 Participant FrontEnd 
 Participant API 
 Participant Backend
-Participant DB 
+database DB 
 
 == Initialization ==
 Alice -> FrontEnd: klick Button

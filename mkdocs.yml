@@ -14,6 +14,9 @@ edit_uri: edit/main/docs/
 docs_dir: docs
 site_dir: site
 
+extra_css:
+  - assets/style-guide/color-tokens.css
+
 theme:
   name: material
   palette:
@@ -37,9 +40,17 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
+      toc_depth: 2
+  - md_in_html
   - tables
   - admonition
   - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.snippets:
@@ -51,9 +62,35 @@ markdown_extensions:
 
 plugins:
   - search
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+      puml_keyword: puml
+      verbose: false
 
 nav:
   - Home: index.md
   - Getting started: getting-started.md
   - Theme usage: theme-usage.md
   - Examples & diagram types: examples.md
+  - Style Guide:
+      - style-guide/index.md
+      - Executive Summary: style-guide/executive-summary.md
+      - Design Tokens: style-guide/design-tokens.md
+      - Globale Defaults: style-guide/global-defaults.md
+      - Diagrammtypen:
+          - Sequence: style-guide/diagram-types/sequence.md
+          - Class & Data: style-guide/diagram-types/class-and-data.md
+          - Use Case: style-guide/diagram-types/use-case.md
+          - Activity: style-guide/diagram-types/activity.md
+          - State: style-guide/diagram-types/state.md
+          - System & C4: style-guide/diagram-types/system-c4.md
+          - Gantt: style-guide/diagram-types/gantt.md
+          - Mindmap & WBS: style-guide/diagram-types/mindmap-wbs.md
+          - Deployment & Component: style-guide/diagram-types/deployment-component.md
+          - JSON, YAML & Misc: style-guide/diagram-types/data-and-misc.md
+      - Autoren-Regeln: style-guide/authoring-rules.md
+      - Theme-Entwicklung: style-guide/theme-development.md
+      - Barrierefreiheit: style-guide/accessibility.md
+      - Versionierung: style-guide/versioning.md
+      - Beispiel-Galerie: style-guide/examples-gallery.md
+      - Anti-Patterns: style-guide/anti-patterns.md

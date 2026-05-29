@@ -1,0 +1,15 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+<style>
+element {
+  Padding 2
+}
+participant {
+  Margin 5 40
+  Padding 15 20
+}
+</style>
+participant A
+participant B
+A -> B : hello
+@enduml

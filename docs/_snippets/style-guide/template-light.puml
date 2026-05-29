@@ -1,0 +1,6 @@
+@startuml
+!$PUML_MODE = "light"
+!$PUML_BGCOLOR = "white"
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+class Example
+@enduml

@@ -1,0 +1,69 @@
+/* Color token cards – Design Tokens page (design-tokens.md) */
+
+.ds-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.ds-color-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  background: var(--md-default-bg-color);
+}
+
+.ds-color-card__swatch {
+  height: 3rem;
+}
+
+.ds-color-card__swatch--bordered {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.ds-color-card__swatch--dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ds-color-card__swatch-part {
+  height: 3rem;
+}
+
+.ds-color-card__body {
+  padding: 1rem 1.25rem;
+}
+
+.ds-color-card__title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 0.75rem;
+}
+
+.ds-color-card__meta {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.4rem 1rem;
+  font-size: 0.9rem;
+  margin: 0 0 0.75rem;
+}
+
+.ds-color-card__meta dt {
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+}
+
+.ds-color-card__meta dd {
+  margin: 0;
+}
+
+.ds-color-card__desc {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 0.75rem;
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}

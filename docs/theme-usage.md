@@ -6,7 +6,7 @@ Beyond the universal gen2 bundle, specialized entry points exist for diagrams th
 !!! info "Source files"
     Theme `.puml` sources live under [`doubleslash/`](https://github.com/doubleSlashde/umltheme/tree/main/doubleslash) in this repository.
 
-## System / C4-style diagrams
+## System / C4-style diagrams { #system-c4-style-diagrams }
 
 ```txt
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/puml-theme-gen2-system.puml
@@ -39,7 +39,7 @@ rectangle "Online Shop System" <<context>> {
 
 Full sample: [`systemmodel_with_levels.puml`](https://github.com/doubleSlashde/umltheme/blob/main/examples/gen2/local_testing/systemmodel_with_levels.puml) (mirror under `remote_testing/` with raw URLs).
 
-## Gantt diagrams
+## Gantt diagrams { #gantt-diagrams }
 
 Wrap with `@startgantt` … `@endgantt` and include the Gantt-oriented theme:
 
@@ -125,7 +125,7 @@ Legacy bundles under the repo root include [`doubleslash/padding-eval-gate.puml`
 
 2. Choose **light** (`doubleslash/light.puml`), **dark** (`doubleslash/dark.puml`), or **universal** (`doubleslash/doubleslash-gen2.puml`).
 
-## Consumption from MkDocs (mkdocs_puml)
+## Consumption from MkDocs (mkdocs_puml) { #consumption-from-mkdocs-mkdocs_puml }
 
 Integrate themes in **your documentation project** using [mkdocs_puml](https://github.com/MikhailKravets/mkdocs_puml):
 
@@ -141,3 +141,12 @@ plugins:
 ```
 
 This uses the official PlantUML server for rendering and follows your MkDocs / Material palette for light vs dark skins.
+
+## Weiterführend: Style Guide
+
+Styling-Regeln (nicht Include-Mechanik):
+
+- [Design Tokens](style-guide/design-tokens.md) — Farben, Typografie, Light/Dark, Spacing
+- [System & C4](style-guide/diagram-types/system-c4.md) — C4-Stereotypen und System-Bundle
+- [Autoren-Regeln](style-guide/authoring-rules.md) — Do/Don't, Naming, Titel-Format
+- [Style Guide — Übersicht](style-guide/index.md)

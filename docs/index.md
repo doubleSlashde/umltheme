@@ -21,6 +21,7 @@ This repository hosts **doubleSlash PlantUML styling** theme files that you refe
 - [**Getting started**](getting-started.md) — quickest way to drop a theme into PlantUML
 - [**Theme usage**](theme-usage.md) — universal, light/dark, specialized variants, MkDocs [`mkdocs_puml`](https://github.com/MikhailKravets/mkdocs_puml)
 - [**Examples**](examples.md) — diagram types covered and sample `.puml` paths in this repo
+- [**Style Guide**](style-guide/index.md) — normative styling rules, design tokens, diagram-type conventions (Atomic Design)
 
 ## Contributing
 

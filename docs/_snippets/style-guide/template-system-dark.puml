@@ -1,0 +1,10 @@
+@startuml
+!$PUML_MODE = "dark"
+!$PUML_BGCOLOR = "#1E1E1E"
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/puml-theme-gen2-system.puml
+rectangle "Shop System" <<context>> {
+  rectangle "Web Application" <<container>> {
+    rectangle "Order Service" <<module>>
+  }
+}
+@enduml

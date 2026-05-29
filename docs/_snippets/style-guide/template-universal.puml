@@ -1,0 +1,7 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+title [Project] — Sequence: Example
+participant "Service A" as A
+participant "Service B" as B
+A -> B : request
+@enduml

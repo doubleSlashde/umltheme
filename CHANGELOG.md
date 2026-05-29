@@ -11,6 +11,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- PlantUML Style Guide documentation under `docs/style-guide/` — Atomic Design structure, design tokens, diagram-type rules, Do/Don't gallery, traceability matrix, anti-patterns, and MkDocs navigation
+- Reusable PlantUML snippets under `docs/_snippets/style-guide/` for Style Guide examples
+- `mkdocs_puml` plugin integration for inline diagram rendering in documentation
+
 ### Changed
 
 - Padding version gate defaults to the CSS `<style>` path when `%version()` is unparseable; legacy `skinparam` is selected only for releases strictly before **1.2026.3** ([`doubleslash/padding-eval-gate.puml`](doubleslash/padding-eval-gate.puml)).

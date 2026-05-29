@@ -1,0 +1,6 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/puml-theme-gen2-system.puml
+rectangle "System" <<context>> {
+  rectangle "Web App" <<container>>
+}
+@enduml

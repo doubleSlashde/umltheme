@@ -20,13 +20,16 @@ skinparam linetype polyline
 ' Set "top to bottom direction" or "left to right direction"
 ' in the concrete diagram where the diagram type supports it.
 
+hide circle
+hide empty members
+hide stereotype
+
 <style>
   root {
     BackGroundColor #15202B
   }
 
   element {
-
     LineColor             #77DDFF
     LineThickness         1
     'LineStyle             solid
@@ -122,16 +125,33 @@ skinparam linetype polyline
   database {
     BackGroundColor       #22303C
   }
+  usecase {
+    BackGroundColor       #22303C
+    LineThickness         0
+  }
+  rectangle {
+    BackGroundColor       #3A3A3A
+    LineThickness         0
+    FontSize              14
+  }
   actor {
     BackGroundColor     #B6B6B6
     LineColor           #B6B6B6
     LineThickness       3
     FontColor           #AFC1C7
+    FontSize            14
   }
   separator {
     BackGroundColor     #2D2D2D
     LineColor           #2D2D2D
     LineThickness 0
+  }
+
+  package {
+    BackGroundColor     #3A3A3A
+    LineThickness       0
+    FontSize            14
+    FontStyle           normal
   }
   .external {
       BackGroundColor     #2D2D2D
@@ -142,6 +162,10 @@ skinparam linetype polyline
     LineColor             #77DDFF
     LineThickness         2
     FontColor             #D7E9F4
+  }
+  .interface.external {
+    BackGroundColor       #7A7A7A
+    LineColor             #7A7A7A
   }
 ' =============================================================
 ' Ende — Globale Defaults (Dark Mode)

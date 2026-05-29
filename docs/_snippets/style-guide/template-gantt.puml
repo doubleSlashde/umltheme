@@ -1,0 +1,6 @@
+@startgantt
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/puml-theme-gen2-gantt.puml
+[Task A] lasts 5 days
+[Task B] lasts 3 days
+@endgantt

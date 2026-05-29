@@ -13,6 +13,10 @@ From **PlantUML 1.2026.3** onward, the engine deprecates `skinparam Padding` and
 
     To force the legacy `skinparam` path even on a newer JAR (for debugging), set **`!$PUML_FORCE_LEGACY_PADDING = true`** in your `.puml` **before** the theme `!include`.
 
+## PlantUML version (padding styling) { #plantuml-version-padding-styling }
+
+See the note above for padding migration behaviour on PlantUML **1.2026.3+** vs legacy JARs.
+
 ## Universal Gen2 theme (recommended)
 
 Works for **most diagram types**:
@@ -61,3 +65,7 @@ Generated examples are grouped for different workflows:
 | [`examples/gen2/local_testing/`](https://github.com/doubleSlashde/umltheme/tree/main/examples/gen2/local_testing)   | Includes use **relative** paths into `doubleslash/` |
 
 Browse either set on GitHub to mirror your environment.
+
+## Weiterführend
+
+- [**Style Guide**](style-guide/index.md) — normative Styling-Regeln, Design Tokens, Do/Don't für Diagramm-Autoren

@@ -2,3 +2,4 @@
 mkdocs>=1.6,<2
 mkdocs-material>=9.5,<11
 pymdown-extensions>=10,<17
+mkdocs_puml>=1.0,<2

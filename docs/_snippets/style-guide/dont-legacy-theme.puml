@@ -1,0 +1,6 @@
+@startuml
+!include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/puml-theme-doubleslash-sequence.puml
+participant A
+participant B
+A -> B : legacy theme
+@enduml
