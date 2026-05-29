@@ -20,6 +20,21 @@ skinparam linetype polyline
 ' Set "top to bottom direction" or "left to right direction"
 ' in the concrete diagram where the diagram type supports it.
 
+' Activity — legacy only (no CSS selector for start/stop, fork/join bar, swimlane)
+skinparam conditionStyle diamond
+skinparam activity {
+  StartColor            #CCCCCC
+  EndColor              #CCCCCC
+  BarColor              #B9D478
+}
+skinparam swimlane {
+  TitleFontColor        #D7E9F4
+  TitleFontSize         16
+  TitleBackgroundColor  #2D2D2D
+  BorderColor           #B6B6B6
+  BorderThickness       1
+}
+
 hide circle
 hide empty members
 hide stereotype
@@ -190,6 +205,35 @@ hide stereotype
       BackGroundColor     #2D2D2D
       LineColor           #7A7A7A
       Padding             32
+    }
+  }
+
+  activityDiagram {
+    activity {
+      BackGroundColor     #22303C
+    }
+
+    activityBar {
+      BackGroundColor     #B9D478
+      LineThickness       2
+    }
+    
+    start {
+      BackgroundColor #CCCCCC
+      LineColor #CCCCCC
+    }
+
+    diamond {
+      BackGroundColor     #00A5E1
+      LineColor           #77DDFF
+      FontColor           #000000
+      FontSize            11
+    }
+
+    partition {
+      LineColor           #77DDFF
+      FontColor           #77DDFF
+      BackGroundColor     transparent
     }
   }
 

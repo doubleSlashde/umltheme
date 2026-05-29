@@ -1,0 +1,48 @@
+@startuml v3-theme-dark-activity
+!theme dark from ../../../doubleslash/v3
+
+title UML Theme v3 — Dark Mode Activity Smoke Test
+
+|Planung|
+start
+:Anforderung erfassen;
+:Kapazitaet pruefen;
+note right
+  Erlaeuterung zum
+  Zwischenschritt
+end note
+
+|Entwicklung|
+if (Freigabe erteilt?) then (ja)
+  partition Umsetzung {
+    :Story implementieren;
+    :Code Review;
+  }
+else (nein)
+  :Zurueck zur Planung;
+endif
+
+|Abnahme|
+fork
+  :Tests ausfuehren;
+fork again
+  :Dokumentation aktualisieren;
+end fork
+:Release freigeben;
+stop
+
+legend right
+  |= Token |= Selector |
+  | Activity node | activityDiagram activity |
+  | Decision diamond | activityDiagram diamond |
+  | Partition | activityDiagram partition |
+  | Swimlane title | skinparam swimlane (legacy) |
+  | Start / stop | skinparam activity StartColor/EndColor |
+  | Fork / join bar | activityDiagram activityBar |
+  | Arrow labels | global arrow |
+  | Notes | global note |
+endlegend
+
+footer Smoke test for puml-theme-dark.puml (v3 activity)
+
+@enduml
