@@ -15,7 +15,7 @@ skinparam dpi 100
 skinparam Shadowing false
 skinparam BackgroundColor #15202B
 skinparam DefaultTextAlignment center
-skinparam linetype polyline
+'skinparam linetype polyline
 ' Direction is not set globally in v3 theme.
 ' Set "top to bottom direction" or "left to right direction"
 ' in the concrete diagram where the diagram type supports it.
@@ -33,6 +33,14 @@ skinparam swimlane {
   TitleBackgroundColor  #2D2D2D
   BorderColor           #B6B6B6
   BorderThickness       1
+}
+
+' State — legacy only (StartColor, EndColor, AttributeFont*; no CSS equivalent)
+skinparam state {
+  StartColor            #CCCCCC
+  EndColor              #CCCCCC
+  AttributeFontColor    #D7E9F4
+  AttributeFontSize     11
 }
 
 hide circle
@@ -234,6 +242,34 @@ hide stereotype
       LineColor           #77DDFF
       FontColor           #77DDFF
       BackGroundColor     transparent
+    }
+  }
+
+  stateDiagram {
+    state {
+      BackGroundColor     #22303C
+    }
+
+    diamond {
+      BackGroundColor     #00A5E1
+      LineColor           #77DDFF
+      FontColor           #000000
+      FontSize            11
+    }
+
+    activityBar {
+      BackGroundColor     #B9D478
+      LineThickness       2
+    }
+
+    start {
+      BackgroundColor #CCCCCC
+      LineColor #CCCCCC
+    }
+
+    end {
+      BackgroundColor #CCCCCC
+      LineColor #CCCCCC
     }
   }
 

@@ -1,0 +1,52 @@
+@startuml v3-theme-dark-state
+!theme dark from ../../../doubleslash/v3
+
+hide empty description
+
+title UML Theme v3 — Dark Mode State Smoke Test
+
+state "Auftrag" as Auftrag {
+  Auftrag : Zustandsbeschreibung
+  Auftrag : interne Aktivitaet
+  [*] --> Entwurf
+  Entwurf --> Freigegeben : freigeben
+  Freigegeben --> Storniert : stornieren
+  Freigegeben --> [*]
+  Storniert --> [*]
+}
+
+[*] --> Auftrag : anlegen
+
+state choice1 <<choice>>
+state fork1 <<fork>>
+state join1 <<join>>
+
+Auftrag --> choice1 : abschliessen
+choice1 --> fork1 : parallel starten
+choice1 --> join1 : direkt
+fork1 --> Bearbeitung
+fork1 --> Versand
+Bearbeitung --> join1
+Versand --> join1
+join1 --> [*]
+
+note right of Auftrag
+  Erlaeuterung zum
+  Zustandsautomaten
+end note
+
+legend right
+  |= Setting / Element |= Quelle |
+  | hide empty description | Autor-Setting (SG-45) |
+  | State node | stateDiagram state (BackGroundColor only) |
+  | Choice | stateDiagram diamond |
+  | Fork / join bar | stateDiagram activityBar |
+  | Initial / final [*] | skinparam state StartColor/EndColor (#CCCCCC, wie Activity) |
+  | State description | skinparam state AttributeFont* |
+  | Transitions | global arrow |
+  | Notes | global note |
+endlegend
+
+footer Smoke test for puml-theme-dark.puml (v3 state)
+
+@enduml

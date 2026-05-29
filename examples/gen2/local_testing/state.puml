@@ -1,4 +1,4 @@
 @startuml state
-!include ../../../doubleslash/doubleslash-gen2.puml
+!theme light from ../../../doubleslash/v3
 !include ../../input/state/13 - State.puml
 @enduml 

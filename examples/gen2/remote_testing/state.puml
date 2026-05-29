@@ -1,5 +1,8 @@
 @startuml state
 !include https://raw.githubusercontent.com/doubleSlashde/umltheme/main/doubleslash/doubleslash-gen2.puml
+
+hide empty description
+
 state choice1 <<choice>>
 state fork1   <<fork>>
 state join2   <<join>>
