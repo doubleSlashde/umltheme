@@ -184,7 +184,8 @@ hide stereotype
   }
   .external {
       BackGroundColor     #2D2D2D
-      LineThickness       0
+      LineThickness       1
+      LineColor           #7A7A7A
   }
   .interface {
     BackGroundColor       #00A5E1
