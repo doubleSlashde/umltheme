@@ -13,7 +13,7 @@ inspiration: https://plantuml.com/de/style
 skinparam useBetaStyle false
 skinparam dpi 100
 skinparam Shadowing false
-skinparam BackgroundColor #FFFFFF
+skinparam BackGroundColor #FFFFFF
 skinparam DefaultTextAlignment center
 'skinparam linetype polyline
 ' Direction is not set globally in v3 theme.
@@ -46,7 +46,9 @@ skinparam state {
 hide circle
 hide empty members
 hide stereotype
-
+!ifndef $FONT_NAME
+  !$FONT_NAME = "Helvetica"
+!endif
 <style>
   root {
     BackGroundColor #FFFFFF
@@ -271,7 +273,7 @@ hide stereotype
     }
 
     start {
-      BackgroundColor #515151
+      BackGroundColor #515151
       LineColor #515151
     }
 

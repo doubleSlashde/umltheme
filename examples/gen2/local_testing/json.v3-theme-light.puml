@@ -1,0 +1,8 @@
+@startjson v3-theme-light-json
+!theme light from ../../../doubleslash/v3
+{
+   "fruit": "Apple",
+   "size": "Large",
+   "color": ["Red", "Green"]
+}
+@endjson

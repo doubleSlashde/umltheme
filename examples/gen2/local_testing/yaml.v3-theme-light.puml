@@ -1,0 +1,8 @@
+@startyaml v3-theme-light-yaml
+!theme light from ../../../doubleslash/v3
+fruit: Apple
+size: Large
+color:
+ - Red
+ - Green
+@endyaml
