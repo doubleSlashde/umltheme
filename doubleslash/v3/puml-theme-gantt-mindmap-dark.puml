@@ -1,0 +1,263 @@
+---
+name: gantt-mindmap-dark
+display_name: doubleSlash (Gantt & Mindmap Dark)
+description: Dark-mode — CSS-style theme for Gantt & Mindmap
+author: doubleSlash
+release:
+license: MIT
+version: 3.0.0
+source: https://github.com/doubleSlashde/umltheme
+inspiration: https://plantuml.com/de/style
+---
+
+skinparam useBetaStyle false
+skinparam dpi 100
+skinparam Shadowing false
+skinparam BackgroundColor #15202B
+skinparam DefaultTextAlignment center
+
+<style>
+  root {
+    BackGroundColor #15202B
+  }
+
+  element {
+    LineColor             #77DDFF
+    LineThickness         1
+    'LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+    HorizontalAlignment   center
+  }
+    arrow {
+    LineColor             #7A7A7A
+    LineThickness         1.5
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+  }
+
+  note {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    HorizontalAlignment   left
+  }
+
+  legend {
+    BackGroundColor       transparent
+    LineColor             #7A7A7A
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  title {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              28
+    FontColor             #D7E9F4
+    FontStyle             normal
+    BorderRoundCorner     16
+    Shadowing             0
+  }
+
+  caption {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  footer {
+    BackGroundColor       transparent
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+  }
+
+  stereotype {
+    FontName              Helvetica
+    FontSize              11
+    FontColor             #D7E9F4
+    FontStyle             normal
+  }
+
+  group {
+    BackGroundColor       #2D2D2D
+    LineColor             #77DDFF
+    LineThickness         1
+    LineStyle             solid
+    FontName              Helvetica
+    FontSize              12
+    FontColor             #D7E9F4
+    FontStyle             normal
+    Shadowing             0
+    RoundCorner           16
+    Padding               4
+  }
+  mindmapDiagram {
+    node {
+      BackGroundColor       #22303C
+      FontColor             #D7E9F4
+      FontSize              12
+      Padding               10
+      Margin                10
+      LineColor             transparent
+      LineThickness         0
+    }
+
+    rootNode {
+      BackGroundColor       #00A5E1
+      FontColor             #FFFFFF
+      FontSize              12
+      FontStyle             bold
+      Padding               10
+      Margin                10
+      LineColor             transparent
+      LineThickness         0
+    }
+
+    leafNode {
+      BackGroundColor       #2D2D2D
+      FontColor             #D7E9F4
+      FontSize              11
+      Padding               5
+      Margin                5
+      LineColor             transparent
+      LineThickness         0
+    }
+
+    arrow {
+      LineColor             #7A7A7A
+      LineThickness         1.5
+    }
+  }
+
+  wbsDiagram {
+    node {
+      BackGroundColor       #22303C
+      FontColor             #D7E9F4
+      FontSize              12
+      Padding               10
+      Margin                10
+      LineColor             #77DDFF
+      LineThickness         1
+    }
+
+    rootNode {
+      BackGroundColor       #00A5E1
+      FontColor             #FFFFFF
+      FontSize              12
+      FontStyle             bold
+      Padding               10
+      Margin                10
+      LineColor             #77DDFF
+      LineThickness         1
+    }
+
+    leafNode {
+      BackGroundColor       #2D2D2D
+      FontColor             #D7E9F4
+      FontSize              11
+      Padding               5
+      Margin                5
+      LineColor             #77DDFF
+      LineThickness         1
+    }
+
+    arrow {
+      LineColor             #7A7A7A
+      LineThickness         1.5
+    }
+  }
+
+  ganttDiagram {
+    task {
+      FontName              Helvetica
+      FontSize              12
+      FontColor             #D7E9F4
+      FontStyle             normal
+      BackGroundColor       #22303C
+      LineColor             #22303C
+      RoundCorner           6
+      Margin                0
+      Padding               3
+      HorizontalAlignment   left
+      unstarted {
+        BackGroundColor     #2D2D2D
+        LineColor           #2D2D2D
+      }
+      undone {
+        BackGroundColor     #E85F63
+        LineColor           #E85F63
+        FontColor           #FFFFFF
+      }
+    }
+
+    timeline {
+      FontName              Helvetica
+      FontSize              12
+      FontColor             #D7E9F4
+      BackGroundColor       #2D2D2D
+    }
+
+    milestone {
+      FontColor             #D7E9F4
+      FontSize              12
+      FontStyle             normal
+      BackGroundColor       #77DDFF
+      LineColor             #77DDFF
+      LineThickness         15
+      Margin                5
+    }
+
+    note {
+      FontColor             #D7E9F4
+      FontSize              10
+      LineColor             #B6B6B6
+      Margin                4 4 16 4
+    }
+
+    closed {
+      BackGroundColor       #B9D478
+      LineColor             #B9D478
+      FontColor             #000000
+    }
+
+    arrow {
+      LineColor             #7A7A7A
+      LineStyle             solid
+      LineThickness         1.5
+      FontName              Helvetica
+      FontColor             #D7E9F4
+      FontSize              12
+    }
+
+    separator {
+      LineColor             #7A7A7A
+      LineThickness         1
+      FontSize              12
+      FontColor             #D7E9F4
+      Margin                5
+      Padding               5
+    }
+  }
+</style>

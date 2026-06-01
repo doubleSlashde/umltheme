@@ -50,6 +50,7 @@ hide stereotype
 <style>
   root {
     BackGroundColor #FFFFFF
+    FontSize 12
   }
 
   element {
@@ -63,6 +64,7 @@ hide stereotype
     Shadowing             0
     RoundCorner           16
     Padding               4
+    Margin                4 32 4 32
     HorizontalAlignment   center
   }
 
@@ -147,6 +149,9 @@ hide stereotype
   }
   database {
     BackGroundColor       #D7E9F4
+    FontSize              12
+    LineThickness         1
+    LineColor             #C6C6C6
   }
   usecase {
     BackGroundColor       #D7E9F4
@@ -188,6 +193,46 @@ hide stereotype
   .interface.external {
     BackGroundColor       #7A7A7A
     LineColor             #7A7A7A
+  }
+  .context {
+    BackGroundColor       #FFFFFF
+    LineColor             #00759E
+    LineThickness         1
+    LineStyle             solid
+    FontColor             #000000
+    FontStyle             bold
+    FontSize              12
+  }
+  .container {
+    BackGroundColor       #EEF8FE
+    LineColor             #C6C6C6
+    LineThickness         1
+    LineStyle             solid
+    FontColor             #000000
+    FontSize              12
+  }
+  .component {
+    BackGroundColor       #D7E9F4
+    LineThickness         0
+    FontColor             #000000
+    FontSize              12
+  }
+  .module {
+    BackGroundColor       #AFC1C7
+    LineThickness         0
+    FontColor             #000000
+    FontSize              12
+  }
+  .code {
+    BackGroundColor       #84999F
+    LineThickness         0
+    FontColor             #FFFFFF
+    FontSize              12
+  }
+  .database.external {
+    BackGroundColor       #F8F8F8
+    LineColor             #7A7A7A
+    LineThickness         1
   }
 ' =============================================================
 ' Ende — Globale Defaults (Light Mode)
@@ -261,13 +306,28 @@ hide stereotype
       LineThickness       2
     }
     start {
-      BackgroundColor #515151
+      BackGroundColor #515151
       LineColor #515151
     }
     end {
-      BackgroundColor #515151
+      BackGroundColor #515151
       LineColor #515151
     }
   }
+  componentDiagram {
+    interface {
+      BackGroundColor       #00A5E1
+      LineThickness         0
+      FontColor             #000000
+      FontSize              12
+      IconColor             #000000
+    }
+    component {
+      BackGroundColor       #D7E9F4
+      LineThickness         0
+      FontColor             #000000
+      FontSize              12
+    }
 
+  }
 </style>

@@ -13,12 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- v3 CSS `ganttDiagram`, `mindmapDiagram`, and `wbsDiagram` selectors in [`doubleslash/v3/puml-theme-light.puml`](doubleslash/v3/puml-theme-light.puml) and [`doubleslash/v3/puml-theme-dark.puml`](doubleslash/v3/puml-theme-dark.puml) — task status colors, timeline, milestone, WBS borders, and full dark-mode palette
+- Style-guide to-be definitions for Gantt and Mindmap/WBS in [`docs/style-guide/diagram-types/gantt.md`](docs/style-guide/diagram-types/gantt.md) and [`docs/style-guide/diagram-types/mindmap-wbs.md`](docs/style-guide/diagram-types/mindmap-wbs.md)
+- v3 golden samples: `gantt.v3-theme-{light,dark}.puml`, `mindmap.v3-theme-{light,dark}.puml`, `wbs.v3-theme-{light,dark}.puml` in [`examples/gen2/local_testing/`](examples/gen2/local_testing/)
+- v3 CSS stereotype classes for System & C4 diagrams (`.context`, `.container`, `.component`, `.module`, `.code`) in [`doubleslash/v3/puml-theme-light.puml`](doubleslash/v3/puml-theme-light.puml) and [`doubleslash/v3/puml-theme-dark.puml`](doubleslash/v3/puml-theme-dark.puml) — context/container borders, bold context headline, 12 pt inner-level labels, external-database grey border (`.database.external`)
 - PlantUML Style Guide documentation under `docs/style-guide/` — Atomic Design structure, design tokens, diagram-type rules, Do/Don't gallery, traceability matrix, anti-patterns, and MkDocs navigation
 - Reusable PlantUML snippets under `docs/_snippets/style-guide/` for Style Guide examples
 - `mkdocs_puml` plugin integration for inline diagram rendering in documentation
 
 ### Changed
 
+- Gantt layout in [`doubleslash/v3/puml-theme-gantt-mindmap-light.puml`](doubleslash/v3/puml-theme-gantt-mindmap-light.puml) and [`doubleslash/v3/puml-theme-gantt-mindmap-dark.puml`](doubleslash/v3/puml-theme-gantt-mindmap-dark.puml) — reset inherited `element` spacing (`Margin 0`, `RoundCorner 6`, `HorizontalAlignment left` on tasks; bottom note margin) so short task bars render at full width; dark milestone label `#D7E9F4` for readability on canvas
+- Gantt smoke tests [`gantt.v3-theme-light.puml`](examples/gen2/local_testing/gantt.v3-theme-light.puml) and [`gantt.v3-theme-dark.puml`](examples/gen2/local_testing/gantt.v3-theme-dark.puml) — `printscale daily zoom 2` for short tasks; `note bottom` after milestone (Gantt has no `note top`); footer removed to avoid overlap
 - Padding version gate defaults to the CSS `<style>` path when `%version()` is unparseable; legacy `skinparam` is selected only for releases strictly before **1.2026.3** ([`doubleslash/padding-eval-gate.puml`](doubleslash/padding-eval-gate.puml)).
 
 ## [2.0.3] - 2026-05-22

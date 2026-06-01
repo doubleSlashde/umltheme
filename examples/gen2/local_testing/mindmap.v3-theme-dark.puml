@@ -1,0 +1,19 @@
+@startmindmap v3-theme-dark-mindmap
+!theme gantt-mindmap-dark from ../../../doubleslash/v3
+
+title UML Theme v3 — Dark Mode Mindmap Smoke Test
+
+* Renovation project
+** Planning
+*** Budget & deadlines
+*** Risk assessment
+** Execution
+*** Team coordination
+*** Material selection
+** Monitoring
+*** Quality control
+*** Managing unforeseen events
+
+footer Smoke test for puml-theme-dark.puml (v3 mindmap)
+
+@endmindmap

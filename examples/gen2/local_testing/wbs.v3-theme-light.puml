@@ -1,0 +1,20 @@
+@startwbs v3-theme-light-wbs
+!theme light from ../../../doubleslash/v3
+
+title UML Theme v3 — Light Mode WBS Smoke Test
+
+* World
+** America
+*** Canada
+*** Mexico
+*** USA
+**** Texas
+**** California
+** Europe
+*** England
+*** Germany
+*** Spain
+
+footer Smoke test for puml-theme-light.puml (v3 wbs)
+
+@endwbs

@@ -1,0 +1,37 @@
+@startgantt v3-theme-dark-gantt
+!theme gantt-mindmap-dark from ../../../doubleslash/v3
+
+skinparam RoundCorner 6
+saturday are colored in #2D2D2D
+sunday are colored in #2D2D2D
+printscale daily zoom 2
+
+title UML Theme v3 — Dark Mode Gantt Smoke Test
+
+Project starts 2026-06-02
+
+[Prototype Design] lasts 7 days
+[Functional Testing] lasts 4 days
+[Performance Testing] lasts 4 days
+[Documentation] lasts 3 days
+
+[Functional Testing] starts at [Prototype Design]'s end
+[Performance Testing] starts at [Prototype Design]'s end
+[Documentation] starts at [Functional Testing]'s end
+
+[Functional Testing] is 0% complete
+[Performance Testing] is 80% complete
+[Documentation] is 100% complete
+
+-- Milestone --
+[Release 1.0] happens at [Documentation]'s end
+
+note bottom
+  Smoke test for puml-theme-gantt-mindmap-dark.puml
+  Covers ganttDiagram selectors:
+  task, timeline, milestone,
+  note, arrow, separator,
+  unstarted / undone / closed
+end note
+
+@endgantt

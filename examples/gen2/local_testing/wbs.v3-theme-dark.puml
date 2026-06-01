@@ -1,0 +1,20 @@
+@startwbs v3-theme-dark-wbs
+!theme dark from ../../../doubleslash/v3
+
+title UML Theme v3 — Dark Mode WBS Smoke Test
+
+* World
+** America
+*** Canada
+*** Mexico
+*** USA
+**** Texas
+**** California
+** Europe
+*** England
+*** Germany
+*** Spain
+
+footer Smoke test for puml-theme-dark.puml (v3 wbs)
+
+@endwbs
