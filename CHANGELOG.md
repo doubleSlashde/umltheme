@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-06-01
+
 ### Added
 
 - v3 CSS `ganttDiagram`, `mindmapDiagram`, and `wbsDiagram` selectors in [`doubleslash/v3/puml-theme-light.puml`](doubleslash/v3/puml-theme-light.puml) and [`doubleslash/v3/puml-theme-dark.puml`](doubleslash/v3/puml-theme-dark.puml) — task status colors, timeline, milestone, WBS borders, and full dark-mode palette
@@ -192,4 +194,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.0.0]: https://github.com/doubleSlashde/umltheme/compare/v1.4.0...v2.0.0
 [2.0.1]: https://github.com/doubleSlashde/umltheme/compare/v2.0.0...v2.0.1
 [2.0.2]: https://github.com/doubleSlashde/umltheme/compare/v2.0.1...v2.0.2
-[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v2.0.3...HEAD
+[2.0.3]: https://github.com/doubleSlashde/umltheme/compare/v2.0.2...v2.0.3
+[3.0.0]: https://github.com/doubleSlashde/umltheme/compare/v2.0.3...v3.0.0
+[Unreleased]: https://github.com/doubleSlashde/umltheme/compare/v3.0.0...HEAD
