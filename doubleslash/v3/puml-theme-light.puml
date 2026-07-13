@@ -266,8 +266,11 @@ hide stereotype
   activityDiagram {
     activity {
       BackGroundColor     #D7E9F4
+      LineThickness         0
     }
-
+    arrow {
+      LineThickness         1.5
+    }
     activityBar {
       BackGroundColor     #6B9714
       LineThickness       2

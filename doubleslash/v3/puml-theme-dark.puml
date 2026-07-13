@@ -263,8 +263,11 @@ hide stereotype
   activityDiagram {
     activity {
       BackGroundColor     #22303C
+      LineThickness         0
     }
-
+    arrow {
+      LineThickness         1.5
+    }
     activityBar {
       BackGroundColor     #B9D478
       LineThickness       2
@@ -278,7 +281,7 @@ hide stereotype
     diamond {
       BackGroundColor     #00A5E1
       LineColor           #77DDFF
-      FontColor           #000000
+      FontColor           #D7E9F4
       FontSize            11
     }
 
@@ -297,7 +300,7 @@ hide stereotype
     diamond {
       BackGroundColor     #00A5E1
       LineColor           #77DDFF
-      FontColor           #000000
+      FontColor           #D7E9F4
       FontSize            11
     }
 
